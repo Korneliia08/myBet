@@ -44,6 +44,10 @@
       &:hover {
         transform: perspective(1px) scale(.95);
       }
+
+      &:focus {
+        background-color: #e82323;
+      }
     }
   }
 }

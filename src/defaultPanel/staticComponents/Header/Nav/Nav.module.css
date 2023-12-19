@@ -40,5 +40,8 @@
 .containerForTitleAndNav .nav .btnWriteToUs:hover {
   transform: perspective(1px) scale(0.95);
 }
+.containerForTitleAndNav .nav .btnWriteToUs:focus {
+  background-color: #e82323;
+}
 
 /*# sourceMappingURL=Nav.module.css.map */
