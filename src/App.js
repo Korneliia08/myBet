@@ -1,22 +1,23 @@
 import './App.css';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, Navigate, RouterProvider} from "react-router-dom";
+import DefaultPanel from "./defaultPanel/DefaultPanel";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <h1>hejoo</h1>
+            element: <DefaultPanel/>
         },
         {
             path: "*",
-            element: <h1>hejoo</h1>
+            element: <Navigate to="/"></Navigate>
         }
-    ], {basename:"/mybet"});
-  return (
-    <div className="App">
-        <RouterProvider router={router}></RouterProvider>
-    </div>
-  );
+    ], {basename: "/mybet"});
+    return (
+        <div className="App">
+            <RouterProvider router={router}></RouterProvider>
+        </div>
+    );
 }
 
 export default App;
