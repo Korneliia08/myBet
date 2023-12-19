@@ -1,0 +1,44 @@
+.containerForTitleAndNav {
+  width: 100%;
+  background-color: #1a1a1a;
+  box-sizing: border-box;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.containerForTitleAndNav .title {
+  color: white;
+  text-shadow: 0px 0px 1px black;
+}
+.containerForTitleAndNav .title span {
+  color: #ef5151;
+}
+.containerForTitleAndNav .nav {
+  display: flex;
+  column-gap: 25px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.containerForTitleAndNav .nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 700ms ease;
+  text-shadow: 0px 0px 1px black;
+}
+.containerForTitleAndNav .nav a:hover {
+  transform: perspective(1px) scale(1.05);
+}
+.containerForTitleAndNav .nav .btnWriteToUs {
+  background-color: #ef5151;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 700ms ease;
+  text-shadow: 0px 1px 1px black;
+}
+.containerForTitleAndNav .nav .btnWriteToUs:hover {
+  transform: perspective(1px) scale(0.95);
+}
+
+/*# sourceMappingURL=Nav.module.css.map */

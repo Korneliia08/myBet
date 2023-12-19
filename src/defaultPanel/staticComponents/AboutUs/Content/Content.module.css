@@ -1,0 +1,44 @@
+.containerForContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+.containerForContent .title {
+  width: 700px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #ef5151;
+  letter-spacing: 1px;
+  text-shadow: 0px 2px 1px white;
+}
+.containerForContent .content {
+  width: 700px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+.containerForContent .btnReadMore {
+  padding: 10px 40px;
+  border: none;
+  transition: all 400ms linear;
+  background-color: #ef5151;
+  color: white;
+  text-shadow: 0px 1px 1px #2f2f2f;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.containerForContent .btnReadMore:hover {
+  cursor: pointer;
+  transform: perspective(1px) scale(0.95);
+}
+.containerForContent .btnReadMore:focus {
+  background-color: #e82323;
+}
+
+/*# sourceMappingURL=Content.module.css.map */
