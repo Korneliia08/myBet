@@ -10,10 +10,10 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 15px;
-  font-size: 27px;
+  font-size: 35px;
   color: #ef5151;
   letter-spacing: 1px;
-  text-shadow: 0px 2px 1px white;
+  text-shadow: 0px 1px 1px white;
 }
 .containerForContent .content {
   width: 450px;

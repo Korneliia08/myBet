@@ -1,0 +1,71 @@
+.sectionEmpoyees {
+  background-image: url("../../assets/backgroundBlurEmployees.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px 90px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.sectionEmpoyees .blockForTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+.sectionEmpoyees .blockForTitle .title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 35px;
+  text-shadow: 0px 0px 1px black;
+}
+.sectionEmpoyees .blockForTitle .content {
+  width: 500px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 20px;
+  color: gainsboro;
+  text-shadow: 0px 0px 1px black;
+}
+.sectionEmpoyees .containerForCards {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  box-sizing: border-box;
+}
+.sectionEmpoyees .containerForCards .cardOfEmploy {
+  padding-bottom: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  transition: all 500ms linear;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.sectionEmpoyees .containerForCards .cardOfEmploy img {
+  width: 100%;
+}
+.sectionEmpoyees .containerForCards .cardOfEmploy .nameSurname {
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.sectionEmpoyees .containerForCards .cardOfEmploy .information {
+  width: 85%;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: bold;
+  color: #464646;
+}
+.sectionEmpoyees .containerForCards .cardOfEmploy:hover {
+  cursor: pointer;
+  scale: 1.04;
+}
+
+/*# sourceMappingURL=Employees.module.css.map */
