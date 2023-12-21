@@ -1,7 +1,8 @@
 import style from "./Employees.module.css";
-import employee1 from "../../assets/employee1.jpg";
+import emloyee1 from "../../assets/employee1.jpg";
 import employee2 from "../../assets/employee2.jpg";
 import employee3 from "../../assets/employee3.jpg";
+import CardEmployee from "./CardEmployee/CardEmployee";
 
 const Employees = () => {
     return (
@@ -12,22 +13,11 @@ const Employees = () => {
                     but also enjoy maintaining the atmosphere of a classic barbershop.</p>
             </div>
             <div className={style.containerForCards}>
-                <div className={style.cardOfEmploy}>
-                    <img src={employee1} alt="image of emloyee"/>
-                    <h3 className={style.nameSurname}>simon gili</h3>
-                    <p className={style.information}>Simon has several years of experience in the barber industry.</p>
-                </div>
-                <div className={style.cardOfEmploy}>
-                    <img src={employee2} alt="image of emloyee"/>
-                    <h3 className={style.nameSurname}>simon phillips</h3>
-                    <p className={style.information}>Simon has several years of experience in the barber industry.</p>
-                </div>
-                <div className={style.cardOfEmploy}>
-                    <img src={employee3} alt="image of emloyee"/>
-                    <h3 className={style.nameSurname}>matthew phillips</h3>
-                    <p className={style.information}>Matthew has several years of experience in the barber industry.</p>
-                </div>
+                <CardEmployee data={emloyee1}/>
+                <CardEmployee data={employee2}/>
+                <CardEmployee data={employee3}/>
             </div>
+            <button className={style.btnView}>view all team</button>
         </section>
     )
 }

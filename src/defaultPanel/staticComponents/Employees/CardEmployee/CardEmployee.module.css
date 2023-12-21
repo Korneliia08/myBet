@@ -1,0 +1,32 @@
+.cardOfEmployee {
+  padding-bottom: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  transition: all 500ms linear;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cardOfEmployee img {
+  width: 100%;
+}
+.cardOfEmployee .nameSurname {
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.cardOfEmployee .information {
+  width: 85%;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: bold;
+  color: #464646;
+}
+.cardOfEmployee:hover {
+  cursor: pointer;
+  scale: 1.04;
+}
+
+/*# sourceMappingURL=CardEmployee.module.css.map */

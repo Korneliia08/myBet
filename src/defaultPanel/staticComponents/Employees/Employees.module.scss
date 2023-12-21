@@ -39,43 +39,23 @@
     justify-content: center;
     column-gap: 15px;
     box-sizing: border-box;
+  }
 
-    .cardOfEmploy {
-      padding-bottom: 25px;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      row-gap: 10px;
-      transition: all 500ms linear;
-      border-radius: 20px;
-      overflow: hidden;
+  .btnView {
+    margin-top: 40px;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 50px;
+    background-color: #014D55;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 400ms ease;
 
-
-      img {
-        width: 100%;
-      }
-
-      .nameSurname {
-        color: #1e1e1e;
-        text-transform: uppercase;
-      }
-
-      .information {
-        width: 85%;
-        text-align: center;
-        line-height: 1.4;
-        font-size: 18px;
-        font-weight: bold;
-        color: #464646;
-      }
-
-      &:hover {
-        cursor: pointer;
-        scale: 1.04;
-
-
-      }
+    &:hover {
+      cursor: pointer;
+      transform: perspective(1px) scale(0.95);
+      font-size: 19px;
     }
   }
 }

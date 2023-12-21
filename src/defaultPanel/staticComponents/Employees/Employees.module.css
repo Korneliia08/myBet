@@ -37,35 +37,21 @@
   column-gap: 15px;
   box-sizing: border-box;
 }
-.sectionEmpoyees .containerForCards .cardOfEmploy {
-  padding-bottom: 25px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 10px;
-  transition: all 500ms linear;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.sectionEmpoyees .containerForCards .cardOfEmploy img {
-  width: 100%;
-}
-.sectionEmpoyees .containerForCards .cardOfEmploy .nameSurname {
-  color: #1e1e1e;
-  text-transform: uppercase;
-}
-.sectionEmpoyees .containerForCards .cardOfEmploy .information {
-  width: 85%;
-  text-align: center;
-  line-height: 1.4;
+.sectionEmpoyees .btnView {
+  margin-top: 40px;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 50px;
+  background-color: #014D55;
+  border: none;
   font-size: 18px;
-  font-weight: bold;
-  color: #464646;
+  letter-spacing: 1px;
+  transition: 400ms ease;
 }
-.sectionEmpoyees .containerForCards .cardOfEmploy:hover {
+.sectionEmpoyees .btnView:hover {
   cursor: pointer;
-  scale: 1.04;
+  transform: perspective(1px) scale(0.95);
+  font-size: 19px;
 }
 
 /*# sourceMappingURL=Employees.module.css.map */
