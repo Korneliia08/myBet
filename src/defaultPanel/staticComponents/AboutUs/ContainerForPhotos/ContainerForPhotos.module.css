@@ -1,20 +1,20 @@
 .containerForImages {
   display: flex;
-  column-gap: 20px;
+  column-gap: 15px;
   box-sizing: border-box;
   justify-content: flex-start;
 }
 .containerForImages .blockForImage {
   background-color: #cbcbcb;
   box-sizing: border-box;
-  width: 335px;
-  height: 315px;
+  width: 295px;
+  height: 270px;
   position: relative;
   box-shadow: 0px 0px 15px 2px #838383;
 }
 .containerForImages .blockForImage img {
-  top: -15px;
-  width: 320px;
+  top: -25px;
+  width: 285px;
   position: absolute;
 }
 

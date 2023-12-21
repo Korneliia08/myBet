@@ -6,20 +6,20 @@
   box-sizing: border-box;
 }
 .containerForContent .title {
-  width: 700px;
+  width: 450px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 15px;
-  font-size: 28px;
+  font-size: 27px;
   color: #ef5151;
   letter-spacing: 1px;
   text-shadow: 0px 2px 1px white;
 }
 .containerForContent .content {
-  width: 700px;
+  width: 450px;
   text-align: center;
   line-height: 1.4;
-  font-size: 21px;
+  font-size: 19px;
   margin-bottom: 20px;
 }
 .containerForContent .btnReadMore {

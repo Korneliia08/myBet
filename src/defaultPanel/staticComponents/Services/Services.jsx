@@ -1,4 +1,8 @@
 import style from "./Services.module.css";
+import haircurtService from "../../assets/haircutService.jpg";
+import beardTriming from "../../assets/beardTriming.jpg";
+import cleanShave from "../../assets/cleanShave.jpg";
+import faceMasking from "../../assets/faceMasking.jpg";
 
 const Services = () => {
     return (
@@ -8,32 +12,32 @@ const Services = () => {
             </div>
             <div className={style.containerForServicesCard}>
                 <div className={style.serviceCard}>
-                    <div>sfbh</div>
-                    <h3 className={style.title}>Title</h3>
-                    <p className={style.describe}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-                        sint, voluptates! Assumenda
-                        dolorum ex minima!</p>
+                    <div className={style.blockForImage}>
+                        <img src={haircurtService} alt="haircurt service image" className={style.imageService}/>
+                    </div>
+                    <h3 className={style.title}>Haircut Styles</h3>
+                    <p className={style.describe}>Barber is a person whose occupation is mainly to cut dress style.</p>
                 </div>
                 <div className={style.serviceCard}>
-                    <div>sfbh</div>
-                    <h3 className={style.title}>Title</h3>
-                    <p className={style.describe}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-                        sint, voluptates! Assumenda
-                        dolorum ex minima!</p>
+                    <div className={style.blockForImage}>
+                        <img src={beardTriming} alt="beard triming image" className={style.imageService}/>
+                    </div>
+                    <h3 className={style.title}>Beard Triming</h3>
+                    <p className={style.describe}>Barber is a person whose occupation is mainly to cut dress style.</p>
                 </div>
                 <div className={style.serviceCard}>
-                    <div>sfbh</div>
-                    <h3 className={style.title}>Title</h3>
-                    <p className={style.describe}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-                        sint, voluptates! Assumenda
-                        dolorum ex minima!</p>
+                    <div className={style.blockForImage}>
+                        <img src={cleanShave} alt="clean shave image" className={style.imageService}/>
+                    </div>
+                    <h3 className={style.title}>Clean Smooth Shave</h3>
+                    <p className={style.describe}>Barber is a person whose occupation is mainly to cut dress style.</p>
                 </div>
                 <div className={style.serviceCard}>
-                    <div>sfbh</div>
-                    <h3 className={style.title}>Title</h3>
-                    <p className={style.describe}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-                        sint, voluptates! Assumenda
-                        dolorum ex minima!</p>
+                    <div className={style.blockForImage}>
+                        <img src={faceMasking} alt="face masking image" className={style.imageService}/>
+                    </div>
+                    <h3 className={style.title}>Face Masking</h3>
+                    <p className={style.describe}>Barber is a person whose occupation is mainly to cut dress style.</p>
                 </div>
             </div>
         </section>
