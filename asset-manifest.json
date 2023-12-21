@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myBet/static/css/main.56ae1a3c.css",
-    "main.js": "/myBet/static/js/main.621d9ff9.js",
+    "main.css": "/myBet/static/css/main.ffb84861.css",
+    "main.js": "/myBet/static/js/main.3068ecde.js",
     "static/media/barber.jpg": "/myBet/static/media/barber.ca6299566e4a0db05f77.jpg",
     "static/media/men1.jpeg": "/myBet/static/media/men1.0f249b4a0a364ab3c48e.jpeg",
     "static/media/men3.jpeg": "/myBet/static/media/men3.28ffefdc85f006dfb54a.jpeg",
@@ -15,11 +15,11 @@
     "static/media/backgroundBlurEmployees.jpeg": "/myBet/static/media/backgroundBlurEmployees.a12c0d5c653448ef2ef3.jpeg",
     "static/media/employee3.jpg": "/myBet/static/media/employee3.3b6b8a1a2d5643e30253.jpg",
     "index.html": "/myBet/index.html",
-    "main.56ae1a3c.css.map": "/myBet/static/css/main.56ae1a3c.css.map",
-    "main.621d9ff9.js.map": "/myBet/static/js/main.621d9ff9.js.map"
+    "main.ffb84861.css.map": "/myBet/static/css/main.ffb84861.css.map",
+    "main.3068ecde.js.map": "/myBet/static/js/main.3068ecde.js.map"
   },
   "entrypoints": [
-    "static/css/main.56ae1a3c.css",
-    "static/js/main.621d9ff9.js"
+    "static/css/main.ffb84861.css",
+    "static/js/main.3068ecde.js"
   ]
 }
