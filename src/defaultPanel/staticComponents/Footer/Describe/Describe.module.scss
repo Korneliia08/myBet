@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  h3 {
+    color: white;
+    font-size: 25px;
+    text-shadow: 0px 0px 1px black;
+
+    span {
+      color: #ef5151;
+    }
+  }
+
+  p {
+    color: white;
+    width: 280px;
+    font-size: 16px;
+    line-height: 1.4;
+    text-shadow: 0px 0px 1px black;
+  }
+}

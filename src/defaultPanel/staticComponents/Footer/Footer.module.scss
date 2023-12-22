@@ -1,11 +1,27 @@
 footer {
   background-color: #2D2D2D;
-  padding: 70px 20px 40px 20px;
+  box-sizing: border-box;
 
   .topPartFooter {
-  
+    padding: 80px 70px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .bottomPartFooter {
+    border-top: 1px solid rgba(68, 68, 68, 0.59);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+
+    .title {
+      color: white;
+      letter-spacing: 1px;
+      text-shadow: 0px 0px 1px black;
+
+      span {
+        color: #ef5151;
+      }
+    }
   }
 }
