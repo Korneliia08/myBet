@@ -5,11 +5,17 @@
   "testLibrary": "Testing Library",
   "component": {
     "default": {
+      "customDirectory": "TemplateName",
+      "customTemplates": {
+        "component": "template/TemplateName.jsx",
+        "style": "template/TemplateName.module.scss"
+      },
       "path": "src",
       "withLazy": false,
       "withStory": false,
       "withStyle": true,
       "withTest": false
     }
-  }
+  },
+  "usesStyledComponents": true
 }
