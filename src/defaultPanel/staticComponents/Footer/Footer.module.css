@@ -1,3 +1,9 @@
-
+footer {
+  background-color: #2D2D2D;
+  padding: 70px 20px 40px 20px;
+}
+footer .topPartFooter {
+  background-color: #e82323;
+}
 
 /*# sourceMappingURL=Footer.module.css.map */
