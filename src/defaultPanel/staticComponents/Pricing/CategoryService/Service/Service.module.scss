@@ -1,0 +1,27 @@
+.containerForService {
+  box-sizing: border-box;
+
+  .blockForTitlePrice {
+    padding: 15px 10px 5px 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-top: dashed 1px gray;
+    position: relative;
+
+    h4, span {
+      position: absolute;
+      top: -12px;
+      background-color: white;
+    }
+
+    span {
+      right: 10px;
+    }
+  }
+
+  .describe {
+    color: black;
+    width: 280px;
+    padding: 20px 10px;
+  }
+}

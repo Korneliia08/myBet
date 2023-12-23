@@ -1,0 +1,22 @@
+.sectionPricing {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionPricing .blockForTitle {
+  box-sizing: border-box;
+}
+.sectionPricing .blockForTitle .title {
+  font-size: 35px;
+  color: #ef5151;
+  margin-bottom: 20px;
+}
+.sectionPricing .containerForCategories {
+  display: flex;
+  column-gap: 15px;
+}
+
+/*# sourceMappingURL=Pricing.module.css.map */

@@ -10,7 +10,8 @@ const Nav = () => {
                 <Link to={"/"}>employees</Link>
                 <Link to={"/"}>about us</Link>
                 <Link to={"/"}>services</Link>
-                <Link to={"/"}>Pricing</Link>
+                <Link to={"/"}>pricing</Link>
+                <Link to={"/"}>contact</Link>
                 <Link to={"/rgdev"}>map</Link>
                 <Link to={"/rgdev"} className={style.btnWriteToUs}>write to us</Link>
             </nav>
