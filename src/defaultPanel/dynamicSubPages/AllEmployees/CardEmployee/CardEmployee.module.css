@@ -1,0 +1,20 @@
+.cardEmployee {
+  background-color: #FFFFFF;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.cardEmployee img {
+  width: 100%;
+}
+.cardEmployee .nameSurname {
+  color: black;
+}
+.cardEmployee .describe {
+  text-align: center;
+}
+
+/*# sourceMappingURL=CardEmployee.module.css.map */

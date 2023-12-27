@@ -1,8 +1,8 @@
 import style from "./Services.module.css";
-import haircurtService from "../../assets/haircutService.jpg";
-import beardTriming from "../../assets/beardTriming.jpg";
-import cleanShave from "../../assets/cleanShave.jpg";
-import faceMasking from "../../assets/faceMasking.jpg";
+import haircurtService from "../../../assets/haircutService.jpg";
+import beardTriming from "../../../assets/beardTriming.jpg";
+import cleanShave from "../../../assets/cleanShave.jpg";
+import faceMasking from "../../../assets/faceMasking.jpg";
 
 const Services = () => {
     return (

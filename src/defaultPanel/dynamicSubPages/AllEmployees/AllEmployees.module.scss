@@ -1,0 +1,32 @@
+.section {
+  background-color: #DCDCDC;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    font-size: 35px;
+    color: #ef5151;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 500px;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+}

@@ -1,12 +1,24 @@
 import './App.css';
 import {createBrowserRouter, Navigate, RouterProvider} from "react-router-dom";
 import DefaultPanel from "./defaultPanel/DefaultPanel";
+import AllEmployees from "./defaultPanel/dynamicSubPages/AllEmployees/AllEmployees";
+import Default from "./defaultPanel/dynamicSubPages/default/Default";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <DefaultPanel/>
+            element: <DefaultPanel/>,
+            children: [
+                {
+                    path: "/",
+                    element: <Default/>
+                },
+                {
+                    path: "/allEmployees",
+                    element: <AllEmployees/>
+                }
+            ]
         },
         {
             path: "*",
