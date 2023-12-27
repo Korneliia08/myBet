@@ -1,25 +1,41 @@
 .containerForService {
   box-sizing: border-box;
+  width: 280px;
 }
 .containerForService .blockForTitlePrice {
-  padding: 15px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
   margin-bottom: 5px;
   box-sizing: border-box;
   border-top: dashed 1px gray;
   position: relative;
 }
-.containerForService .blockForTitlePrice h4, .containerForService .blockForTitlePrice span {
+.containerForService .blockForTitlePrice .titleService, .containerForService .blockForTitlePrice .price {
   position: absolute;
   top: -12px;
   background-color: white;
+  font-size: 20px;
 }
-.containerForService .blockForTitlePrice span {
-  right: 10px;
+.containerForService .blockForTitlePrice .titleService {
+  left: 0;
+  padding-right: 8px;
+  color: #1e1e1e;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.containerForService .blockForTitlePrice .price {
+  top: -15px;
+  padding-left: 8px;
+  right: 0;
+  font-size: 26px;
+  color: #ef5151;
+  font-weight: bold;
 }
 .containerForService .describe {
-  color: black;
-  width: 280px;
-  padding: 20px 10px;
+  padding: 5px 10px 40px 0px;
+  color: #464646;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=Service.module.css.map */
