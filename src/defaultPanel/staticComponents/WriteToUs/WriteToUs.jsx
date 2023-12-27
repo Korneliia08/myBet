@@ -19,6 +19,7 @@ const WriteToUs = () => {
                         </select>
                         <input type="text" placeholder="Phone"/>
                     </div>
+                    <textarea placeholder="Message"></textarea>
                     <input type="submit" value="send request" className={style.submit}/>
                 </form>
             </div>

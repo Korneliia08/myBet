@@ -1,5 +1,5 @@
 .container {
-  background-color: #222227;
+  background-color: #DCDCDC;
   display: flex;
 
   .image {
@@ -15,23 +15,23 @@
     box-sizing: border-box;
 
     .title {
-      color: white;
-      margin-bottom: 8px;
-      font-size: 35px;
-      text-shadow: 0px 0px 1px black;
+      width: 450px;
+      text-align: center;
       text-transform: uppercase;
+      margin-bottom: 15px;
+      font-size: 35px;
+      color: #ef5151;
+      letter-spacing: 1px;
+      text-shadow: 0px 1px 1px white;
     }
 
     .content {
-      margin-bottom: 10px;
-      width: 500px;
+      width: 450px;
       text-align: center;
-      line-height: 1.5;
-      font-size: 20px;
-      color: gainsboro;
-      text-shadow: 0px 0px 1px black;
+      line-height: 1.4;
+      font-size: 19px;
+      margin-bottom: 20px;
     }
-
 
     form {
       display: flex;
@@ -54,6 +54,19 @@
         column-gap: 2px;
       }
 
+      textarea {
+        width: 100%;
+        resize: none;
+        background-color: transparent;
+        border: 2px solid #868686;
+        border-radius: 5px;
+        color: white;
+        text-shadow: 0px 0px 1px black;
+        font-size: 18px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+      }
+
       input {
         padding: 10px 20px;
         border-radius: 5px;
@@ -62,19 +75,19 @@
         border: 2px solid #868686;
         color: white;
         text-shadow: 0px 0px 1px black;
+        box-sizing: border-box;
       }
 
       .submit {
-        text-transform: uppercase;
-        margin-top: 20px;
-        padding: 10px 40px;
-        color: white;
-        border-radius: 50px;
-        background-color: #014D55;
         border: none;
+        transition: all 400ms linear;
+        background-color: #ef5151;
+        color: white;
+        text-shadow: 0px 1px 1px #2f2f2f;
+        border-radius: 5px;
         font-size: 15px;
-        letter-spacing: 1px;
-        transition: 400ms ease;
+        font-weight: bold;
+        text-transform: uppercase;
 
         &:hover {
           transform: scale(0.98) perspective(1px);
