@@ -5,6 +5,7 @@ import AboutUs from "./staticComponents/AboutUs/AboutUs";
 import Services from "./staticComponents/Services/Services";
 import Employees from "./staticComponents/Employees/Employees";
 import Pricing from "./staticComponents/Pricing/Pricing";
+import WriteToUs from "./staticComponents/WriteToUs/WriteToUs";
 
 const DefaultPanel = () => {
     return (
@@ -14,6 +15,7 @@ const DefaultPanel = () => {
             <Services/>
             <Employees/>
             <Pricing/>
+            <WriteToUs/>
             <Outlet/>
             <Footer/>
         </>

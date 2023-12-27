@@ -5,7 +5,8 @@ footer {
 footer .topPartFooter {
   padding: 80px 70px;
   display: flex;
-  justify-content: space-between;
+  column-gap: 15px;
+  justify-content: center;
 }
 footer .bottomPartFooter {
   border-top: 1px solid rgba(68, 68, 68, 0.59);

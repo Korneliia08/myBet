@@ -38,6 +38,7 @@
   box-sizing: border-box;
 }
 .sectionEmpoyees .btnView {
+  text-transform: uppercase;
   margin-top: 40px;
   padding: 10px 40px;
   color: white;
@@ -50,7 +51,7 @@
 }
 .sectionEmpoyees .btnView:hover {
   cursor: pointer;
-  transform: perspective(1px) scale(0.95);
+  transform: perspective(1px) scale(0.98);
   font-size: 19px;
 }
 
