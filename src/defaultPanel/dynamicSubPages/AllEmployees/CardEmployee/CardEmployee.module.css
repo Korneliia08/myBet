@@ -5,7 +5,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  row-gap: 5px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  row-gap: 10px;
+  transition: all 700ms ease;
+}
+.cardEmployee:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 .cardEmployee img {
   width: 100%;
@@ -14,6 +21,7 @@
   color: black;
 }
 .cardEmployee .describe {
+  width: 85%;
   text-align: center;
 }
 

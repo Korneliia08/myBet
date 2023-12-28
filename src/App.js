@@ -3,6 +3,8 @@ import {createBrowserRouter, Navigate, RouterProvider} from "react-router-dom";
 import DefaultPanel from "./defaultPanel/DefaultPanel";
 import AllEmployees from "./defaultPanel/dynamicSubPages/AllEmployees/AllEmployees";
 import Default from "./defaultPanel/dynamicSubPages/default/Default";
+import InformationaAboutEmployee
+    from "./defaultPanel/dynamicSubPages/AllEmployees/CardEmployee/InformationaAboutEmployee/InformationaAboutEmployee";
 
 function App() {
     const router = createBrowserRouter([
@@ -16,7 +18,11 @@ function App() {
                 },
                 {
                     path: "/allEmployees",
-                    element: <AllEmployees/>
+                    element: <AllEmployees/>,
+                },
+                {
+                    path: "/currentEmployee",
+                    element: <InformationaAboutEmployee/>
                 }
             ]
         },
