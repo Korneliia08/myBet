@@ -2,6 +2,7 @@ import style from "./InformationaAboutEmployee.module.css";
 import imgEmployee from "../../../../assets/employee1.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faSquareInstagram, faTelegram, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import ArrowBack from "../../../../components/ArrowBack/ArrowBack";
 
 const InformationaAboutEmployee = () => {
     return (
@@ -24,6 +25,7 @@ const InformationaAboutEmployee = () => {
                 <FontAwesomeIcon icon={faTelegram} className={`${style.icon} ${style.telegram}`}/>
                 <FontAwesomeIcon icon={faTwitter} className={`${style.icon} ${style.twitter}`}/>
             </div>
+            <ArrowBack/>
         </div>
     )
 }

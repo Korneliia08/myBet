@@ -1,5 +1,6 @@
 import style from "./AllEmployees.module.css";
 import CardEmployee from "./CardEmployee/CardEmployee";
+import ArrowBack from "../../components/ArrowBack/ArrowBack";
 
 const AllEmployees = () => {
     return (
@@ -18,6 +19,7 @@ const AllEmployees = () => {
                 <CardEmployee/>
                 <CardEmployee/>
             </div>
+            <ArrowBack/>
         </section>
     )
 }

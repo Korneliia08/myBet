@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   box-sizing: border-box;
   row-gap: 10px;
   transition: all 700ms ease;
@@ -26,5 +26,38 @@
   .describe {
     width: 85%;
     text-align: center;
+  }
+
+  .containerForIcons {
+    display: flex;
+    column-gap: 10px;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      transition: all 700ms ease;
+      color: blue;
+
+      &:hover {
+        scale: 1.1;
+        cursor: pointer;
+      }
+    }
+
+    .fb {
+      color: #395498;
+    }
+
+    .insta {
+      color: #F502BB;
+    }
+
+    .telegram {
+      color: #26A4E3;
+    }
+
+    .twitter {
+      color: #1DA1F2;
+    }
   }
 }
