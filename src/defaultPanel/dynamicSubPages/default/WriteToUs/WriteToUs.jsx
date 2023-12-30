@@ -1,5 +1,5 @@
 import style from "./WriteToUs.module.css";
-import backgroundImage from "../../../assets/backgroundWriteToUs.jpg";
+import backgroundImage from "../../../assets/images/backgroundWriteToUs.jpg";
 
 const WriteToUs = () => {
     return (

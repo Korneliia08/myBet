@@ -1,7 +1,7 @@
 import style from "./Employees.module.css";
-import employee1 from "../../../assets/employee1.jpg";
-import employee2 from "../../../assets/employee2.jpg";
-import employee3 from "../../../assets/employee3.jpg";
+import employee1 from "../../../assets/images/employee1.jpg";
+import employee2 from "../../../assets/images/employee2.jpg";
+import employee3 from "../../../assets/images/employee3.jpg";
 import CardEmployee from "./CardEmployee/CardEmployee";
 import {useNavigate} from "react-router-dom";
 

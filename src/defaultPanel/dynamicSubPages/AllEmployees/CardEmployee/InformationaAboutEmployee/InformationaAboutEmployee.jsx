@@ -1,5 +1,5 @@
 import style from "./InformationaAboutEmployee.module.css";
-import imgEmployee from "../../../../assets/employee1.jpg";
+import imgEmployee from "../../../../assets/images/employee1.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faSquareInstagram, faTelegram, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import ArrowBack from "../../../../components/ArrowBack/ArrowBack";

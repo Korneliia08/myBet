@@ -1,5 +1,5 @@
 import style from "./CardEmployee.module.css";
-import employeeImg from "../../../assets/employee1.jpg";
+import employeeImg from "../../../assets/images/employee1.jpg";
 import {useNavigate} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faSquareInstagram, faTelegram, faTwitter} from "@fortawesome/free-brands-svg-icons";

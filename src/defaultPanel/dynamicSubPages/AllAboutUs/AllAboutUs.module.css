@@ -1,7 +1,28 @@
-.blockAboutUs {
+.section {
   background-color: #F5F8F9;
   position: relative;
   padding: 60px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section .title {
+  font-size: 35px;
+  color: #ef5151;
+  margin-bottom: 20px;
+}
+.section .image {
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 5px #a2a2a2;
+}
+.section .content {
+  width: 50%;
+  text-align: center;
+  color: #464646;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=AllAboutUs.module.css.map */

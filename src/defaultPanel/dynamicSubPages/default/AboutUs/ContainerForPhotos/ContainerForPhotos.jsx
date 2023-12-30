@@ -1,7 +1,7 @@
 import style from "./ContainerForPhotos.module.css";
-import img1 from "../../../../assets/men1.jpeg";
-import img2 from "../../../../assets/men2.jpeg";
-import img3 from "../../../../assets/men3.jpeg";
+import img1 from "../../../../assets/images/men1.jpeg";
+import img2 from "../../../../assets/images/men2.jpeg";
+import img3 from "../../../../assets/images/men3.jpeg";
 
 const ContainerForPhotos = () => {
     return (
