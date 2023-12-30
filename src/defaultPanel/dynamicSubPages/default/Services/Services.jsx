@@ -8,7 +8,7 @@ const Services = () => {
     return (
         <section className={style.container}>
             <div className={style.blockForTitle}>
-                <h2>Our Barber Services</h2>
+                <h2 className="mainTitle">Our Barber Services</h2>
             </div>
             <div className={style.containerForServicesCard}>
                 <div className={style.serviceCard}>

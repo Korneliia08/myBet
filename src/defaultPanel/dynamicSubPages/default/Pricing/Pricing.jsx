@@ -12,7 +12,7 @@ const Pricing = () => {
     return (
         <section className={style.sectionPricing}>
             <div className={style.blockForTitle}>
-                <h2 className={style.title}>Our Barber Pricing</h2>
+                <h2 className="mainTitle">Our Barber Pricing</h2>
             </div>
             <div className={style.containerForCategories}>
                 <CategoryService/>

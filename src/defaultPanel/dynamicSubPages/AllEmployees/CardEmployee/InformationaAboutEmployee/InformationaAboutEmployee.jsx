@@ -1,8 +1,7 @@
 import style from "./InformationaAboutEmployee.module.css";
 import imgEmployee from "../../../../assets/images/employee1.jpg";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook, faSquareInstagram, faTelegram, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import ArrowBack from "../../../../components/ArrowBack/ArrowBack";
+import SocialMedias from "../../../../components/SocialMedias/SocialMedias";
 
 const InformationaAboutEmployee = () => {
     return (
@@ -19,12 +18,7 @@ const InformationaAboutEmployee = () => {
                 internationally recognized standard in the industry. Simon has been the recipient of various accolades
                 including the HYPE Award for Entrepreneurs and the Hartford Business Journal's 40 Under Forty (Class of
                 2014). He can be found at the shop on Wednesdays and Fridays.</p>
-            <div className={style.containerForIcons}>
-                <FontAwesomeIcon icon={faFacebook} className={`${style.icon} ${style.fb}`}/>
-                <FontAwesomeIcon icon={faSquareInstagram} className={`${style.icon} ${style.insta}`}/>
-                <FontAwesomeIcon icon={faTelegram} className={`${style.icon} ${style.telegram}`}/>
-                <FontAwesomeIcon icon={faTwitter} className={`${style.icon} ${style.twitter}`}/>
-            </div>
+            <SocialMedias/>
             <ArrowBack/>
         </div>
     )

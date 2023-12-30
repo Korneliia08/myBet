@@ -28,31 +28,5 @@
   cursor: pointer;
   scale: 1.04;
 }
-.cardOfEmployee .containerForIcons {
-  display: flex;
-  column-gap: 10px;
-}
-.cardOfEmployee .containerForIcons .icon {
-  width: 20px;
-  height: 20px;
-  transition: all 700ms ease;
-  color: blue;
-}
-.cardOfEmployee .containerForIcons .icon:hover {
-  scale: 1.1;
-  cursor: pointer;
-}
-.cardOfEmployee .containerForIcons .fb {
-  color: #395498;
-}
-.cardOfEmployee .containerForIcons .insta {
-  color: #F502BB;
-}
-.cardOfEmployee .containerForIcons .telegram {
-  color: #26A4E3;
-}
-.cardOfEmployee .containerForIcons .twitter {
-  color: #1DA1F2;
-}
 
 /*# sourceMappingURL=CardEmployee.module.css.map */

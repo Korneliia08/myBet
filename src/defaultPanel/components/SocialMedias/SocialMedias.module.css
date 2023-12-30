@@ -1,5 +1,28 @@
-.container {
-  background-color: #e82323;
+.containerForIcons {
+  display: flex;
+  column-gap: 10px;
+}
+.containerForIcons .icon {
+  width: 20px;
+  height: 20px;
+  transition: all 700ms ease;
+  color: blue;
+}
+.containerForIcons .icon:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.containerForIcons .fb {
+  color: #395498;
+}
+.containerForIcons .insta {
+  color: #F502BB;
+}
+.containerForIcons .telegram {
+  color: #26A4E3;
+}
+.containerForIcons .twitter {
+  color: #1DA1F2;
 }
 
 /*# sourceMappingURL=SocialMedias.module.css.map */

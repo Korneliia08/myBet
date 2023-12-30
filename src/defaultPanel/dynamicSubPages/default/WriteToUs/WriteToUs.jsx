@@ -6,7 +6,7 @@ const WriteToUs = () => {
         <section className={style.container}>
             <img src={backgroundImage} alt="image of backgorund" className={style.image}/>
             <div className={style.blockForForm}>
-                <h3 className={style.title}>Get In Touch</h3>
+                <h2 className="mainTitle">Get In Touch</h2>
                 <p className={style.content}>Leave your name and phone number, and we’ll contact you.</p>
                 <form>
                     <input type="text" placeholder="Name"/>

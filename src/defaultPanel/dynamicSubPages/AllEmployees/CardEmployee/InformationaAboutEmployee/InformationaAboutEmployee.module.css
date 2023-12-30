@@ -32,31 +32,5 @@
   text-shadow: 0px 0px 1px black;
   color: #575757;
 }
-.blockInformationAboutEmployee .containerForIcons {
-  display: flex;
-  column-gap: 25px;
-}
-.blockInformationAboutEmployee .containerForIcons .icon {
-  width: 20px;
-  height: 20px;
-  transition: all 700ms ease;
-  color: blue;
-}
-.blockInformationAboutEmployee .containerForIcons .icon:hover {
-  scale: 1.1;
-  cursor: pointer;
-}
-.blockInformationAboutEmployee .containerForIcons .fb {
-  color: #395498;
-}
-.blockInformationAboutEmployee .containerForIcons .insta {
-  color: #F502BB;
-}
-.blockInformationAboutEmployee .containerForIcons .telegram {
-  color: #26A4E3;
-}
-.blockInformationAboutEmployee .containerForIcons .twitter {
-  color: #1DA1F2;
-}
 
 /*# sourceMappingURL=InformationaAboutEmployee.module.css.map */

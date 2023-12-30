@@ -24,31 +24,5 @@
   width: 85%;
   text-align: center;
 }
-.cardEmployee .containerForIcons {
-  display: flex;
-  column-gap: 10px;
-}
-.cardEmployee .containerForIcons .icon {
-  width: 20px;
-  height: 20px;
-  transition: all 700ms ease;
-  color: blue;
-}
-.cardEmployee .containerForIcons .icon:hover {
-  scale: 1.1;
-  cursor: pointer;
-}
-.cardEmployee .containerForIcons .fb {
-  color: #395498;
-}
-.cardEmployee .containerForIcons .insta {
-  color: #F502BB;
-}
-.cardEmployee .containerForIcons .telegram {
-  color: #26A4E3;
-}
-.cardEmployee .containerForIcons .twitter {
-  color: #1DA1F2;
-}
 
 /*# sourceMappingURL=CardEmployee.module.css.map */

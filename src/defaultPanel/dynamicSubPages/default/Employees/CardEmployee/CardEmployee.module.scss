@@ -32,36 +32,5 @@
     scale: 1.04;
   }
 
-  .containerForIcons {
-    display: flex;
-    column-gap: 10px;
 
-    .icon {
-      width: 20px;
-      height: 20px;
-      transition: all 700ms ease;
-      color: blue;
-
-      &:hover {
-        scale: 1.1;
-        cursor: pointer;
-      }
-    }
-
-    .fb {
-      color: #395498;
-    }
-
-    .insta {
-      color: #F502BB;
-    }
-
-    .telegram {
-      color: #26A4E3;
-    }
-
-    .twitter {
-      color: #1DA1F2;
-    }
-  }
 }
