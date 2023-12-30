@@ -1,5 +1,15 @@
 .container {
-  background-color: #e82323;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding-bottom: 10px;
+}
+.container .emptyBlock {
+  border-top: dashed 1px #9C5E02;
+  width: 40px;
+}
+.container img {
+  width: 40px;
 }
 
 /*# sourceMappingURL=Moustache.module.css.map */

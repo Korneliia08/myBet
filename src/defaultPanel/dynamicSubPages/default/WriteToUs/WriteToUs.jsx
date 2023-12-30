@@ -1,5 +1,6 @@
 import style from "./WriteToUs.module.css";
 import backgroundImage from "../../../assets/images/backgroundWriteToUs.jpg";
+import Moustache from "../../../components/Moustache/Moustache";
 
 const WriteToUs = () => {
     return (
@@ -7,6 +8,7 @@ const WriteToUs = () => {
             <img src={backgroundImage} alt="image of backgorund" className={style.image}/>
             <div className={style.blockForForm}>
                 <h2 className="mainTitle">Get In Touch</h2>
+                <Moustache/>
                 <p className={style.content}>Leave your name and phone number, and we’ll contact you.</p>
                 <form>
                     <input type="text" placeholder="Name"/>

@@ -1,11 +1,13 @@
 import style from "./AllAboutUs.module.css";
 import ArrowBack from "../../components/ArrowBack/ArrowBack";
 import image from "../../assets/images/aboutUs.jpg";
+import Moustache from "../../components/Moustache/Moustache";
 
 const AllAboutUs = () => {
     return (
         <section className={style.section}>
-            <h2 className={style.title}>About Us</h2>
+            <h2 className="mainTitle">About Us</h2>
+            <Moustache/>
             <img src={image} alt="image about us" className={style.image}/>
             <p className={style.content}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et natus pariatur reiciendis reprehenderit

@@ -3,12 +3,14 @@ import haircurtService from "../../../assets/images/haircutService.jpg";
 import beardTriming from "../../../assets/images/beardTriming.jpg";
 import cleanShave from "../../../assets/images/cleanShave.jpg";
 import faceMasking from "../../../assets/images/faceMasking.jpg";
+import Moustache from "../../../components/Moustache/Moustache";
 
 const Services = () => {
     return (
         <section className={style.container}>
             <div className={style.blockForTitle}>
                 <h2 className="mainTitle">Our Barber Services</h2>
+                <Moustache/>
             </div>
             <div className={style.containerForServicesCard}>
                 <div className={style.serviceCard}>

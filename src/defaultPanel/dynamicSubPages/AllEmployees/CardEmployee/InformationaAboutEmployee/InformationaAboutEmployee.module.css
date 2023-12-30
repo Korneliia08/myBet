@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 15px;
   position: relative;
 }
 .blockInformationAboutEmployee .blockForImg {
@@ -14,15 +13,12 @@
   height: 183px;
   border-radius: 100%;
   box-shadow: 0px 0px 8px 1px #8a8a8a;
+  margin-bottom: 10px;
 }
 .blockInformationAboutEmployee .blockForImg .image {
   width: 180px;
   height: 180px;
   border-radius: 100%;
-}
-.blockInformationAboutEmployee .nameSurname {
-  font-size: 35px;
-  color: #ef5151;
 }
 .blockInformationAboutEmployee .describe {
   width: 60%;
@@ -31,6 +27,7 @@
   line-height: 1.4;
   text-shadow: 0px 0px 1px black;
   color: #575757;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=InformationaAboutEmployee.module.css.map */

@@ -2,6 +2,7 @@ import style from "./InformationaAboutEmployee.module.css";
 import imgEmployee from "../../../../assets/images/employee1.jpg";
 import ArrowBack from "../../../../components/ArrowBack/ArrowBack";
 import SocialMedias from "../../../../components/SocialMedias/SocialMedias";
+import Moustache from "../../../../components/Moustache/Moustache";
 
 const InformationaAboutEmployee = () => {
     return (
@@ -9,7 +10,8 @@ const InformationaAboutEmployee = () => {
             <div className={style.blockForImg}>
                 <img src={imgEmployee} alt="image of employee" className={style.image}/>
             </div>
-            <h3 className={style.nameSurname}>Mattew Phillips</h3>
+            <h3 className="mainTitle">Mattew Phillips</h3>
+            <Moustache/>
             <p className={style.describe}>Simon Wilson founded Barbershop in 2003 at the age of 23. He decided to
                 establish a place where the long
                 standing traditions of American barbering could be saved. He kept Barbershop a true place for men, their
