@@ -1,0 +1,15 @@
+.back {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  font-size: 20px;
+  border-bottom: 2px solid #626262;
+  letter-spacing: 1px;
+  color: #545454;
+  font-weight: bold;
+}
+.back:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Back.module.css.map */
