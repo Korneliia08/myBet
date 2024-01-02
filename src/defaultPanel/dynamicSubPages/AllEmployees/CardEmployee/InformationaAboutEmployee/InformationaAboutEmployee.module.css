@@ -29,34 +29,33 @@
   color: #575757;
   margin-bottom: 10px;
 }
-.blockInformationAboutEmployee .containerBlock {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-}
-.blockInformationAboutEmployee .containerBlock .blockForContact {
+.blockInformationAboutEmployee .blockForContact {
   min-width: 25%;
   padding: 20px 0;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   row-gap: 5px;
 }
-.blockInformationAboutEmployee .containerBlock .blockForContact h4 {
+.blockInformationAboutEmployee .blockForContact h4 {
   margin-bottom: 5px;
   font-size: 19px;
-  color: #2d117e;
+  color: #506CAB;
+  text-shadow: 0px 1px 1px #3f3e3e;
+  font-weight: bold;
 }
-.blockInformationAboutEmployee .containerBlock .blockForContact .blockForIconAndSpan {
+.blockInformationAboutEmployee .blockForContact .blockForIconAndSpan {
   display: flex;
+  align-items: center;
   column-gap: 15px;
 }
-.blockInformationAboutEmployee .containerBlock .blockForContact .blockForIconAndSpan .icon {
-  color: #363636;
+.blockInformationAboutEmployee .blockForContact .blockForIconAndSpan .icon {
+  color: #195401;
 }
-.blockInformationAboutEmployee .containerBlock .blockForContact .blockForIconAndSpan span {
-  font-size: 16px;
+.blockInformationAboutEmployee .blockForContact .blockForIconAndSpan span {
+  font-size: 19px;
+  text-shadow: 0px 0px 1px black;
+  color: #3b3b3b;
 }
 .blockInformationAboutEmployee .blockForBtns {
   display: flex;

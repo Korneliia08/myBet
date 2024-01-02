@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from "react-router-dom";
 
-const InformationaAboutEmployee = () => {
+const InformationAboutEmployee = () => {
     const navigate = useNavigate();
 
     function desplayRegistration() {
@@ -29,19 +29,17 @@ const InformationaAboutEmployee = () => {
                 internationally recognized standard in the industry. Simon has been the recipient of various accolades
                 including the HYPE Award for Entrepreneurs and the Hartford Business Journal's 40 Under Forty (Class of
                 2014). He can be found at the shop on Wednesdays and Fridays.</p>
-            <div className={style.containerBlock}>
-                <div className={style.blockForContact}>
-                    <h4>
-                        Contact:
-                    </h4>
-                    <div className={style.blockForIconAndSpan}>
-                        <FontAwesomeIcon icon={faEnvelope} className={style.icon}/>
-                        <span>mattew@gmail.com</span>
-                    </div>
-                    <div className={style.blockForIconAndSpan}>
-                        <FontAwesomeIcon icon={faPhone} className={style.icon}/>
-                        <span>78883****</span>
-                    </div>
+            <div className={style.blockForContact}>
+                <h4>
+                    Contact with me if you have any questions:
+                </h4>
+                <div className={style.blockForIconAndSpan}>
+                    <FontAwesomeIcon icon={faEnvelope} className={style.icon}/>
+                    <span>mattew@gmail.com</span>
+                </div>
+                <div className={style.blockForIconAndSpan}>
+                    <FontAwesomeIcon icon={faPhone} className={style.icon}/>
+                    <span>78883****</span>
                 </div>
             </div>
             <div className={style.blockForBtns}>
@@ -53,4 +51,4 @@ const InformationaAboutEmployee = () => {
         </div>
     )
 }
-export default InformationaAboutEmployee;
+export default InformationAboutEmployee;

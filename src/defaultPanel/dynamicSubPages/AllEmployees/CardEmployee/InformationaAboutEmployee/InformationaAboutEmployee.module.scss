@@ -32,38 +32,36 @@
     margin-bottom: 10px;
   }
 
-  .containerBlock {
+  .blockForContact {
+    min-width: 25%;
+    padding: 20px 0;
     display: flex;
-    justify-content: flex-end;
-    width: 50%;
+    //align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
 
-    .blockForContact {
-      //background-color: yellow;
-      min-width: 25%;
-      padding: 20px 0;
+    h4 {
+      margin-bottom: 5px;
+      font-size: 19px;
+      color: #506CAB;
+      text-shadow: 0px 1px 1px #3f3e3e;
+      font-weight: bold;
+    }
+
+    .blockForIconAndSpan {
       display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      row-gap: 5px;
+      align-items: center;
+      column-gap: 15px;
 
-      h4 {
-        margin-bottom: 5px;
-        font-size: 19px;
-        color: #2d117e;
+      .icon {
+        color: #195401;
       }
 
-      .blockForIconAndSpan {
-        display: flex;
-        column-gap: 15px;
-
-        .icon {
-          color: #363636;
-        }
-
-        span {
-          font-size: 16px;
-        }
+      span {
+        font-size: 19px;
+        text-shadow: 0px 0px 1px black;
+        color: #3b3b3b;
       }
     }
   }
