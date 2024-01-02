@@ -1,4 +1,14 @@
 .container {
   background-color: #e82323;
   width: 48%;
+  display: flex;
+  column-gap: 10px;
+
+  img {
+    width: 45%;
+  }
+
+  .rightPart {
+
+  }
 }
