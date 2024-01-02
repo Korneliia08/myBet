@@ -29,5 +29,54 @@
   color: #575757;
   margin-bottom: 10px;
 }
+.blockInformationAboutEmployee .containerBlock {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.blockInformationAboutEmployee .containerBlock .blockForContact {
+  min-width: 25%;
+  padding: 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.blockInformationAboutEmployee .containerBlock .blockForContact h4 {
+  margin-bottom: 5px;
+  font-size: 19px;
+  color: #2d117e;
+}
+.blockInformationAboutEmployee .containerBlock .blockForContact .blockForIconAndSpan {
+  display: flex;
+  column-gap: 15px;
+}
+.blockInformationAboutEmployee .containerBlock .blockForContact .blockForIconAndSpan .icon {
+  color: #363636;
+}
+.blockInformationAboutEmployee .containerBlock .blockForContact .blockForIconAndSpan span {
+  font-size: 16px;
+}
+.blockInformationAboutEmployee .blockForBtns {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 15px;
+}
+.blockInformationAboutEmployee .blockForBtns .btnWrite, .blockInformationAboutEmployee .blockForBtns .btnBook {
+  background-color: rgba(70, 109, 192, 0.85);
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 5px 28px;
+  border-radius: 8px;
+  border: 1px solid #4f5dc0;
+  text-transform: uppercase;
+  transition: 400ms;
+}
+.blockInformationAboutEmployee .blockForBtns .btnWrite:hover, .blockInformationAboutEmployee .blockForBtns .btnBook:hover {
+  cursor: pointer;
+  background-color: rgba(50, 84, 157, 0.85);
+}
 
 /*# sourceMappingURL=InformationaAboutEmployee.module.css.map */

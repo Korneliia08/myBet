@@ -7,6 +7,7 @@ import InformationaAboutEmployee
     from "./defaultPanel/dynamicSubPages/AllEmployees/CardEmployee/InformationaAboutEmployee/InformationaAboutEmployee";
 import AllPricing from "./defaultPanel/dynamicSubPages/AllPricing/AllPricing";
 import AllAboutUs from "./defaultPanel/dynamicSubPages/AllAboutUs/AllAboutUs";
+import Registration from "./defaultPanel/dynamicSubPages/Registration/Registration";
 
 function App() {
     const router = createBrowserRouter([
@@ -33,6 +34,10 @@ function App() {
                 {
                     path: "/pricing",
                     element: <AllPricing/>
+                },
+                {
+                    path: "/registration",
+                    element: <Registration/>
                 }
             ]
         },

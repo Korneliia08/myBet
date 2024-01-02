@@ -6,7 +6,7 @@ const Nav = () => {
         <div className={style.containerForTitleAndNav}>
             <h1 className={style.title}>Barbersh<span>o</span>p demo</h1>
             <nav className={style.nav}>
-                <Link to={"/"}>registration</Link>
+                <Link to={"/registration"}>registration</Link>
                 <Link to={"/"}>employees</Link>
                 <Link to={"/"}>about us</Link>
                 <Link to={"/"}>services</Link>

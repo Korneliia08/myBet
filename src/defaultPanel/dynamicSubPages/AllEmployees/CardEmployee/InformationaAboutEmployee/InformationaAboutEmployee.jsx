@@ -3,8 +3,17 @@ import imgEmployee from "../../../../assets/images/employee1.jpg";
 import ArrowBack from "../../../../components/ArrowBack/ArrowBack";
 import SocialMedias from "../../../../components/SocialMedias/SocialMedias";
 import Moustache from "../../../../components/Moustache/Moustache";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {useNavigate} from "react-router-dom";
 
 const InformationaAboutEmployee = () => {
+    const navigate = useNavigate();
+
+    function desplayRegistration() {
+        navigate("/registration");
+    }
+
     return (
         <div className={style.blockInformationAboutEmployee}>
             <div className={style.blockForImg}>
@@ -20,6 +29,25 @@ const InformationaAboutEmployee = () => {
                 internationally recognized standard in the industry. Simon has been the recipient of various accolades
                 including the HYPE Award for Entrepreneurs and the Hartford Business Journal's 40 Under Forty (Class of
                 2014). He can be found at the shop on Wednesdays and Fridays.</p>
+            <div className={style.containerBlock}>
+                <div className={style.blockForContact}>
+                    <h4>
+                        Contact:
+                    </h4>
+                    <div className={style.blockForIconAndSpan}>
+                        <FontAwesomeIcon icon={faEnvelope} className={style.icon}/>
+                        <span>mattew@gmail.com</span>
+                    </div>
+                    <div className={style.blockForIconAndSpan}>
+                        <FontAwesomeIcon icon={faPhone} className={style.icon}/>
+                        <span>78883****</span>
+                    </div>
+                </div>
+            </div>
+            <div className={style.blockForBtns}>
+                <button className={style.btnWrite}>Write to me</button>
+                <button className={style.btnBook} onClick={desplayRegistration}>Book a visit</button>
+            </div>
             <SocialMedias/>
             <ArrowBack/>
         </div>

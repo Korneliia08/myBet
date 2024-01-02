@@ -31,4 +31,63 @@
     color: #575757;
     margin-bottom: 10px;
   }
+
+  .containerBlock {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+
+    .blockForContact {
+      //background-color: yellow;
+      min-width: 25%;
+      padding: 20px 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 5px;
+
+      h4 {
+        margin-bottom: 5px;
+        font-size: 19px;
+        color: #2d117e;
+      }
+
+      .blockForIconAndSpan {
+        display: flex;
+        column-gap: 15px;
+
+        .icon {
+          color: #363636;
+        }
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .blockForBtns {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 15px;
+
+    .btnWrite, .btnBook {
+      background-color: rgba(70, 109, 192, 0.85);
+      color: white;
+      font-size: 15px;
+      letter-spacing: 1px;
+      padding: 5px 28px;
+      border-radius: 8px;
+      border: 1px solid #4f5dc0;
+      text-transform: uppercase;
+      transition: 400ms;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(50, 84, 157, 0.85);
+      }
+    }
+  }
 }
