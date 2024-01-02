@@ -8,6 +8,13 @@ import AllAboutUs from "./defaultPanel/dynamicSubPages/AllAboutUs/AllAboutUs";
 import Registration from "./defaultPanel/dynamicSubPages/Registration/Registration";
 import InformationAboutEmployee
     from "./defaultPanel/dynamicSubPages/AllEmployees/CardEmployee/InformationaAboutEmployee/InformationaAboutEmployee";
+import ChooseEmpoloyee
+    from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/ChooseEmpoloyee/ChooseEmpoloyee";
+import ChooseService from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/ChooseService/ChooseService";
+import Summary from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/Summary/Summary";
+import ChooseDate from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/ChooseDate/ChooseDate";
+import Veryfication from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/Veryfication/Veryfication";
+import BasicData from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/BasicData/BasicData";
 
 function App() {
     const router = createBrowserRouter([
@@ -20,24 +27,54 @@ function App() {
                     element: <Default/>
                 },
                 {
-                    path: "/allEmployees",
+                    path: "allEmployees",
                     element: <AllEmployees/>,
                 },
                 {
-                    path: "/currentEmployee",
+                    path: "currentEmployee",
                     element: <InformationAboutEmployee/>
                 },
                 {
-                    path: "/aboutUs",
+                    path: "aboutUs",
                     element: <AllAboutUs/>
                 },
                 {
-                    path: "/pricing",
+                    path: "pricing",
                     element: <AllPricing/>
                 },
                 {
-                    path: "/registration",
-                    element: <Registration/>
+                    path: "registration",
+                    element: <Registration/>,
+                    children: [
+                        {
+                            path: "employee",
+                            element: <ChooseEmpoloyee/>
+                        },
+                        {
+                            path: "service",
+                            element: <ChooseService/>
+                        },
+                        {
+                            path: "basicDate",
+                            element: <BasicData/>
+                        },
+                        {
+                            path: "date",
+                            element: <ChooseDate/>
+                        },
+                        {
+                            path: "veryfication",
+                            element: <Veryfication/>
+                        },
+                        {
+                            path: "summary",
+                            element: <Summary/>
+                        },
+                        {
+                            path: "",
+                            element: <Navigate to="/registration/employee"></Navigate>
+                        }
+                    ]
                 }
             ]
         },

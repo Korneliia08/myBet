@@ -1,3 +1,10 @@
 .container {
-  background-color: #e82323;
+  background-color: #F5F8F9;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
 }
