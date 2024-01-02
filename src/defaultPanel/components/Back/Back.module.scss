@@ -7,8 +7,11 @@
   letter-spacing: 1px;
   color: #545454;
   font-weight: bold;
+  transition: all 400ms ease;
 
   &:hover {
+    color: rgba(1, 91, 12, 0.91);
+    border-bottom: 2px solid rgba(1, 91, 12, 0.91);;
     cursor: pointer;
   }
 }
