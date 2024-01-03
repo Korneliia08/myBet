@@ -1,17 +1,19 @@
 import style from "./Footer.module.css";
 import React from "react";
 import Describe from "./Describe/Describe";
-import Headquaters from "./Headquaters/Headquaters";
+import Contact from "./Contact/Contact";
 import OpeningHours from "./OpeningHours/OpeningHours";
 import Map from "./Map/Map";
+import Address from "./Address/Address";
 
 const Footer = () => {
     return (
         <footer>
             <div className={style.topPartFooter}>
                 <Describe/>
-                <Headquaters/>
                 <OpeningHours/>
+                <Contact/>
+                <Address/>
                 <Map/>
             </div>
             <div className={style.bottomPartFooter}>
