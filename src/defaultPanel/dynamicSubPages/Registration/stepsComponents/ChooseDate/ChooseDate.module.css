@@ -1,5 +1,11 @@
-.container {
-  background-color: #e82323;
+.containerForDate {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  row-gap: 10px;
 }
 
 /*# sourceMappingURL=ChooseDate.module.css.map */
