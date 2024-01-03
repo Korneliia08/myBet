@@ -1,0 +1,36 @@
+.container {
+  background-color: #f3f2f2;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.container .spanId, .container .serviceTitle, .container .spanPrice {
+  width: 10%;
+  color: #464646;
+  font-weight: bold;
+  font-size: 16px;
+}
+.container .serviceTitle {
+  width: 65%;
+}
+.container .infoIcon {
+  background-color: rgba(241, 241, 241, 0);
+  padding: 0 25px;
+  border-radius: 40%;
+  margin-left: 20px;
+  color: red;
+}
+.container .infoIcon:hover {
+  cursor: help;
+}
+.container .spanPrice {
+  width: 15%;
+}
+.container input {
+  width: 10%;
+  scale: 1.4;
+}
+
+/*# sourceMappingURL=Service.module.css.map */

@@ -1,3 +1,57 @@
+.containerForServices {
+  width: 100%;
+  height: 400px;
+  padding: 0 15px 15px 15px;
+  box-sizing: border-box;
+  background-color: #dadada;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 1px rgba(148, 147, 147, 0.62);
+}
+.containerForServices .blockForHeadlines {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+}
+.containerForServices .blockForHeadlines .nr, .containerForServices .blockForHeadlines .service, .containerForServices .blockForHeadlines .price, .containerForServices .blockForHeadlines .choose {
+  width: 10%;
+  color: #464646;
+  font-weight: bold;
+  font-size: 20px;
+}
+.containerForServices .blockForHeadlines .service {
+  width: 65%;
+}
+.containerForServices .blockForHeadlines .price {
+  width: 15%;
+}
+.containerForServices .blockForHeadlines .choose {
+  width: 10%;
+  position: relative;
+  right: -10px;
+}
 
+.bottomPart {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+.bottomPart .greenSpanForMoney {
+  font-size: 25px;
+  margin-left: 5px;
+}
+.bottomPart .totalSum {
+  color: #464646;
+  font-weight: bold;
+  font-size: 25px;
+}
 
 /*# sourceMappingURL=ChooseService.module.css.map */

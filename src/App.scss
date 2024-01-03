@@ -22,4 +22,29 @@
   color: #464646;
   font-weight: bold;
   font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.greenSpanForMoney {
+  color: #026402;
+  font-size: 18px;
+  margin-left: 2px;
+  text-shadow: 0px 0px 1px green;
+}
+
+.nextBtn {
+  padding: 5px 25px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 114, 0, 0.93);
+  transition: all 400ms ease;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-shadow: 0px 1px 1px #676767;
+  border: 1px inset #606060;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(1, 91, 1, 0.93);
+  }
 }

@@ -55,12 +55,12 @@ function App() {
                             element: <ChooseService/>
                         },
                         {
-                            path: "basicDate",
-                            element: <BasicData/>
-                        },
-                        {
                             path: "date",
                             element: <ChooseDate/>
+                        },
+                        {
+                            path: "basicDate",
+                            element: <BasicData/>
                         },
                         {
                             path: "veryfication",
