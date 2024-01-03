@@ -6,6 +6,7 @@ import Moustache from "../../../../components/Moustache/Moustache";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from "react-router-dom";
+import WorkingDays from "../../../../components/WorkingDays/WorkingDays";
 
 const InformationAboutEmployee = () => {
     const navigate = useNavigate();
@@ -21,6 +22,7 @@ const InformationAboutEmployee = () => {
             </div>
             <h3 className="mainTitle">Mattew Phillips</h3>
             <Moustache/>
+            <WorkingDays/>
             <p className={style.describe}>Simon Wilson founded Barbershop in 2003 at the age of 23. He decided to
                 establish a place where the long
                 standing traditions of American barbering could be saved. He kept Barbershop a true place for men, their

@@ -9,23 +9,6 @@
   width: 45%;
   border-radius: 25px;
 }
-.container .containerAllDays {
-  display: flex;
-  column-gap: 2px;
-}
-.container .containerAllDays span {
-  display: block;
-  padding: 2px 4px;
-  background-color: #014D55;
-  color: white;
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1px;
-}
-.container .containerAllDays .noActive {
-  background-color: #7c7c7c;
-  color: gainsboro;
-}
 .container .rightPart {
   display: flex;
   justify-content: center;
