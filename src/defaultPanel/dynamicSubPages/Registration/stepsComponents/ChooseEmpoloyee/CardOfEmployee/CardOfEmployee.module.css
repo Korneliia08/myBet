@@ -9,6 +9,23 @@
   width: 45%;
   border-radius: 25px;
 }
+.container .containerAllDays {
+  display: flex;
+  column-gap: 2px;
+}
+.container .containerAllDays span {
+  display: block;
+  padding: 2px 4px;
+  background-color: #014D55;
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.container .containerAllDays .noActive {
+  background-color: #7c7c7c;
+  color: gainsboro;
+}
 .container .rightPart {
   display: flex;
   justify-content: center;
@@ -18,26 +35,26 @@
   row-gap: 20px;
 }
 .container .rightPart h5 {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 19px;
   letter-spacing: 1px;
-  color: #4b4b4b;
-  text-shadow: 0px 1px 1px #8f8e8e;
+  color: #333333;
+  text-shadow: 0px 1px 1px #757575;
 }
 .container .rightPart button {
   padding: 5px 25px;
   border-radius: 10px;
-  background-color: rgba(5, 112, 5, 0.87);
+  background-color: #014D55;
   color: white;
-  font-size: 16px;
-  border: 1px solid #015e01;
+  font-size: 14px;
+  border: 1px solid #003338;
   letter-spacing: 1px;
   text-shadow: 0px 1px 1px gray;
   transition: all 400ms ease;
 }
 .container .rightPart button:hover {
   cursor: pointer;
-  background-color: rgba(4, 84, 4, 0.87);
+  background-color: #013c42;
 }
 
 /*# sourceMappingURL=CardOfEmployee.module.css.map */
