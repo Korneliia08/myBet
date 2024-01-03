@@ -1,0 +1,49 @@
+.container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 20px;
+
+    .groupOfInputs {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
+      .blockForNumberOfPhone {
+        display: flex;
+        column-gap: 5px;
+      }
+
+      input, select {
+        background-color: rgba(211, 211, 211, 0.91);
+        padding: 4px 8px;
+        font-size: 18px;
+        color: #2d2d2d;
+        border: 1px solid gray;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .btnBook {
+    background-color: #014D55;
+    color: white;
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #014249;
+    transition: 400ms;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #004148;
+    }
+  }
+}

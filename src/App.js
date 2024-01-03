@@ -11,7 +11,6 @@ import InformationAboutEmployee
 import ChooseEmpoloyee
     from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/ChooseEmpoloyee/ChooseEmpoloyee";
 import ChooseService from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/ChooseService/ChooseService";
-import Summary from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/Summary/Summary";
 import ChooseDate from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/ChooseDate/ChooseDate";
 import Veryfication from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/Veryfication/Veryfication";
 import BasicData from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/BasicData/BasicData";
@@ -65,10 +64,6 @@ function App() {
                         {
                             path: "veryfication",
                             element: <Veryfication/>
-                        },
-                        {
-                            path: "summary",
-                            element: <Summary/>
                         },
                         {
                             path: "",
