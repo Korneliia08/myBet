@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/myBet/static/css/main.698b3460.css",
+    "main.css": "/myBet/static/css/main.e489e6ba.css",
     "main.js": "/myBet/static/js/main.b48bfe4f.js",
     "static/media/backgroundWriteToUs.jpg": "/myBet/static/media/backgroundWriteToUs.c73f59402d2a568bf4a6.jpg",
     "static/media/barber.jpg": "/myBet/static/media/barber.ca6299566e4a0db05f77.jpg",
@@ -15,11 +15,11 @@
     "static/media/aboutUs.jpg": "/myBet/static/media/aboutUs.001b4bb08e1547904c3f.jpg",
     "static/media/mustache.svg": "/myBet/static/media/mustache.f7d9fa85b96af8ca9daff873f5ddcf3e.svg",
     "index.html": "/myBet/index.html",
-    "main.698b3460.css.map": "/myBet/static/css/main.698b3460.css.map",
+    "main.e489e6ba.css.map": "/myBet/static/css/main.e489e6ba.css.map",
     "main.b48bfe4f.js.map": "/myBet/static/js/main.b48bfe4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.698b3460.css",
+    "static/css/main.e489e6ba.css",
     "static/js/main.b48bfe4f.js"
   ]
 }
