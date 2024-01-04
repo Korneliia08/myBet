@@ -35,3 +35,27 @@
     }
   }
 }
+
+@media (max-width: 750px) {
+  .containerForContent {
+    .content {
+      width: 350px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .btnReadMore {
+      padding: 5px 20px;
+      font-size: 12px;
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .containerForContent {
+    .content {
+      width: 220px;
+    }
+  }
+}

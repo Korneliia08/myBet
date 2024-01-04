@@ -5,6 +5,9 @@
   color: #ef5151;
   letter-spacing: 1px;
   text-shadow: 0px 1px 1px white;
+  @media (max-width: 700px) {
+    font-size: 25px;
+  }
 }
 
 .containerInRegistration {

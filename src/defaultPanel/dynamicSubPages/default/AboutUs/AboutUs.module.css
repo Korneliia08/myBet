@@ -7,4 +7,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1480px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+
 /*# sourceMappingURL=AboutUs.module.css.map */

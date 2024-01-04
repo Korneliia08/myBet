@@ -6,6 +6,11 @@
   letter-spacing: 1px;
   text-shadow: 0px 1px 1px white;
 }
+@media (max-width: 700px) {
+  .mainTitle {
+    font-size: 25px;
+  }
+}
 
 .containerInRegistration {
   display: flex;

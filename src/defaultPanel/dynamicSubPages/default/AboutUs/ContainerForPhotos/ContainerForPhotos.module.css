@@ -18,4 +18,40 @@
   position: absolute;
 }
 
+@media (max-width: 1220px) {
+  .containerForImages .blockForImage {
+    background-color: #cbcbcb;
+    width: 255px;
+    height: 220px;
+  }
+  .containerForImages .blockForImage img {
+    top: -30px;
+    width: 245px;
+    position: absolute;
+  }
+}
+@media (max-width: 940px) {
+  .containerForImages {
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .containerForImages {
+    width: 100%;
+  }
+  .containerForImages .blockForImage {
+    background-color: #cbcbcb;
+    width: 205px;
+    height: 175px;
+  }
+  .containerForImages .blockForImage img {
+    top: -25px;
+    width: 195px;
+    position: absolute;
+  }
+}
+
 /*# sourceMappingURL=ContainerForPhotos.module.css.map */

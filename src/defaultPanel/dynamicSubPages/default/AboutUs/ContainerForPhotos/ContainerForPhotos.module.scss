@@ -20,3 +20,48 @@
     }
   }
 }
+
+
+@media (max-width: 1220px) {
+  .containerForImages {
+    .blockForImage {
+      background-color: #cbcbcb;
+      width: 255px;
+      height: 220px;
+
+      img {
+        top: -30px;
+        width: 245px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .containerForImages {
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .containerForImages {
+    width: 100%;
+
+    .blockForImage {
+      background-color: #cbcbcb;
+      width: 205px;
+      height: 175px;
+
+      img {
+        top: -25px;
+        width: 195px;
+        position: absolute;
+      }
+    }
+  }
+}
