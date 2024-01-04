@@ -12,7 +12,7 @@ const Summary = () => {
         <div className="containerInRegistration">
             <h4 className="mainTitle">It is all</h4>
             <Moustache/>
-            <p className="contentInRegistration">
+            <p className="describeUnderTitle">
                 Thanks for submitting your appointment! Our administrators will contact you shortly to confirm your
                 booking and to answer questions you may have.
             </p>

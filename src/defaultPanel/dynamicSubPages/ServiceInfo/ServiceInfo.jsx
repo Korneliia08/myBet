@@ -20,7 +20,8 @@ const ServiceInfo = () => {
                 <div className={style.mainInfo}>
                     <img src={imageOfService} alt="image of service"/>
                     <h4>Beard Shave</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi assumenda at aut commodi
+                    <p className="desribeInInformationCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                        animi assumenda at aut commodi
                         culpa
                         ea eligendi, error esse eum expedita facilis id incidunt ipsam, minus nobis obcaecati omnis
                         possimus quaerat quibusdam rem reprehenderit sapiente similique tenetur unde. Accusantium,

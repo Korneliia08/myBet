@@ -5,7 +5,7 @@ import Moustache from "../../components/Moustache/Moustache";
 
 const AllAboutUs = () => {
     return (
-        <section className={style.section}>
+        <section className="containerSubPage">
             <h2 className="mainTitle">About Us</h2>
             <Moustache/>
             <img src={image} alt="image about us" className={style.image}/>

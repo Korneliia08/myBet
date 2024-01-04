@@ -42,15 +42,6 @@
   color: #525252;
   text-transform: uppercase;
 }
-.section .cardOfInfo .mainInfo p {
-  width: 450px;
-  font-size: 19px;
-  line-height: 1.4;
-  text-shadow: 0px 0px 1px black;
-  color: #575757;
-  margin-bottom: 10px;
-  text-align: justify;
-}
 .section .cardOfInfo .mainInfo > span {
   font-size: 20px;
   line-height: 1.4;

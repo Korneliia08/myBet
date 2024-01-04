@@ -16,7 +16,7 @@ const Veryfication = () => {
             <Back/>
             <h4 className="mainTitle">Verification</h4>
             <Moustache/>
-            <p className="contentInRegistration">
+            <p className="describeUnderTitle">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deleniti harum quis temporibus
                 voluptates! Aliquid corporis debitis doloribus esse facere hic ipsum maiores necessitatibus, optio
                 sapiente!

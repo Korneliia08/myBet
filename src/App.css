@@ -12,6 +12,15 @@
   }
 }
 
+.describeUnderTitle {
+  width: 500px;
+  text-align: center;
+  color: #464646;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
 .containerInRegistration {
   display: flex;
   flex-direction: column;
@@ -21,13 +30,23 @@
   box-sizing: border-box;
 }
 
-.contentInRegistration {
-  width: 500px;
-  text-align: center;
-  color: #464646;
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 15px;
+.containerSubPage {
+  background-color: #F5F8F9;
+  position: relative;
+  padding: 60px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.desribeInInformationCard {
+  width: 50%;
+  font-size: 19px;
+  line-height: 1.4;
+  text-shadow: 0px 0px 1px black;
+  color: #575757;
+  margin-bottom: 10px;
 }
 
 .greenSpanForMoney {

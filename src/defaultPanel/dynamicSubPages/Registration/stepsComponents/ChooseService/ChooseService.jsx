@@ -16,7 +16,7 @@ const ChooseService = () => {
             <Back/>
             <h4 className="mainTitle">Choose a service</h4>
             <Moustache/>
-            <p className="contentInRegistration">Barbershop offers professional services of certified barbers with years
+            <p className="describeUnderTitle">Barbershop offers professional services of certified barbers with years
                 of experience. On this page you
                 can choose a preferred barber in a few clicks.</p>
             <div className={style.containerForServices}>

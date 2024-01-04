@@ -23,7 +23,8 @@ const InformationAboutEmployee = () => {
             <h3 className="mainTitle">Mattew Phillips</h3>
             <Moustache/>
             <WorkingDays/>
-            <p className={style.describe}>Simon Wilson founded Barbershop in 2003 at the age of 23. He decided to
+            <p className="desribeInInformationCard">Simon Wilson founded Barbershop in 2003 at the age of 23. He decided
+                to
                 establish a place where the long
                 standing traditions of American barbering could be saved. He kept Barbershop a true place for men, their
                 fathers, and sons, rather than converting it to a unisex salon as was the popular trend at the time.

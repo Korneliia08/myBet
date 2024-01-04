@@ -1,13 +1,5 @@
-.section {
-  background-color: #F5F8F9;
-  position: relative;
-  padding: 60px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-  .image {
+ .image {
     margin: 15px 0 25px 0;
     border-radius: 20px;
     box-shadow: 0px 0px 15px 5px #a2a2a2;
@@ -21,4 +13,3 @@
     font-size: 16px;
     line-height: 1.4;
   }
-}

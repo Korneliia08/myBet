@@ -5,10 +5,11 @@ import Moustache from "../../components/Moustache/Moustache";
 
 const AllEmployees = () => {
     return (
-        <section className={style.section}>
+        <section className="containerSubPage">
             <h2 className="mainTitle">Our barbers</h2>
             <Moustache/>
-            <p className={style.content}>We employ only highly qualified barbers who are not just professionals, but
+            <p className="describeUnderTitle">We employ only highly qualified barbers who are not just professionals,
+                but
                 also enjoy maintaining the
                 atmosphere of a classic barbershop.</p>
             <div className={style.container}>
