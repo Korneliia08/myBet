@@ -37,6 +37,11 @@
 .containerForTitleAndNav .nav a:hover {
   transform: perspective(1px) scale(1.05);
 }
+@media (max-width: 1300px) {
+  .containerForTitleAndNav .nav a {
+    font-size: 12px;
+  }
+}
 .containerForTitleAndNav .nav .btnWriteToUs {
   background-color: #ef5151;
   padding: 10px 20px;

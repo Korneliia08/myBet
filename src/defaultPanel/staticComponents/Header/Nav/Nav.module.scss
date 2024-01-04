@@ -39,6 +39,10 @@
       &:hover {
         transform: perspective(1px) scale(1.05);
       }
+
+      @media (max-width: 1300px) {
+        font-size: 12px;
+      }
     }
 
     .btnWriteToUs {
