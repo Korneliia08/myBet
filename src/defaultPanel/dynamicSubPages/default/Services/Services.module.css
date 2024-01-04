@@ -20,45 +20,5 @@
   column-gap: 10px;
   box-sizing: border-box;
 }
-.container .containerForServicesCard .serviceCard {
-  padding: 40px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 10px;
-  box-sizing: border-box;
-}
-.container .containerForServicesCard .serviceCard .blockForImage {
-  background-color: rgba(182, 181, 181, 0.77);
-  width: 243px;
-  height: 244px;
-  border-radius: 100%;
-  box-shadow: 0px 0px 5px 1px #5b5b5b;
-}
-.container .containerForServicesCard .serviceCard .blockForImage .imageService {
-  width: 240px;
-  border-radius: 100%;
-  height: 240px;
-  transition: 500ms;
-}
-.container .containerForServicesCard .serviceCard .blockForImage:hover {
-  cursor: pointer;
-}
-.container .containerForServicesCard .serviceCard .blockForImage:hover .imageService {
-  opacity: 0.85;
-}
-.container .containerForServicesCard .serviceCard .title {
-  text-align: center;
-  color: #1e1e1e;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-.container .containerForServicesCard .serviceCard .describe {
-  text-align: center;
-  color: #464646;
-  font-weight: bold;
-  font-size: 16px;
-}
 
 /*# sourceMappingURL=Services.module.css.map */

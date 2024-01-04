@@ -3,10 +3,10 @@ import ArrowBack from "../../components/ArrowBack/ArrowBack";
 
 const AllPricing = () => {
     return (
-        <div className={style.blockAllPricing}>
+        <section className={style.blockAllPricing}>
             wszsykie ceny
             <ArrowBack/>
-        </div>
+        </section>
     )
 }
 export default AllPricing;

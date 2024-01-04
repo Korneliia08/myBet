@@ -26,7 +26,7 @@ const FormBasicData = () => {
                     </div>
                     <input type="text" placeholder="E-mail"/>
                 </div>
-                <input type="submit" value="Book Now" className={style.btnBook} onClick={desplayVeryfication}/>
+                <input type="submit" value="Book Now" className="btnBook" onClick={desplayVeryfication}/>
             </form>
         </div>
     )

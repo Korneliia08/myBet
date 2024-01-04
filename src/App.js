@@ -14,6 +14,7 @@ import ChooseService from "./defaultPanel/dynamicSubPages/Registration/stepsComp
 import ChooseDate from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/ChooseDate/ChooseDate";
 import Veryfication from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/Veryfication/Veryfication";
 import BasicData from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/BasicData/BasicData";
+import ServiceInfo from "./defaultPanel/dynamicSubPages/ServiceInfo/ServiceInfo";
 
 function App() {
     const router = createBrowserRouter([
@@ -24,6 +25,10 @@ function App() {
                 {
                     path: "/",
                     element: <Default/>
+                },
+                {
+                    path: "allServices",
+                    element: <ServiceInfo/>,
                 },
                 {
                     path: "allEmployees",

@@ -33,18 +33,15 @@
         transform: perspective(1px) scale(1.05);
       }
     }
-
     .btnWriteToUs {
       background-color: #ef5151;
       padding: 10px 20px;
       border-radius: 10px;
       transition: 700ms ease;
       text-shadow: 0px 1px 1px black;
-
       &:hover {
         transform: perspective(1px) scale(.95);
       }
-
       &:focus {
         background-color: #e82323;
       }

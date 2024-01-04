@@ -27,19 +27,5 @@
   border: 1px solid gray;
   border-radius: 5px;
 }
-.container .btnBook {
-  background-color: #014D55;
-  color: white;
-  height: 40px;
-  padding: 5px 20px;
-  font-size: 16px;
-  border-radius: 20px;
-  border: 1px solid #014249;
-  transition: 400ms;
-}
-.container .btnBook:hover {
-  cursor: pointer;
-  background-color: #004148;
-}
 
 /*# sourceMappingURL=FormBasicData.module.css.map */
