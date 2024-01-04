@@ -63,4 +63,24 @@
   background-color: #004148;
 }
 
+.btnBackToHome {
+  color: #fff;
+  background: #014d55;
+  font-size: 12px;
+  padding: 8px 28px;
+  border-radius: 35px;
+  min-width: 200px;
+  text-transform: uppercase;
+  border: 2px solid #024850;
+  letter-spacing: 1px;
+  transition: all 400ms ease;
+}
+.btnBackToHome:hover {
+  cursor: pointer;
+  background: #00373d;
+}
+.btnBackToHome:focus {
+  background: #014d56;
+}
+
 /*# sourceMappingURL=App.css.map */

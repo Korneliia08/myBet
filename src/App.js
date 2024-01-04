@@ -15,6 +15,7 @@ import ChooseDate from "./defaultPanel/dynamicSubPages/Registration/stepsCompone
 import Veryfication from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/Veryfication/Veryfication";
 import BasicData from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/BasicData/BasicData";
 import ServiceInfo from "./defaultPanel/dynamicSubPages/ServiceInfo/ServiceInfo";
+import Summary from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/Summary/Summary";
 
 function App() {
     const router = createBrowserRouter([
@@ -69,6 +70,10 @@ function App() {
                         {
                             path: "veryfication",
                             element: <Veryfication/>
+                        },
+                        {
+                            path: "summary",
+                            element: <Summary/>
                         },
                         {
                             path: "",
