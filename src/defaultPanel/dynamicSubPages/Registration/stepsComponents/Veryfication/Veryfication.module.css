@@ -1,5 +1,24 @@
-.container {
-  background-color: #e82323;
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 80%;
+  border-radius: 20px;
+  row-gap: 10px;
+}
+.form input:first-of-type {
+  width: 200px;
+  font-weight: bold;
+  background-color: rgba(211, 211, 211, 0.91);
+  padding: 4px 8px;
+  font-size: 18px;
+  color: #2d2d2d;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=Veryfication.module.css.map */
