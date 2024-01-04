@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myBet/static/css/main.cd3db974.css",
-    "main.js": "/myBet/static/js/main.8292190e.js",
+    "main.css": "/myBet/static/css/main.eacc7eef.css",
+    "main.js": "/myBet/static/js/main.a543c5fe.js",
     "static/media/backgroundWriteToUs.jpg": "/myBet/static/media/backgroundWriteToUs.c73f59402d2a568bf4a6.jpg",
     "static/media/barber.jpg": "/myBet/static/media/barber.ca6299566e4a0db05f77.jpg",
     "static/media/men1.jpeg": "/myBet/static/media/men1.0f249b4a0a364ab3c48e.jpeg",
@@ -9,20 +9,17 @@
     "static/media/men2.jpeg": "/myBet/static/media/men2.a34252009a8b3fbfb236.jpeg",
     "static/media/employee1.jpg": "/myBet/static/media/employee1.347285804b329f2597fe.jpg",
     "static/media/employee2.jpg": "/myBet/static/media/employee2.4bf201c9561f0daa9050.jpg",
-    "static/media/faceMasking.jpg": "/myBet/static/media/faceMasking.523129e68de9720c7918.jpg",
-    "static/media/beardTriming.jpg": "/myBet/static/media/beardTriming.c3a11966623243f51d4c.jpg",
-    "static/media/cleanShave.jpg": "/myBet/static/media/cleanShave.8a1a79d60818691475ed.jpg",
     "static/media/haircutService.jpg": "/myBet/static/media/haircutService.a68dc0bafea5faf8d701.jpg",
     "static/media/backgroundBlurEmployees.jpeg": "/myBet/static/media/backgroundBlurEmployees.a12c0d5c653448ef2ef3.jpeg",
     "static/media/employee3.jpg": "/myBet/static/media/employee3.3b6b8a1a2d5643e30253.jpg",
     "static/media/aboutUs.jpg": "/myBet/static/media/aboutUs.001b4bb08e1547904c3f.jpg",
     "static/media/mustache.svg": "/myBet/static/media/mustache.f7d9fa85b96af8ca9daff873f5ddcf3e.svg",
     "index.html": "/myBet/index.html",
-    "main.cd3db974.css.map": "/myBet/static/css/main.cd3db974.css.map",
-    "main.8292190e.js.map": "/myBet/static/js/main.8292190e.js.map"
+    "main.eacc7eef.css.map": "/myBet/static/css/main.eacc7eef.css.map",
+    "main.a543c5fe.js.map": "/myBet/static/js/main.a543c5fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd3db974.css",
-    "static/js/main.8292190e.js"
+    "static/css/main.eacc7eef.css",
+    "static/js/main.a543c5fe.js"
   ]
 }
