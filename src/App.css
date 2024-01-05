@@ -9,6 +9,8 @@
 @media (max-width: 700px) {
   .mainTitle {
     font-size: 25px;
+    width: 80%;
+    text-align: center;
   }
 }
 
