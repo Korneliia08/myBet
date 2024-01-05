@@ -16,6 +16,8 @@ import Veryfication from "./defaultPanel/dynamicSubPages/Registration/stepsCompo
 import BasicData from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/BasicData/BasicData";
 import ServiceInfo from "./defaultPanel/dynamicSubPages/ServiceInfo/ServiceInfo";
 import Summary from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/Summary/Summary";
+import {Provider} from "react-redux";
+import store from "./data/store";
 
 function App() {
     const router = createBrowserRouter([
@@ -90,7 +92,9 @@ function App() {
     ], {basename: "/mybet"});
     return (
         <div className="App">
-            <RouterProvider router={router}></RouterProvider>
+            <Provider store={store}>
+                <RouterProvider router={router}></RouterProvider>
+            </Provider>
         </div>
     );
 }

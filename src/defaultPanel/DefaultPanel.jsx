@@ -5,11 +5,11 @@ import Footer from "./staticComponents/Footer/Footer";
 
 const DefaultPanel = () => {
     return (
-        <>
+        <div class='test'>
             <Header/>
             <Outlet/>
             <Footer/>
-        </>
+        </div>
     )
 }
 export default DefaultPanel;
