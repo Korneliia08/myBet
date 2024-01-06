@@ -52,20 +52,22 @@
   flex-grow: 10;
 }
 
-.desribeInInformationCard {
-  width: 50%;
+.describeInInformationCard {
+  width: 40%;
   font-size: 19px;
   line-height: 1.4;
   text-shadow: 0px 0px 1px black;
   color: #575757;
   margin-bottom: 10px;
+  text-align: justify;
 }
 
-.greenSpanForMoney {
-  color: #026402;
-  font-size: 24px;
-  margin-left: 2px;
-  text-shadow: 0px 0px 1px green;
+.iconMoney {
+  color: rgba(117, 140, 47, 0.83);
+}
+
+.iconClock {
+  color: rgba(65, 65, 63, 0.74);
 }
 
 .nextBtn {

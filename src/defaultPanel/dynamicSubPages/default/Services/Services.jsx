@@ -1,8 +1,11 @@
 import style from "./Services.module.css";
 import Moustache from "../../../components/Moustache/Moustache";
+import {useSelector} from "react-redux";
 import ServiceCard from "./ServiceCard/ServiceCard";
 
 const Services = () => {
+    const allServices = useSelector(state => state.services.services);
+    const serviceCard = allServices.map(service => <ServiceCard data={service}/>);
     return (
         <section className={style.container}>
             <div className={style.blockForTitle}>
@@ -10,9 +13,7 @@ const Services = () => {
                 <Moustache/>
             </div>
             <div className={style.containerForServicesCard}>
-                <ServiceCard/>
-                <ServiceCard/>
-                <ServiceCard/>
+                {serviceCard}
             </div>
         </section>
     )

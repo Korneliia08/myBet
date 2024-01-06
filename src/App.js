@@ -30,7 +30,7 @@ function App() {
                     element: <Default/>
                 },
                 {
-                    path: "allServices",
+                    path: "service/:id",
                     element: <ServiceInfo/>,
                 },
                 {

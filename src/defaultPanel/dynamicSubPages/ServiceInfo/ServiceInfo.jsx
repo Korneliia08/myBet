@@ -1,16 +1,24 @@
 import style from "./ServiceInfo.module.css";
 import Moustache from "../../components/Moustache/Moustache";
 import ArrowBack from "../../components/ArrowBack/ArrowBack";
-import imageOfService from "../../assets/images/haircutService.jpg";
-import {useNavigate} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
+import {useSelector} from "react-redux";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faClock, faCoins} from "@fortawesome/free-solid-svg-icons";
 
 const ServiceInfo = () => {
     const navigate = useNavigate();
+    const {id} = useParams();
+    const currentService = useSelector(state => state.services.services.find(service => service.id === Number(id)));
 
     function desplayRegistration() {
         navigate("/registration");
     }
 
+    if (!currentService) {
+        return "loading";
+    }
+    const imageId = currentService.imageId ? currentService.imageId : 0;
     return (
         <section className={style.section}>
             <ArrowBack/>
@@ -18,15 +26,21 @@ const ServiceInfo = () => {
             <Moustache/>
             <div className={style.cardOfInfo}>
                 <div className={style.mainInfo}>
-                    <img src={imageOfService} alt="image of service"/>
-                    <h4>Beard Shave</h4>
-                    <p className="desribeInInformationCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                        animi assumenda at aut commodi
-                        culpa
-                        ea eligendi, error esse eum expedita facilis id incidunt ipsam, minus nobis obcaecati omnis
-                        possimus quaerat quibusdam rem reprehenderit sapiente similique tenetur unde. Accusantium,
-                        labore.</p>
-                    <span>Price:80<span className="greenSpanForMoney">$</span></span>
+                    <div className={style.imgAndTitle}>
+                        <img src={`https://api.fenek.tech/files/image/${imageId}`}
+                             alt={`image of ${currentService.title} service`}/>
+                        <div>
+                            <h4>{currentService.title}</h4>
+                            <span>Price:{currentService.price} zł <FontAwesomeIcon icon={faCoins}
+                                                                                   className="iconMoney"/></span>
+                            <span>Time: {currentService.time} minutes <FontAwesomeIcon icon={faClock}
+                                                                                       className="iconClock"/></span>
+                        </div>
+                    </div>
+                    <div className={style.describe}>
+                        <p className={`${style.content} describeInInformationCard`}
+                           dangerouslySetInnerHTML={{__html: currentService.description}}></p>
+                    </div>
                 </div>
                 <button className="btnBook" onClick={desplayRegistration}>Book Now</button>
             </div>
