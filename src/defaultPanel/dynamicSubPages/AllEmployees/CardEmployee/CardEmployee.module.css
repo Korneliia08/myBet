@@ -1,26 +1,49 @@
 .cardEmployee {
-  background-color: #FFFFFF;
+  background-color: white;
   width: 30%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding-bottom: 40px;
   box-sizing: border-box;
   row-gap: 10px;
   transition: all 700ms ease;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 400px;
 }
 .cardEmployee:hover {
   cursor: pointer;
   opacity: 0.9;
 }
-.cardEmployee img {
+.cardEmployee .containerForImages {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 75%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.cardEmployee .nameSurname {
-  color: black;
+.cardEmployee .containerForImages img {
+  height: 100%;
+  z-index: 15;
+  position: relative;
+}
+.cardEmployee .containerForImages .background {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  filter: blur(40px);
+  border-radius: 20px;
 }
 .cardEmployee .describe {
+  height: 25%;
   width: 85%;
   text-align: center;
 }

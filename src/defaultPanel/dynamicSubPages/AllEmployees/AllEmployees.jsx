@@ -2,8 +2,11 @@ import style from "./AllEmployees.module.css";
 import CardEmployee from "./CardEmployee/CardEmployee";
 import ArrowBack from "../../components/ArrowBack/ArrowBack";
 import Moustache from "../../components/Moustache/Moustache";
+import {useSelector} from "react-redux";
 
 const AllEmployees = () => {
+    const allEmployees = useSelector(state => state.employees.employees);
+    const cardEmployee = allEmployees.map(employee => <CardEmployee data={employee}/>);
     return (
         <section className="containerSubPage">
             <h2 className="mainTitle">Our barbers</h2>
@@ -13,14 +16,7 @@ const AllEmployees = () => {
                 also enjoy maintaining the
                 atmosphere of a classic barbershop.</p>
             <div className={style.container}>
-                <CardEmployee/>
-                <CardEmployee/>
-                <CardEmployee/>
-                <CardEmployee/>
-                <CardEmployee/>
-                <CardEmployee/>
-                <CardEmployee/>
-                <CardEmployee/>
+                {cardEmployee}
             </div>
             <ArrowBack/>
         </section>

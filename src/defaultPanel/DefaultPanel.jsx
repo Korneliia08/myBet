@@ -1,22 +1,28 @@
 import Header from "./staticComponents/Header/Header";
 import {Outlet} from "react-router-dom";
 import Footer from "./staticComponents/Footer/Footer";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import axios from "axios";
 import {setServices} from "../data/reducers/serviceReducer";
 import {useDispatch} from "react-redux";
-
+import {setEmployees} from "../data/reducers/employeeReducer";
 
 const DefaultPanel = () => {
+
     const dispatch = useDispatch();
+
     useEffect(() => {
         axios("https://api.fenek.tech/registerPage/secondTemplate/services")
             .then(response => {
                 dispatch(setServices(response.data.value));
+            });
+        axios("https://api.fenek.tech/registerPage/secondTemplate/employees")
+            .then(response => {
+                dispatch(setEmployees(response.data.value));
             })
     }, []);
     return (
-        <div class='test'>
+        <div className='flexibleBlock'>
             <Header/>
             <Outlet/>
             <Footer/>

@@ -1,12 +1,12 @@
 import style from "./Employees.module.css";
-import employee1 from "../../../assets/images/employee1.jpg";
-import employee2 from "../../../assets/images/employee2.jpg";
-import employee3 from "../../../assets/images/employee3.jpg";
-import CardEmployee from "./CardEmployee/CardEmployee";
 import {useNavigate} from "react-router-dom";
+import {useSelector} from "react-redux";
+import CardEmployee from "./CardEmployee/CardEmployee";
 
 const Employees = () => {
     const navigate = useNavigate();
+    const allEmployees = useSelector(state => state.employees.employees);
+    const cardEmployee = allEmployees.slice(0, 3).map(employeeCard => <CardEmployee data={employeeCard}/>);
 
     function openSubPageAllEmployees() {
         navigate("/allEmployees");
@@ -20,9 +20,7 @@ const Employees = () => {
                     but also enjoy maintaining the atmosphere of a classic barbershop.</p>
             </div>
             <div className={style.containerForCards}>
-                <CardEmployee data={employee1}/>
-                <CardEmployee data={employee2}/>
-                <CardEmployee data={employee3}/>
+                {cardEmployee}
             </div>
             <button className={style.btnView} onClick={openSubPageAllEmployees}>view all team</button>
         </section>
