@@ -16,19 +16,16 @@ const CardEmployee = (props) => {
 
   return (
     <div className={style.cardEmployee} onClick={displayCurrentEmployee}>
-      <div className={style.containerForImages}>
+      <div
+        className={`${style.containerForImages} ${
+          data.profilImageId ? "" : style.darker
+        }`}
+      >
         <img
           src={image}
           alt={`image of employee ${data.firstname} ${data.lastname}`}
         />
-        <img
-          src={image}
-          className={
-            data.profilImageId
-              ? style.background
-              : `${style.background} ${style.back}`
-          }
-        />
+        <img src={image} className={style.background} />
       </div>
       <div className={style.containerForInformation}>
         <h3 className="nameSurname">
@@ -38,7 +35,7 @@ const CardEmployee = (props) => {
           className={`${style.describe} describeInInformationCard`}
           dangerouslySetInnerHTML={{ __html: maxLenght(data.description, 120) }}
         ></p>
-        <SocialMedias />
+        <SocialMedias data={data.socialMedia} />
       </div>
     </div>
   );

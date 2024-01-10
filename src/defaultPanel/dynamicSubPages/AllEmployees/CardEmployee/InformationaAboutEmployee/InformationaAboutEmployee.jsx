@@ -61,7 +61,7 @@ const InformationAboutEmployee = () => {
           Book a visit
         </button>
       </div>
-      <SocialMedias />
+      <SocialMedias data={currentEmployee.socialMedia} />
       <ArrowBack />
     </div>
   );
