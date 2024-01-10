@@ -3,11 +3,16 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from "react-router-dom";
 
-const ArrowBack = () => {
+const ArrowBack = (props) => {
     const navigate = useNavigate();
+    const toHome = props.toHome;
 
     function backOneStep() {
-        navigate(-1);
+        if (toHome) {
+            navigate("/");
+        } else {
+            navigate(-1);
+        }
     }
 
     return (

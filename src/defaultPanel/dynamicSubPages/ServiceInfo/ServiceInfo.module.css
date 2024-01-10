@@ -9,7 +9,7 @@
   position: relative;
 }
 .section .cardOfInfo {
-  width: 60%;
+  width: 55%;
   margin-top: 10px;
   background-color: #efefef;
   padding: 40px 40px;
@@ -27,7 +27,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
 }
 .section .cardOfInfo .mainInfo .imgAndTitle {
   box-sizing: border-box;
@@ -53,22 +53,34 @@
 }
 .section .cardOfInfo .mainInfo .imgAndTitle div h4 {
   margin-bottom: 10px;
-  margin-right: 25px;
+  margin-right: 10px;
   letter-spacing: 1px;
-  font-size: 25px;
+  font-size: 20px;
   text-shadow: 0px 1px 0px #020202;
   color: #525252;
   text-transform: uppercase;
   text-align: center;
-  width: 250px;
+  width: 200px;
 }
-.section .cardOfInfo .mainInfo .imgAndTitle div > span {
-  display: block;
+.section .cardOfInfo .mainInfo .imgAndTitle div .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.section .cardOfInfo .mainInfo .imgAndTitle div .container > span {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   padding-bottom: 10px;
   font-size: 20px;
   line-height: 1.4;
   text-shadow: 0px 0px 1px black;
   color: #575757;
+}
+.section .cardOfInfo .mainInfo .imgAndTitle div .container > span svg {
+  padding-left: 10px;
 }
 .section .cardOfInfo .mainInfo .describe {
   width: 100%;

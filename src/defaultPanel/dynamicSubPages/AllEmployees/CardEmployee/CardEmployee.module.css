@@ -2,16 +2,14 @@
   background-color: white;
   width: 30%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-direction: column;
-  padding-bottom: 40px;
   box-sizing: border-box;
-  row-gap: 10px;
+  row-gap: 5px;
   transition: all 700ms ease;
   border-radius: 20px;
   overflow: hidden;
-  height: 400px;
+  height: 450px;
+  box-shadow: 0px 0px 10px 2px inset black;
 }
 .cardEmployee:hover {
   cursor: pointer;
@@ -23,7 +21,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 75%;
+  height: 60%;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -42,8 +40,21 @@
   filter: blur(40px);
   border-radius: 20px;
 }
-.cardEmployee .describe {
-  height: 25%;
+.cardEmployee .containerForImages .back {
+  background-color: #ef5151;
+  z-index: 20;
+}
+.cardEmployee .containerForInformation {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+}
+.cardEmployee .containerForInformation .describe {
   width: 85%;
   text-align: center;
 }

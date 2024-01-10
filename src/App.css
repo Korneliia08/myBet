@@ -122,6 +122,7 @@
 }
 
 .nameSurname {
+  margin-top: 10px;
   color: black;
   text-align: center;
   text-shadow: 0px 0px 1px black;
