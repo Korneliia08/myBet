@@ -15,11 +15,12 @@ const InformationAboutEmployee = () => {
   const employees = useSelector((state) => state.employees.employees);
 
   const currentEmployee = employees.find((employee) => employee.id == id);
-  const imgEmployee =
-    process.env.REACT_APP_IMAGE_LINK + currentEmployee.profilImageId;
+
   if (!currentEmployee) {
     return <h3>loading....</h3>;
   }
+  const imgEmployee =
+    process.env.REACT_APP_IMAGE_LINK + currentEmployee.profilImageId;
 
   function desplayRegistration() {
     navigate("/registration");

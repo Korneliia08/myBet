@@ -22,11 +22,12 @@
 }
 .blockInformationAboutEmployee .blockForContact {
   min-width: 25%;
-  padding: 20px 0;
+  padding: 20px 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   row-gap: 5px;
+  box-sizing: border-box;
 }
 .blockInformationAboutEmployee .blockForContact h4 {
   margin-bottom: 5px;
@@ -34,6 +35,14 @@
   color: #506CAB;
   text-shadow: 0px 1px 1px #3f3e3e;
   font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .blockInformationAboutEmployee .blockForContact h4 {
+    font-size: 16px;
+    width: 70%;
+  }
 }
 .blockInformationAboutEmployee .blockForContact .blockForIconAndSpan {
   display: flex;
@@ -47,6 +56,11 @@
   font-size: 19px;
   text-shadow: 0px 0px 1px black;
   color: #3b3b3b;
+}
+@media (max-width: 800px) {
+  .blockInformationAboutEmployee .blockForContact .blockForIconAndSpan span {
+    font-size: 15px;
+  }
 }
 .blockInformationAboutEmployee .blockForBtns {
   display: flex;
@@ -67,6 +81,18 @@
 .blockInformationAboutEmployee .blockForBtns .btnWrite:hover, .blockInformationAboutEmployee .blockForBtns .btnBook:hover {
   cursor: pointer;
   background-color: rgba(50, 84, 157, 0.85);
+}
+@media (max-width: 800px) {
+  .blockInformationAboutEmployee .blockForBtns .btnWrite, .blockInformationAboutEmployee .blockForBtns .btnBook {
+    padding: 5px 20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 350px) {
+  .blockInformationAboutEmployee .blockForBtns .btnWrite, .blockInformationAboutEmployee .blockForBtns .btnBook {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=InformationaAboutEmployee.module.css.map */

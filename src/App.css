@@ -6,7 +6,7 @@
   letter-spacing: 1px;
   text-shadow: 0px 1px 1px white;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .mainTitle {
     font-size: 25px;
     width: 80%;
@@ -63,7 +63,7 @@
 }
 
 .describeInInformationCard {
-  width: 40%;
+  width: 50%;
   font-size: 18px;
   line-height: 1.4;
   text-shadow: 0px 0px 1px black;
@@ -72,6 +72,16 @@
   text-align: justify;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1000px) {
+  .describeInInformationCard {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .describeInInformationCard {
+    font-size: 15px;
+  }
 }
 
 .iconMoney {
