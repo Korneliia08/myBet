@@ -1,5 +1,4 @@
 import style from "./InformationaAboutEmployee.module.css";
-import imgEmployee from "../../../../assets/images/employee1.jpg";
 import ArrowBack from "../../../../components/ArrowBack/ArrowBack";
 import SocialMedias from "../../../../components/SocialMedias/SocialMedias";
 import Moustache from "../../../../components/Moustache/Moustache";
@@ -16,12 +15,27 @@ const InformationAboutEmployee = () => {
   const employees = useSelector((state) => state.employees.employees);
 
   const currentEmployee = employees.find((employee) => employee.id == id);
+  const imgEmployee =
+    process.env.REACT_APP_IMAGE_LINK + currentEmployee.profilImageId;
   if (!currentEmployee) {
     return <h3>loading....</h3>;
   }
 
   function desplayRegistration() {
     navigate("/registration");
+  }
+
+  let description = currentEmployee.description;
+  if (!description) {
+    description = "no description";
+  }
+  let numberPhone = currentEmployee.phoneNumber;
+  if (numberPhone.length < 7) {
+    numberPhone = "no number phone";
+  }
+  let email = currentEmployee.email;
+  if (!email) {
+    email = "no email";
   }
 
   return (
@@ -42,17 +56,17 @@ const InformationAboutEmployee = () => {
       <WorkingDays data={currentEmployee.workDay} />
       <p
         className="describeInInformationCard"
-        dangerouslySetInnerHTML={{ __html: currentEmployee.description }}
+        dangerouslySetInnerHTML={{ __html: description }}
       ></p>
       <div className={style.blockForContact}>
         <h4>Contact with me if you have any questions:</h4>
         <div className={style.blockForIconAndSpan}>
           <FontAwesomeIcon icon={faEnvelope} className={style.icon} />
-          <span>mattew@gmail.com</span>
+          <span>{email}</span>
         </div>
         <div className={style.blockForIconAndSpan}>
           <FontAwesomeIcon icon={faPhone} className={style.icon} />
-          <span>78883****</span>
+          <span>{numberPhone}</span>
         </div>
       </div>
       <div className={style.blockForBtns}>

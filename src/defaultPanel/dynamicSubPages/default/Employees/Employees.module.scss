@@ -39,6 +39,10 @@
     justify-content: center;
     column-gap: 15px;
     box-sizing: border-box;
+    row-gap: 10px;
+    @media (max-width: 950px) {
+      flex-wrap: wrap;
+    }
   }
 
   .btnView {

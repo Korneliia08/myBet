@@ -11,15 +11,28 @@
   border-radius: 20px;
   overflow: hidden;
   height: 400px;
+  @media (max-width: 1140px) {
+    width: 30%;
+  }
+  @media (max-width: 950px) {
+    width: 40%;
+    min-width: 200px;
+  }
 
   .containerForImage {
-    height: 75%;
+    height: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
     overflow-y: hidden;
+    @media (max-width: 1225px) {
+      height: 60%;
+    }
+    @media (max-width: 750px) {
+      height: 50%;
+    }
 
     img:first-of-type {
       width: auto;
@@ -37,12 +50,18 @@
   }
 
   .containerForInformation {
-    height: 40%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     row-gap: 10px;
+    @media (max-width: 1225px) {
+      height: 40%;
+    }
+    @media (max-width: 750px) {
+      height: 50%;
+    }
 
     .information {
       width: 85%;

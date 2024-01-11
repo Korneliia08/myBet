@@ -6,7 +6,7 @@ import { maxLenght } from "../../../../../pipes/maxLenght";
 const CardEmployee = (props) => {
   const navigate = useNavigate();
   const data = props.data;
-  const image = `https://api.fenek.tech/pliki/image/${
+  const image = `${process.env.REACT_APP_IMAGE_LINK}${
     !data.profilImageId ? 0 : data.profilImageId
   }`;
 
@@ -17,7 +17,10 @@ const CardEmployee = (props) => {
   if (!data) {
     return "loading";
   }
-
+  let description = data.description;
+  if (!description) {
+    description = "no description";
+  }
   return (
     <div className={style.cardOfEmployee} onClick={displayInfoAboutEmployee}>
       <div className={style.containerForImage}>
@@ -33,7 +36,7 @@ const CardEmployee = (props) => {
         </h3>
         <p
           className={style.information}
-          dangerouslySetInnerHTML={{ __html: maxLenght(data.description, 100) }}
+          dangerouslySetInnerHTML={{ __html: maxLenght(description, 100) }}
         ></p>
         <SocialMedias data={data.socialMedia} />
       </div>

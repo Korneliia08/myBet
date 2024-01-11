@@ -26,10 +26,10 @@
   box-sizing: border-box;
 }
 .cardEmployee .containerForImages.darker img {
-  filter: brightness(0.8);
+  filter: brightness(0.9);
 }
 .cardEmployee .containerForImages.darker .background {
-  filter: brightness(0.6);
+  filter: brightness(0.8);
 }
 .cardEmployee .containerForImages img {
   height: 100%;

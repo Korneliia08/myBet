@@ -5,6 +5,7 @@ import {
   faSquareInstagram,
   faTelegram,
   faTwitter,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
 const SocialMedias = (props) => {
@@ -14,9 +15,9 @@ const SocialMedias = (props) => {
   }
 
   function setSocialIcon(link, icon, nameOfClass) {
-    if (link.length > 0) {
+    if (link && link.length > 0) {
       return (
-        <a href={link}>
+        <a href={link} target="_blank">
           <FontAwesomeIcon
             icon={icon}
             className={`${style.icon} ${nameOfClass}`}
@@ -34,6 +35,7 @@ const SocialMedias = (props) => {
       {setSocialIcon(socialMedias.instagram, faSquareInstagram, style.insta)}
       {setSocialIcon(socialMedias.telegram, faTelegram, style.telegram)}
       {setSocialIcon(socialMedias.twitter, faTwitter, style.twitter)}
+      {setSocialIcon(socialMedias.whatsapp, faWhatsapp, style.whatsapp)}
     </div>
   );
 };

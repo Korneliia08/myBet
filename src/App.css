@@ -60,6 +60,8 @@
   color: #575757;
   margin-bottom: 10px;
   text-align: justify;
+  display: flex;
+  justify-content: center;
 }
 
 .iconMoney {

@@ -6,12 +6,17 @@ import { maxLenght } from "../../../../pipes/maxLenght";
 const CardEmployee = (props) => {
   const navigate = useNavigate();
   const data = props.data;
-  const image = `https://api.fenek.tech/files/image/${
+  const image = `${process.env.REACT_APP_IMAGE_LINK}${
     data.profilImageId ? data.profilImageId : 0
   }`;
 
   function displayCurrentEmployee() {
     navigate(`/allEmployees/${data.id}`);
+  }
+
+  let description = data.description;
+  if (!description) {
+    description = "no description";
   }
 
   return (
@@ -33,7 +38,7 @@ const CardEmployee = (props) => {
         </h3>
         <p
           className={`${style.describe} describeInInformationCard`}
-          dangerouslySetInnerHTML={{ __html: maxLenght(data.description, 120) }}
+          dangerouslySetInnerHTML={{ __html: maxLenght(description, 120) }}
         ></p>
         <SocialMedias data={data.socialMedia} />
       </div>
