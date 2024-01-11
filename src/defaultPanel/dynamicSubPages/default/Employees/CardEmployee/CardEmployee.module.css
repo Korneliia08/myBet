@@ -23,6 +23,12 @@
     min-width: 200px;
   }
 }
+@media (max-width: 550px) {
+  .cardOfEmployee {
+    max-width: 300px;
+    width: 100%;
+  }
+}
 .cardOfEmployee .containerForImage {
   height: 65%;
   display: flex;
@@ -83,6 +89,11 @@
 .cardOfEmployee:hover {
   cursor: pointer;
   scale: 1.04;
+}
+@media (max-width: 900px) {
+  .cardOfEmployee:hover {
+    scale: 1.02;
+  }
 }
 
 /*# sourceMappingURL=CardEmployee.module.css.map */

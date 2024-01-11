@@ -8,6 +8,11 @@
   align-items: center;
   box-sizing: border-box;
 }
+@media (max-width: 600px) {
+  .sectionEmpoyees {
+    padding: 20px 0;
+  }
+}
 .sectionEmpoyees .blockForTitle {
   display: flex;
   flex-direction: column;
@@ -22,13 +27,40 @@
   font-size: 35px;
   text-shadow: 0px 0px 1px black;
 }
+@media (max-width: 800px) {
+  .sectionEmpoyees .blockForTitle .title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .sectionEmpoyees .blockForTitle .title {
+    font-size: 26px;
+  }
+}
 .sectionEmpoyees .blockForTitle .content {
-  width: 500px;
+  width: 80%;
   text-align: center;
   line-height: 1.5;
   font-size: 20px;
   color: gainsboro;
   text-shadow: 0px 0px 1px black;
+}
+@media (max-width: 800px) {
+  .sectionEmpoyees .blockForTitle .content {
+    font-size: 18px;
+  }
+}
+@media (max-width: 580px) {
+  .sectionEmpoyees .blockForTitle .content {
+    width: 60%;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 500px) {
+  .sectionEmpoyees .blockForTitle .content {
+    width: 70%;
+    font-size: 16px;
+  }
 }
 .sectionEmpoyees .containerForCards {
   width: 85%;
@@ -59,6 +91,17 @@
   cursor: pointer;
   transform: perspective(1px) scale(0.98);
   font-size: 19px;
+}
+@media (max-width: 700px) {
+  .sectionEmpoyees .btnView {
+    padding: 5px 35px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .sectionEmpoyees .btnView {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=Employees.module.css.map */

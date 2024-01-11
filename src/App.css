@@ -132,5 +132,10 @@
   font-size: 18px;
   letter-spacing: 1px;
 }
+@media (max-width: 400px) {
+  .nameSurname {
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=App.css.map */

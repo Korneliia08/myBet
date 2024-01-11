@@ -7,6 +7,9 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  @media (max-width: 600px) {
+    padding: 20px 0;
+  }
 
   .blockForTitle {
     display: flex;
@@ -21,15 +24,32 @@
       color: white;
       font-size: 35px;
       text-shadow: 0px 0px 1px black;
+      @media (max-width: 800px) {
+        font-size: 28px;
+      }
+      @media (max-width: 500px) {
+        font-size: 26px;
+      }
     }
 
     .content {
-      width: 500px;
+      width: 80%;
       text-align: center;
       line-height: 1.5;
       font-size: 20px;
       color: gainsboro;
       text-shadow: 0px 0px 1px black;
+      @media (max-width: 800px) {
+        font-size: 18px;
+      }
+      @media (max-width: 580px) {
+        width: 60%;
+        line-height: 1.2;
+      }
+      @media (max-width: 500px) {
+        width: 70%;
+        font-size: 16px;
+      }
     }
   }
 
@@ -61,6 +81,14 @@
       cursor: pointer;
       transform: perspective(1px) scale(0.98);
       font-size: 19px;
+    }
+
+    @media (max-width: 700px) {
+      padding: 5px 35px;
+      font-size: 16px;
+    }
+    @media (max-width: 400px) {
+      font-size: 14px;
     }
   }
 }
