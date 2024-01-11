@@ -7,5 +7,10 @@
   flex-wrap: wrap;
   box-sizing: border-box;
 }
+@media (max-width: 850px) {
+  .container {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=AllEmployees.module.css.map */

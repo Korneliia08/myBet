@@ -13,14 +13,24 @@
     text-align: center;
   }
 }
+@media (max-width: 400px) {
+  .mainTitle {
+    font-size: 23px;
+  }
+}
 
 .describeUnderTitle {
-  width: 500px;
+  width: 50%;
   text-align: center;
   color: #464646;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 25px;
+}
+@media (max-width: 800px) {
+  .describeUnderTitle {
+    width: 90%;
+  }
 }
 
 .containerInRegistration {
@@ -44,7 +54,7 @@
 .containerSubPage {
   background-color: #F5F8F9;
   position: relative;
-  padding: 60px 10px;
+  padding: 40px 10px;
   display: flex;
   justify-content: center;
   align-items: center;

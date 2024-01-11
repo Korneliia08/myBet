@@ -9,6 +9,13 @@
   border-radius: 10px;
   overflow: hidden;
 }
+@media (max-width: 1000px) {
+  .firstBlock {
+    padding: 2px 10px;
+    top: 10px;
+    right: 5px;
+  }
+}
 .firstBlock .secondBlock {
   background-color: #EF5151;
   position: absolute;
@@ -27,6 +34,12 @@
   color: #5959bd;
   filter: drop-shadow(0px 1px 15px #9e9ff3);
   z-index: 11;
+}
+@media (max-width: 900px) {
+  .firstBlock .btnArrowLeft {
+    width: 20px;
+    height: 15px;
+  }
 }
 .firstBlock:hover {
   cursor: pointer;

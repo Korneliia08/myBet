@@ -6,4 +6,7 @@
   row-gap: 25px;
   flex-wrap: wrap;
   box-sizing: border-box;
+  @media (max-width: 850px) {
+    width: 100%;
+  }
 }
