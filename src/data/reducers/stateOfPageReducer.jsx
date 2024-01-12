@@ -3,7 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 const stateOfPageReducer = createSlice({
   name: "stateOfPage",
   initialState: {
-    stateOfPage: [],
+    stateOfPage: [
+      //todo dane domyslne
+    ],
   },
   reducers: {
     setState(state, action) {
