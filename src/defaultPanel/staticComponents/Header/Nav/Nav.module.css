@@ -1,6 +1,7 @@
 .emptyBlock {
   width: 100%;
-  height: 65px;
+  height: 52px;
+  background-color: #1da1f2;
 }
 
 .containerForTitleAndNav {
@@ -32,17 +33,28 @@
   }
 }
 .containerForTitleAndNav .nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10px;
+}
+.containerForTitleAndNav .nav .bigContainer {
   display: flex;
   column-gap: 25px;
   box-sizing: border-box;
   align-items: center;
 }
 @media (max-width: 950px) {
-  .containerForTitleAndNav .nav {
+  .containerForTitleAndNav .nav .bigContainer {
     column-gap: 15px;
   }
 }
-.containerForTitleAndNav .nav a {
+@media (max-width: 800px) {
+  .containerForTitleAndNav .nav .bigContainer {
+    display: none;
+  }
+}
+.containerForTitleAndNav .nav .bigContainer a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -51,35 +63,60 @@
   text-shadow: 0px 0px 1px black;
   text-align: center;
 }
-.containerForTitleAndNav .nav a:hover {
+.containerForTitleAndNav .nav .bigContainer a:hover {
   transform: perspective(1px) scale(1.05);
 }
 @media (max-width: 1300px) {
-  .containerForTitleAndNav .nav a {
+  .containerForTitleAndNav .nav .bigContainer a {
     font-size: 11px;
   }
 }
-.containerForTitleAndNav .nav .btnWriteToUs {
+.containerForTitleAndNav .nav .smallContainer {
+  display: none;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .containerForTitleAndNav .nav .smallContainer {
+    display: flex;
+  }
+}
+.containerForTitleAndNav .nav .smallContainer .burger {
+  color: white;
+  font-size: 26px;
+}
+
+.btnWriteToUs {
   background-color: #ef5151;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 10px;
-  transition: 700ms ease;
   text-shadow: 0px 1px 1px black;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: 700ms ease;
+  font-weight: bold;
 }
 @media (max-width: 950px) {
-  .containerForTitleAndNav .nav .btnWriteToUs {
+  .btnWriteToUs {
     padding: 5px 10px;
   }
 }
-.containerForTitleAndNav .nav .btnWriteToUs:hover {
-  transform: perspective(1px) scale(0.95);
+.btnWriteToUs:hover {
+  transform: perspective(1px) scale(0.98);
 }
-.containerForTitleAndNav .nav .btnWriteToUs:focus {
+.btnWriteToUs:focus {
   background-color: #e82323;
+}
+@media (max-width: 900px) {
+  .btnWriteToUs {
+    font-size: 10px;
+    padding: 4px;
+  }
 }
 
 /*# sourceMappingURL=Nav.module.css.map */

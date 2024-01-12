@@ -60,6 +60,14 @@ const stateOfPageReducer = createSlice({
   },
   reducers: {
     setState(state, action) {
+      /*
+           console.log(current(state).stateOfPage);
+            let prevObj = current(state).stateOfPage;
+            let newObj = prevObj;
+            Object.assign(newObj, action.payload);
+            console.log(newObj);
+      
+             */
       return { ...state /*, stateOfPage: { ...action.payload }*/ };
     },
   },
