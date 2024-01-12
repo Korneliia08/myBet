@@ -12,6 +12,9 @@ const ServiceInfo = () => {
   const currentService = useSelector((state) =>
     state.services.services.find((service) => service.id === Number(id)),
   );
+  const defaultData = useSelector(
+    (state) => state.stateOfPage.stateOfPage.services.subPage,
+  );
 
   function desplayRegistration() {
     navigate("/registration");
@@ -24,7 +27,7 @@ const ServiceInfo = () => {
   return (
     <section className={style.section}>
       <ArrowBack />
-      <h3 className="mainTitle">Our Service</h3>
+      <h3 className="mainTitle">{defaultData.title}</h3>
       <Moustache />
       <div className={style.cardOfInfo}>
         <div className={style.mainInfo}>

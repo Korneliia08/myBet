@@ -38,6 +38,9 @@ const stateOfPageReducer = createSlice({
       },
       services: {
         title: "OUR BARBER SERVICES",
+        subPage: {
+          title: "Our Service",
+        },
       },
       employees: {
         backgroundImage: "",
@@ -47,8 +50,11 @@ const stateOfPageReducer = createSlice({
       },
       pricing: {
         title: "Our barber pricing",
-        shortDescription:
-          "We employ only highly qualified barbers who are not just professionals, but also enjoy maintaining the atmosphere of a classic barbershop.",
+        subPage: {
+          title: "Our Pricing",
+          shortDescription:
+            "We employ only highly qualified barbers who are not just professionals, but also enjoy maintaining the atmosphere of a classic barbershop.",
+        },
       },
       getInTouch: {
         backgroundImage: "",
@@ -60,15 +66,7 @@ const stateOfPageReducer = createSlice({
   },
   reducers: {
     setState(state, action) {
-      /*
-           console.log(current(state).stateOfPage);
-            let prevObj = current(state).stateOfPage;
-            let newObj = prevObj;
-            Object.assign(newObj, action.payload);
-            console.log(newObj);
-      
-             */
-      return { ...state /*, stateOfPage: { ...action.payload }*/ };
+      return { ...state, stateOfPage: action.payload };
     },
   },
 });

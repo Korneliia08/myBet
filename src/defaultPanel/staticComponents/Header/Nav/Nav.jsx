@@ -2,15 +2,18 @@ import style from "./Nav.module.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
 
 const Nav = () => {
+  const data = useSelector((state) => state.stateOfPage.stateOfPage.header.nav);
   return (
     <>
       <div className={style.emptyBlock}></div>
       <div className={style.containerForTitleAndNav}>
-        <h1 className={style.title}>
-          Barbersh<span>o</span>p demo
-        </h1>
+        <h1
+          className={style.title}
+          dangerouslySetInnerHTML={{ __html: data.logo }}
+        ></h1>
         <nav className={style.nav}>
           <div className={style.bigContainer}>
             <Link to={"/registration"}>registration</Link>

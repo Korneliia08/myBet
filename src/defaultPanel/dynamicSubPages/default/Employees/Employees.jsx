@@ -11,7 +11,6 @@ const Employees = () => {
     .map((employeeCard) => <CardEmployee data={employeeCard} />);
 
   const data = useSelector((state) => state.stateOfPage.stateOfPage);
-  console.log(data);
 
   function openSubPageAllEmployees() {
     navigate("/allEmployees");

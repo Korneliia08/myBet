@@ -1,17 +1,22 @@
 import ArrowBack from "../../components/ArrowBack/ArrowBack";
 import Moustache from "../../components/Moustache/Moustache";
+import { useSelector } from "react-redux";
 
 const AllPricing = () => {
-    return (
-        <section className="containerSubPage">
-            <h2 className="mainTitle">Our pricing</h2>
-            <Moustache/>
-            <p className="describeUnderTitle">We employ only highly qualified barbers who are not just professionals,
-                but
-                also enjoy maintaining the
-                atmosphere of a classic barbershop.</p>
-            <ArrowBack/>
-        </section>
-    )
-}
+  const data = useSelector(
+    (state) => state.stateOfPage.stateOfPage.pricing.subPage,
+  );
+
+  return (
+    <section className="containerSubPage">
+      <h2 className="mainTitle">{data.title}</h2>
+      <Moustache />
+      <p
+        className="describeUnderTitle"
+        dangerouslySetInnerHTML={{ __html: data.shortDescription }}
+      ></p>
+      <ArrowBack />
+    </section>
+  );
+};
 export default AllPricing;
