@@ -1,15 +1,32 @@
 
- .image {
-    margin: 15px 0 25px 0;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px 5px #a2a2a2;
+.image {
+  height: 20vw;
+  margin: 15px 0 25px 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 5px #a2a2a2;
+  @media (max-width: 850px) {
+    margin: 5px 0 15px 0;
+    box-shadow: 0px 0px 8px 2px #a2a2a2;
+    height: 25vw;
   }
+  @media (max-width: 550px) {
+    margin: 5px 0 15px 0;
+    box-shadow: 0px 0px 8px 2px #a2a2a2;
+    height: 30vw;
+  }
+}
 
-  .content {
-    width: 50%;
-    text-align: center;
-    color: #464646;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.4;
+
+.content {
+  width: 50%;
+  text-align: center;
+  color: #464646;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+  @media (max-width: 850px) {
+    width: 95%;
+    font-size: 13px;
+    line-height: 1.2;
   }
+}

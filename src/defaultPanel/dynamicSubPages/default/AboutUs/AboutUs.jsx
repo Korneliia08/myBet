@@ -1,13 +1,15 @@
+import { useSelector } from "react-redux";
+import style from "./AboutUs.module.css";
 import ContainerForPhotos from "./ContainerForPhotos/ContainerForPhotos";
 import Content from "./Content/Content";
-import style from "./AboutUs.module.css";
 
 const AboutUs = () => {
-    return (
-        <section className={style.section}>
-            <ContainerForPhotos/>
-            <Content/>
-        </section>
-    )
-}
+  const data = useSelector((state) => state.stateOfPage.stateOfPage.aboutUs);
+  return (
+    <section className={style.section}>
+      <ContainerForPhotos data={data.images} />
+      <Content data={data.information} />
+    </section>
+  );
+};
 export default AboutUs;
