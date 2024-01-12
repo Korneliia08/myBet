@@ -22,7 +22,7 @@
   color: white;
   width: 600px;
   line-height: 1.1;
-  font-size: 55px;
+  font-size: 40px;
   letter-spacing: 2px;
   text-align: center;
   text-shadow: 0px 0px 1px black;
@@ -32,20 +32,38 @@
   .header .container .title {
     letter-spacing: 1px;
     width: 450px;
-    font-size: 40px;
   }
 }
 @media (max-width: 1050px) {
   .header .container .title {
     letter-spacing: 0;
-    width: 400px;
-    font-size: 29px;
+    width: 380px;
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 900px) {
+  .header .container .title {
+    letter-spacing: 0;
+    width: 300px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .header .container .title {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .header .container .title {
+    width: 110px;
+    font-size: 12px;
   }
 }
 .header .container .content {
   color: white;
   width: 450px;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.4;
   text-align: center;
 }
@@ -54,6 +72,18 @@
     width: 290px;
     line-height: 1.1;
     font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .header .container .content {
+    width: 140px;
+    font-size: 9px;
+  }
+}
+@media (max-width: 400px) {
+  .header .container .content {
+    width: 100px;
+    font-size: 8px;
   }
 }
 .header .container .btnBookNow {
@@ -81,6 +111,25 @@
     margin-top: 10px;
     padding: 8px 28px;
     font-size: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  .header .container .btnBookNow {
+    margin-top: 5px;
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 800px) {
+  .header .container .btnBookNow {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .header .container .btnBookNow {
+    padding: 2px 5px;
+    font-size: 8px;
   }
 }
 
