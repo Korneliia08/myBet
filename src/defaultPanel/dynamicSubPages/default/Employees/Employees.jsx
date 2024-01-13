@@ -10,7 +10,7 @@ const Employees = () => {
     .slice(0, 3)
     .map((employeeCard) => <CardEmployee data={employeeCard} />);
 
-  const data = useSelector((state) => state.stateOfPage.stateOfPage);
+  const data = useSelector((state) => state.stateOfPage.stateOfPage.employees);
 
   function openSubPageAllEmployees() {
     navigate("/allEmployees");
@@ -19,13 +19,7 @@ const Employees = () => {
   return (
     <section className={style.sectionEmpoyees}>
       <div className={style.blockForTitle}>
-        <h2 className={style.title}>our barbers</h2>
-        <p
-          className={style.content}
-          dangerouslySetInnerHTML={{
-            __html: data.descriptionOfEmpolyeeSubPage,
-          }}
-        ></p>
+        <h2 className={style.title}>{data.title}</h2>
       </div>
       <div className={style.containerForCards}>{cardEmployee}</div>
       <button className={style.btnView} onClick={openSubPageAllEmployees}>

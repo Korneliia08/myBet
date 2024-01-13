@@ -6,12 +6,17 @@
   padding: 80px 20px 80px 0px;
   box-sizing: border-box;
 }
-
 @media (max-width: 1480px) {
   .section {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .section {
+    padding: 45px 20px 10px 0px;
+    row-gap: 15px;
   }
 }
 

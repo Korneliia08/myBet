@@ -6,7 +6,7 @@
   letter-spacing: 1px;
   text-shadow: 0px 1px 1px white;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .mainTitle {
     font-size: 25px;
     width: 80%;

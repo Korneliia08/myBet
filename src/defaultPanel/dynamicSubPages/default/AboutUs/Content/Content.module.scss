@@ -52,10 +52,11 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .containerForContent {
     .content {
-      width: 220px;
+      width: 80%;
+      font-size: 14px;
     }
   }
 }
