@@ -8,9 +8,14 @@
   align-items: center;
   box-sizing: border-box;
 }
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .sectionEmpoyees {
-    padding: 20px 0;
+    padding: 20px 0 20px 0;
+  }
+}
+@media (max-width: 550px) {
+  .sectionEmpoyees {
+    padding: 5px 0 5px 0;
   }
 }
 .sectionEmpoyees .blockForTitle {
@@ -20,21 +25,33 @@
   padding-bottom: 20px;
   box-sizing: border-box;
 }
+@media (max-width: 550px) {
+  .sectionEmpoyees .blockForTitle {
+    padding-bottom: 5px;
+  }
+}
 .sectionEmpoyees .blockForTitle .title {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: white;
   font-size: 35px;
   text-shadow: 0px 0px 1px black;
+  box-sizing: border-box;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .sectionEmpoyees .blockForTitle .title {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 @media (max-width: 500px) {
   .sectionEmpoyees .blockForTitle .title {
-    font-size: 26px;
+    font-size: 23px;
+  }
+}
+@media (max-width: 550px) {
+  .sectionEmpoyees .blockForTitle .title {
+    padding-bottom: 10px;
+    margin-bottom: 0;
   }
 }
 .sectionEmpoyees .containerForCards {
@@ -45,8 +62,14 @@
   box-sizing: border-box;
   row-gap: 10px;
 }
-@media (max-width: 950px) {
+@media (max-width: 650px) {
   .sectionEmpoyees .containerForCards {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .sectionEmpoyees .containerForCards {
+    width: 80%;
     flex-wrap: wrap;
   }
 }
@@ -67,15 +90,18 @@
   transform: perspective(1px) scale(0.98);
   font-size: 19px;
 }
-@media (max-width: 700px) {
+@media (max-width: 950px) {
   .sectionEmpoyees .btnView {
+    margin-top: 20px;
     padding: 5px 35px;
     font-size: 16px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .sectionEmpoyees .btnView {
-    font-size: 14px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    font-size: 12px;
   }
 }
 

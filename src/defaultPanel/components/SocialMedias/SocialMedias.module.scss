@@ -1,12 +1,19 @@
 .containerForIcons {
   display: flex;
   column-gap: 10px;
+  @media (max-width: 650px) {
+    column-gap: 5px;
+  }
 
   .icon {
     width: 20px;
     height: 20px;
     transition: all 700ms ease;
     color: blue;
+    @media (max-width: 650px) {
+      width: 15px;
+      height: 15px;
+    }
 
     &:hover {
       scale: 1.1;

@@ -1,6 +1,6 @@
 .cardOfEmployee {
   width: 25%;
-  padding-bottom: 20px;
+  padding: 0 5px 20px 0;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,7 @@
   border-radius: 20px;
   overflow: hidden;
   height: 400px;
+  box-sizing: border-box;
 }
 @media (max-width: 1140px) {
   .cardOfEmployee {
@@ -19,14 +20,19 @@
 }
 @media (max-width: 950px) {
   .cardOfEmployee {
-    width: 40%;
-    min-width: 200px;
+    height: 280px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .cardOfEmployee {
-    max-width: 300px;
-    width: 100%;
+    height: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .cardOfEmployee {
+    width: 45%;
+    height: 150px;
+    min-width: 140px;
   }
 }
 .cardOfEmployee .containerForImage {
@@ -37,15 +43,21 @@
   position: relative;
   width: 100%;
   overflow-y: hidden;
+  box-sizing: border-box;
 }
 @media (max-width: 1225px) {
   .cardOfEmployee .containerForImage {
     height: 60%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 950px) {
   .cardOfEmployee .containerForImage {
     height: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .cardOfEmployee .containerForImage {
+    height: 80%;
   }
 }
 .cardOfEmployee .containerForImage img:first-of-type {
@@ -67,15 +79,22 @@
   align-items: center;
   justify-content: space-between;
   row-gap: 10px;
+  padding-bottom: 5px;
 }
 @media (max-width: 1225px) {
   .cardOfEmployee .containerForInformation {
     height: 40%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 950px) {
   .cardOfEmployee .containerForInformation {
     height: 50%;
+    row-gap: 5px;
+  }
+}
+@media (max-width: 650px) {
+  .cardOfEmployee .containerForInformation {
+    width: 20%;
   }
 }
 .cardOfEmployee .containerForInformation .information {
@@ -85,6 +104,17 @@
   font-size: 16px;
   font-weight: bold;
   color: #464646;
+}
+@media (max-width: 950px) {
+  .cardOfEmployee .containerForInformation .information {
+    line-height: 1;
+    font-size: 14px;
+  }
+}
+@media (max-width: 650px) {
+  .cardOfEmployee .containerForInformation .information {
+    display: none;
+  }
 }
 .cardOfEmployee:hover {
   cursor: pointer;

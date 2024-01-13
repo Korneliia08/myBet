@@ -2,11 +2,22 @@
   display: flex;
   column-gap: 10px;
 }
+@media (max-width: 650px) {
+  .containerForIcons {
+    column-gap: 5px;
+  }
+}
 .containerForIcons .icon {
   width: 20px;
   height: 20px;
   transition: all 700ms ease;
   color: blue;
+}
+@media (max-width: 650px) {
+  .containerForIcons .icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 .containerForIcons .icon:hover {
   scale: 1.1;

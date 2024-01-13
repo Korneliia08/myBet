@@ -7,8 +7,11 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  @media (max-width: 600px) {
-    padding: 20px 0;
+  @media (max-width: 1100px) {
+    padding: 20px 0 20px 0;
+  }
+  @media (max-width: 550px) {
+    padding: 5px 0 5px 0;
   }
 
   .blockForTitle {
@@ -17,6 +20,9 @@
     align-items: center;
     padding-bottom: 20px;
     box-sizing: border-box;
+    @media (max-width: 550px) {
+      padding-bottom: 5px;
+    }
 
     .title {
       text-transform: uppercase;
@@ -24,11 +30,16 @@
       color: white;
       font-size: 35px;
       text-shadow: 0px 0px 1px black;
-      @media (max-width: 800px) {
-        font-size: 28px;
+      @media (max-width: 1000px) {
+        font-size: 25px;
       }
       @media (max-width: 500px) {
-        font-size: 26px;
+        font-size: 23px;
+      }
+      box-sizing: border-box;
+      @media (max-width: 550px) {
+        padding-bottom: 10px;
+        margin-bottom: 0;
       }
     }
   }
@@ -40,7 +51,11 @@
     column-gap: 15px;
     box-sizing: border-box;
     row-gap: 10px;
-    @media (max-width: 950px) {
+    @media (max-width: 650px) {
+      width: 100%;
+    }
+    @media (max-width: 500px) {
+      width: 80%;
       flex-wrap: wrap;
     }
   }
@@ -63,12 +78,15 @@
       font-size: 19px;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 950px) {
+      margin-top: 20px;
       padding: 5px 35px;
       font-size: 16px;
     }
-    @media (max-width: 400px) {
-      font-size: 14px;
+    @media (max-width: 550px) {
+      margin-top: 10px;
+      padding: 5px 20px;
+      font-size: 12px;
     }
   }
 }
