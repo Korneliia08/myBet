@@ -4,6 +4,11 @@
   column-gap: 5px;
   padding-bottom: 10px;
 }
+@media (max-width: 800px) {
+  .container {
+    padding: 5px;
+  }
+}
 .container .emptyBlock {
   border-top: dashed 1px #9C5E02;
   width: 40px;

@@ -3,6 +3,9 @@
   align-items: center;
   column-gap: 5px;
   padding-bottom: 10px;
+  @media (max-width: 800px) {
+    padding: 5px;
+  }
 
   .emptyBlock {
     border-top: dashed 1px #9C5E02;
