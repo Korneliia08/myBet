@@ -3,19 +3,21 @@
   display: flex;
 
   .image {
-    height: 50vw;
+    height: 40vw;
+    box-shadow: 1px 1px 4px 1px #000000cf;
+    border-radius: 15px;
     @media (max-width: 700px) {
-      height: 40vw;
-      box-shadow: 1px 1px 4px 1px #000000cf;
-      border-radius: 15px;
+      height: 30vw;
     }
     @media (max-width: 600px) {
       display: none;
     }
   }
+
   @media (max-width: 600px) {
     justify-content: center;
   }
+
   .blockForForm {
     width: 80%;
     display: flex;
@@ -37,19 +39,19 @@
       font-weight: bold;
       font-size: 18px;
       text-shadow: 0px 1px 1px #d0d0d0;
-      @media (max-width: 1000px) {
+      @media (max-width: 1100px) {
         width: 350px;
         line-height: 1.0;
         margin-bottom: 5px;
-        font-size: 15px;
+        font-size: 14px;
       }
       @media (max-width: 750px) {
         width: 250px;
-        font-size: 14px;
+        font-size: 13px;
       }
       @media (max-width: 550px) {
         width: 200px;
-        font-size: 13px;
+        font-size: 12px;
       }
     }
 
@@ -65,21 +67,18 @@
         select {
           padding: 10px 20px;
           border-radius: 5px;
-          font-size: 18px;
+          font-size: 19px;
           background-color: transparent;
           border: 2px solid #868686;
           color: #9f0000;
           text-shadow: 0px 0px 1px black;
           font-weight: bold;
-          @media (max-width: 1000px) {
-            padding: 7px 10px;
-            font-size: 16px;
-          }
-          @media (max-width: 750px) {
+          @media (max-width: 1100px) {
             padding: 5px;
+            font-size: 14px;
           }
           @media (max-width: 550px) {
-            font-size: 13px;
+            font-size: 12px;
           }
         }
 
@@ -98,15 +97,12 @@
         font-size: 18px;
         padding: 10px 20px;
         box-sizing: border-box;
-        @media (max-width: 1000px) {
-          padding: 7px 10px;
-          font-size: 16px;
-        }
-        @media (max-width: 750px) {
+        @media (max-width: 1100px) {
           padding: 5px;
+          font-size: 14px;
         }
         @media (max-width: 550px) {
-          font-size: 13px;
+          font-size: 12px;
         }
       }
 
@@ -119,15 +115,12 @@
         color: black;
         text-shadow: 0px 0px 1px black;
         box-sizing: border-box;
-        @media (max-width: 1000px) {
-          padding: 7px 10px;
-          font-size: 16px;
-        }
-        @media (max-width: 750px) {
+        @media (max-width: 1100px) {
           padding: 5px;
+          font-size: 14px;
         }
         @media (max-width: 550px) {
-          font-size: 13px;
+          font-size: 12px;
         }
       }
 

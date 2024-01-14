@@ -43,9 +43,9 @@
     font-size: 25px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .sectionEmpoyees .blockForTitle .title {
-    font-size: 23px;
+    font-size: 18px;
   }
 }
 @media (max-width: 550px) {

@@ -3,13 +3,13 @@
   display: flex;
 }
 .container .image {
-  height: 50vw;
+  height: 40vw;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.8117647059);
+  border-radius: 15px;
 }
 @media (max-width: 700px) {
   .container .image {
-    height: 40vw;
-    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.8117647059);
-    border-radius: 15px;
+    height: 30vw;
   }
 }
 @media (max-width: 600px) {
@@ -46,24 +46,24 @@
   font-size: 18px;
   text-shadow: 0px 1px 1px #d0d0d0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .container .blockForForm .content {
     width: 350px;
     line-height: 1;
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media (max-width: 750px) {
   .container .blockForForm .content {
     width: 250px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (max-width: 550px) {
   .container .blockForForm .content {
     width: 200px;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .container .blockForForm form {
@@ -83,27 +83,22 @@
 .container .blockForForm form .groupe select {
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 19px;
   background-color: transparent;
   border: 2px solid #868686;
   color: #9f0000;
   text-shadow: 0px 0px 1px black;
   font-weight: bold;
 }
-@media (max-width: 1000px) {
-  .container .blockForForm form .groupe select {
-    padding: 7px 10px;
-    font-size: 16px;
-  }
-}
-@media (max-width: 750px) {
+@media (max-width: 1100px) {
   .container .blockForForm form .groupe select {
     padding: 5px;
+    font-size: 14px;
   }
 }
 @media (max-width: 550px) {
   .container .blockForForm form .groupe select {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .container .blockForForm form textarea {
@@ -118,20 +113,15 @@
   padding: 10px 20px;
   box-sizing: border-box;
 }
-@media (max-width: 1000px) {
-  .container .blockForForm form textarea {
-    padding: 7px 10px;
-    font-size: 16px;
-  }
-}
-@media (max-width: 750px) {
+@media (max-width: 1100px) {
   .container .blockForForm form textarea {
     padding: 5px;
+    font-size: 14px;
   }
 }
 @media (max-width: 550px) {
   .container .blockForForm form textarea {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .container .blockForForm form input {
@@ -144,20 +134,15 @@
   text-shadow: 0px 0px 1px black;
   box-sizing: border-box;
 }
-@media (max-width: 1000px) {
-  .container .blockForForm form input {
-    padding: 7px 10px;
-    font-size: 16px;
-  }
-}
-@media (max-width: 750px) {
+@media (max-width: 1100px) {
   .container .blockForForm form input {
     padding: 5px;
+    font-size: 14px;
   }
 }
 @media (max-width: 550px) {
   .container .blockForForm form input {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .container .blockForForm form .submit {

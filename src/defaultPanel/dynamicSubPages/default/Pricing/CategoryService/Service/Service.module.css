@@ -2,6 +2,11 @@
   box-sizing: border-box;
   width: 280px;
 }
+@media (max-width: 1100px) {
+  .containerForService {
+    width: 250px;
+  }
+}
 .containerForService .blockForTitlePrice {
   padding: 5px 10px 5px 10px;
   margin-bottom: 5px;
@@ -23,6 +28,11 @@
   font-size: 20px;
   letter-spacing: 1px;
 }
+@media (max-width: 1100px) {
+  .containerForService .blockForTitlePrice .titleService {
+    font-size: 18px;
+  }
+}
 .containerForService .blockForTitlePrice .price {
   top: -15px;
   padding-left: 8px;
@@ -31,11 +41,23 @@
   color: #ef5151;
   font-weight: bold;
 }
+@media (max-width: 1100px) {
+  .containerForService .blockForTitlePrice .price {
+    font-size: 20px;
+    top: -10px;
+  }
+}
 .containerForService .describe {
   padding: 5px 10px 40px 0px;
   color: #464646;
   font-weight: bold;
   font-size: 16px;
+}
+@media (max-width: 1100px) {
+  .containerForService .describe {
+    padding: 5px 10px 20px 0px;
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=Service.module.css.map */

@@ -1,6 +1,9 @@
 .containerForService {
   box-sizing: border-box;
   width: 280px;
+  @media (max-width: 1100px) {
+    width: 250px;
+  }
 
   .blockForTitlePrice {
     padding: 5px 10px 5px 10px;
@@ -23,6 +26,9 @@
       font-weight: bold;
       font-size: 20px;
       letter-spacing: 1px;
+      @media (max-width: 1100px) {
+        font-size: 18px;
+      }
     }
 
     .price {
@@ -32,6 +38,10 @@
       font-size: 26px;
       color: #ef5151;
       font-weight: bold;
+      @media (max-width: 1100px) {
+        font-size: 20px;
+        top: -10px;
+      }
     }
   }
 
@@ -40,5 +50,9 @@
     color: #464646;
     font-weight: bold;
     font-size: 16px;
+    @media (max-width: 1100px) {
+      padding: 5px 10px 20px 0px;
+      font-size: 14px;
+    }
   }
 }

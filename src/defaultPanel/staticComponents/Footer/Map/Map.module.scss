@@ -1,7 +1,9 @@
 .container {
   width: 100%;
   box-sizing: border-box;
-
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
   iframe {
     width: 260px;
     height: 180px;

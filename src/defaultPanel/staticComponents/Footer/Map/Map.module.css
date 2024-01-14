@@ -2,6 +2,11 @@
   width: 100%;
   box-sizing: border-box;
 }
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
 .container iframe {
   width: 260px;
   height: 180px;
