@@ -13,11 +13,10 @@
     }
   }
 
-  p {
-    color: white;
-    width: 280px;
-    font-size: 16px;
-    line-height: 1.4;
-    text-shadow: 0px 0px 1px black;
+  .describe {
+    width: 210px;
+    @media (max-width: 1200px) {
+      width: 200px;
+    }
   }
 }

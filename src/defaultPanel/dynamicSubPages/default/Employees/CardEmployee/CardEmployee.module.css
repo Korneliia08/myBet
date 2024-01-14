@@ -1,6 +1,6 @@
 .cardOfEmployee {
   width: 25%;
-  padding: 0 5px 20px 0;
+  padding: 0 0 20px 0;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@
   align-items: center;
   justify-content: space-between;
   row-gap: 10px;
-  padding-bottom: 5px;
+  padding: 0 5px 5px 5px;
 }
 @media (max-width: 1225px) {
   .cardOfEmployee .containerForInformation {

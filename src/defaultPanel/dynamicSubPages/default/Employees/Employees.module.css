@@ -87,8 +87,7 @@
 }
 .sectionEmpoyees .btnView:hover {
   cursor: pointer;
-  transform: perspective(1px) scale(0.98);
-  font-size: 19px;
+  background-color: #013c42;
 }
 @media (max-width: 950px) {
   .sectionEmpoyees .btnView {

@@ -177,7 +177,7 @@
   }
 }
 .container .blockForForm form .submit:hover {
-  transform: scale(0.98) perspective(1px);
+  background-color: #be3b3b;
   cursor: pointer;
 }
 

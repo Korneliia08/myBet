@@ -3,10 +3,16 @@ footer {
   box-sizing: border-box;
 
   .topPartFooter {
-    padding: 80px 70px;
+    padding: 50px 40px;
     display: flex;
     column-gap: 15px;
     justify-content: space-around;
+    @media (max-width: 1200px) {
+      padding: 20px 25px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      row-gap: 10px;
+    }
   }
 
   .bottomPartFooter {

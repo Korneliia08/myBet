@@ -1,12 +1,21 @@
-.container h3 {
-  margin-bottom: 10px;
-  color: white;
-  font-size: 25px;
-  text-shadow: 0px 0px 1px black;
+.container {
+  width: 100%;
+  box-sizing: border-box;
 }
 .container iframe {
-  width: 280px;
-  height: 200px;
+  width: 260px;
+  height: 180px;
+}
+@media (max-width: 1200px) {
+  .container iframe {
+    width: 100%;
+    height: 160px;
+  }
+}
+@media (max-width: 1200px) {
+  .container .title {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Map.module.css.map */

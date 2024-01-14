@@ -11,12 +11,13 @@
 .container h3 span {
   color: #ef5151;
 }
-.container p {
-  color: white;
-  width: 280px;
-  font-size: 16px;
-  line-height: 1.4;
-  text-shadow: 0px 0px 1px black;
+.container .describe {
+  width: 210px;
+}
+@media (max-width: 1200px) {
+  .container .describe {
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=Describe.module.css.map */
