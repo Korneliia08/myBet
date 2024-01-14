@@ -23,7 +23,7 @@ const Pricing = () => {
         <CategoryService />
         <CategoryService />
       </div>
-      <button onClick={display} className={style.btnShowMore}>
+      <button onClick={display} className="pinkBtn">
         Show more
       </button>
     </section>

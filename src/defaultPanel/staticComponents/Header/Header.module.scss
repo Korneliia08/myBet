@@ -73,45 +73,7 @@
     }
 
     .btnBookNow {
-      margin-top: 25px;
-      padding: 10px 40px;
-      font-size: 18px;
-      font-weight: bold;
-      background-color: #ef5151;
-      border: none;
-      color: white;
-      text-shadow: 0px 1px 1px black;
-      transition: all 500ms linear;
-      border-radius: 10px;
-      text-transform: uppercase;
 
-      &:hover {
-        cursor: pointer;
-        transform: perspective(1px) scale(.95);
-      }
-
-      &:focus {
-        background-color: #e82323;
-      }
-
-      @media (max-width: 1250px) {
-        margin-top: 10px;
-        padding: 8px 28px;
-        font-size: 14px;
-      }
-      @media (max-width: 1000px) {
-        margin-top: 5px;
-        padding: 5px 15px;
-        font-size: 12px;
-      }
-      @media (max-width: 800px) {
-        padding: 5px 10px;
-        font-size: 12px;
-      }
-      @media (max-width: 500px) {
-        padding: 2px 5px;
-        font-size: 8px;
-      }
     }
   }
 }

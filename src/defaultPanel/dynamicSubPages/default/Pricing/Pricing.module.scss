@@ -22,27 +22,4 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .btnShowMore {
-    padding: 10px 40px;
-    border: none;
-    transition: all 400ms linear;
-    background-color: #ef5151;
-    color: white;
-    text-shadow: 0px 1px 1px #2f2f2f;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    &:hover {
-      cursor: pointer;
-      background-color: #d34141;
-    }
-
-    @media (max-width: 1000px) {
-      padding: 5px 20px;
-      font-size: 11px;
-    }
-  }
 }

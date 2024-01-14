@@ -12,28 +12,6 @@
     font-size: 19px;
     margin-bottom: 20px;
   }
-
-  .btnReadMore {
-    padding: 10px 40px;
-    border: none;
-    transition: all 400ms linear;
-    background-color: #ef5151;
-    color: white;
-    text-shadow: 0px 1px 1px #2f2f2f;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    &:hover {
-      cursor: pointer;
-      transform: perspective(1px) scale(0.95);
-    }
-
-    &:focus {
-      background-color: #e82323;
-    }
-  }
 }
 
 @media (max-width: 750px) {
@@ -42,11 +20,6 @@
       width: 350px;
       line-height: 1.2;
       margin-bottom: 15px;
-    }
-
-    .btnReadMore {
-      padding: 5px 20px;
-      font-size: 12px;
     }
   }
 }

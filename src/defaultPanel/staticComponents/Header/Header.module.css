@@ -86,51 +86,5 @@
     font-size: 8px;
   }
 }
-.header .container .btnBookNow {
-  margin-top: 25px;
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #ef5151;
-  border: none;
-  color: white;
-  text-shadow: 0px 1px 1px black;
-  transition: all 500ms linear;
-  border-radius: 10px;
-  text-transform: uppercase;
-}
-.header .container .btnBookNow:hover {
-  cursor: pointer;
-  transform: perspective(1px) scale(0.95);
-}
-.header .container .btnBookNow:focus {
-  background-color: #e82323;
-}
-@media (max-width: 1250px) {
-  .header .container .btnBookNow {
-    margin-top: 10px;
-    padding: 8px 28px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 1000px) {
-  .header .container .btnBookNow {
-    margin-top: 5px;
-    padding: 5px 15px;
-    font-size: 12px;
-  }
-}
-@media (max-width: 800px) {
-  .header .container .btnBookNow {
-    padding: 5px 10px;
-    font-size: 12px;
-  }
-}
-@media (max-width: 500px) {
-  .header .container .btnBookNow {
-    padding: 2px 5px;
-    font-size: 8px;
-  }
-}
 
 /*# sourceMappingURL=Header.module.css.map */

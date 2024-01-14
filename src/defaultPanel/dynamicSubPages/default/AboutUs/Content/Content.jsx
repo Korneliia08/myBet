@@ -18,7 +18,7 @@ const Content = (props) => {
         className={style.content}
         dangerouslySetInnerHTML={{ __html: data.shortDescription }}
       ></p>
-      <button className={style.btnReadMore} onClick={displaySubPage}>
+      <button className="pinkBtn" onClick={displaySubPage}>
         Read more
       </button>
     </div>

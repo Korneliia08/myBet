@@ -27,7 +27,7 @@ const Nav = () => {
           <div className={style.smallContainer}>
             <FontAwesomeIcon icon={faBars} className={style.burger} />
           </div>
-          <Link to={"/rgdev"} className={style.btnWriteToUs}>
+          <Link to={"/rgdev"} className={`${style.writeToUs} pinkBtn`}>
             write to us
           </Link>
         </nav>

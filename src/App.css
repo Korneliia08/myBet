@@ -195,4 +195,44 @@
   }
 }
 
+.pinkBtn {
+  background-color: #ef5151;
+  border-radius: 10px;
+  text-shadow: 0px 1px 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  transition: all 500ms ease;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  margin-top: 25px;
+  padding: 10px 40px;
+}
+@media (max-width: 1250px) {
+  .pinkBtn {
+    margin-top: 10px;
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  .pinkBtn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .pinkBtn {
+    padding: 2px 5px;
+    font-size: 8px;
+  }
+}
+.pinkBtn:hover {
+  cursor: pointer;
+  background-color: #be3b3b;
+}
+
 /*# sourceMappingURL=App.css.map */

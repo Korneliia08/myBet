@@ -23,7 +23,7 @@ const Header = () => {
             className={style.content}
             dangerouslySetInnerHTML={{ __html: data.description }}
           ></p>
-          <button className={style.btnBookNow} onClick={displayRegistration}>
+          <button className="pinkBtn" onClick={displayRegistration}>
             Book now
           </button>
         </div>
