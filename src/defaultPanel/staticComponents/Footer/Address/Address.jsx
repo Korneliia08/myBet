@@ -1,11 +1,14 @@
 import style from "./Address.module.css";
 
-const Address = () => {
+const Address = (props) => {
+  const data = props.data;
   return (
     <div className={style.container}>
-      <h3 className="titleInFooter">Address</h3>
+      <h3 className="titleInFooter">{data.title}</h3>
       <span className={`${style.address} contentInFooter`}>
-        962 Fifth Avenue, 3rd Floor New York, NY10022
+        {data.city}, {data.street} {data.numberOfApartment}/{data.numberOfLocal}
+        ,{data.country} <br />
+        {data.zipCode}
       </span>
     </div>
   );

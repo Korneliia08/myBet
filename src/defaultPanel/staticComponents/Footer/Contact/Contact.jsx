@@ -1,14 +1,13 @@
 import style from "./Contact.module.css";
 
-const Contact = () => {
+const Contact = (props) => {
+  const data = props.data;
   return (
     <div className={style.container}>
-      <h3 className="titleInFooter">Contact</h3>
-      <span className={`${style.address} contentInFooter`}>
-        info@example.com
-      </span>
+      <h3 className="titleInFooter">{data.title}</h3>
+      <span className={`${style.address} contentInFooter`}>{data.email}</span>
       <span className={`${style.phone} contentInFooter`}>
-        (+123) 456 789 101
+        {data.numberOfPhone}
       </span>
     </div>
   );
