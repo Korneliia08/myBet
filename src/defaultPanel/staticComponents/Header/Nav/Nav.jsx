@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
+import { changeLetterColor } from "../../../../pipes/setColorLetter";
 
 const Nav = () => {
   const data = useSelector((state) => state.stateOfPage.stateOfPage.header.nav);
@@ -12,7 +13,7 @@ const Nav = () => {
       <div className={style.containerForTitleAndNav}>
         <h1
           className={style.title}
-          dangerouslySetInnerHTML={{ __html: data.logo }}
+          dangerouslySetInnerHTML={{ __html: changeLetterColor(data.logo) }}
         ></h1>
         <nav className={style.nav}>
           <div className={style.bigContainer}>
