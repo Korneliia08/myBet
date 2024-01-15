@@ -3,18 +3,18 @@
   column-gap: 5px;
   align-items: center;
   font-size: 20px;
-  border-bottom: 2px solid #626262;
+  border-bottom: 2px solid transparent;
   letter-spacing: 1px;
   color: #545454;
   font-weight: bold;
-  transition: all 400ms ease;
+  transition: all 600ms ease;
   position: absolute;
   top: 10px;
   right: 0;
 }
 .back:hover {
-  color: rgba(1, 91, 12, 0.91);
-  border-bottom: 2px solid rgba(1, 91, 12, 0.91);
+  color: #3f3f3f;
+  border-bottom: 2px solid #383838;
   cursor: pointer;
 }
 
