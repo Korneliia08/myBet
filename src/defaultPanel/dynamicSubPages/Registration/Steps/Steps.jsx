@@ -1,16 +1,10 @@
 import style from "./Steps.module.css";
-import ArrowBack from "../../../components/ArrowBack/ArrowBack";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import HomeIcon from "../../../components/HomeIcon/HomeIcon";
 
 const Steps = () => {
   const location = useLocation();
-  const arrowBack =
-    location.pathname === "/registration/summary" ? (
-      ""
-    ) : (
-      <ArrowBack toHome={true} />
-    );
   const [step, setStep] = useState(1);
 
   function setStepFun() {
@@ -43,9 +37,9 @@ const Steps = () => {
   }, [location]);
   return (
     <div className={style.container}>
+      <HomeIcon />
       <h3>{step} of 4</h3>
       <span className="mainTitle">steps</span>
-      {arrowBack}
     </div>
   );
 };

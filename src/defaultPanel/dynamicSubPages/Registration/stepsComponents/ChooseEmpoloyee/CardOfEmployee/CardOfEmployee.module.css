@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 .container .blockForImage img {
-  height: 180px;
+  height: 140px;
   z-index: 25;
 }
 .container .blockForImage .background {
