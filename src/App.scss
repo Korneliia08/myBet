@@ -1,12 +1,12 @@
 .mainTitle {
   text-transform: uppercase;
   margin-bottom: 8px;
-  font-size: 32px;
+  font-size: 25px;
   color: #ef5151;
   letter-spacing: 1px;
   text-shadow: 0px 1px 1px white;
   @media (max-width: 1100px) {
-    font-size: 24px;
+    font-size: 23px;
     width: 80%;
     text-align: center;
     margin-bottom: 5px;
@@ -21,8 +21,8 @@
   text-align: center;
   color: #464646;
   font-weight: bold;
-  font-size: 15px;
-  margin-bottom: 25px;
+  font-size: 14px;
+  margin-bottom: 15px;
   @media (max-width: 800px) {
     width: 90%;
   }
@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 15px;
+  row-gap: 2px;
   width: 1000px;
   box-sizing: border-box;
 }

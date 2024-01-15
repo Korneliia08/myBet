@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   column-gap: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 @media (max-width: 800px) {
   .container {
