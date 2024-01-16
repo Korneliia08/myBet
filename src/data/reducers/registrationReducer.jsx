@@ -5,13 +5,18 @@ const registrationReducer = createSlice({
   initialState: {
     idOfEmployee: 0,
     idOfServices: [],
-    dateOfService: "",
+    selectedDate: {
+      start: "",
+      end: "",
+    },
     dataOfUser: {
       name: "",
       surname: "",
       numberOfPhone: "",
       email: "",
     },
+    availableDates: [],
+    selectedDay: "",
     totalPrice: 0,
   },
   reducers: {

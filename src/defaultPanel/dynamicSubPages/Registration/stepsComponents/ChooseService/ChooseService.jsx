@@ -2,8 +2,10 @@ import Back from "../../../../components/Back/Back";
 import Moustache from "../../../../components/Moustache/Moustache";
 import style from "./ChooseService.module.css";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Service from "./Service/Service";
+import axios from "axios";
+import { setData } from "../../../../../data/reducers/registrationReducer";
 
 const ChooseService = () => {
   const navigate = useNavigate();
@@ -15,9 +17,23 @@ const ChooseService = () => {
       <Service data={service} key={index} index={index} />
     ));
   const totalSum = useSelector((state) => state.registration.totalPrice);
+  const data = useSelector((state) => state.registration);
+  const dispatch = useDispatch();
 
   function desplayChooseDate() {
-    navigate("/registration/date");
+    const dataForApi = {
+      idOfEmployee: data.idOfEmployee,
+      idOfServices: data.idOfServices,
+    };
+    axios
+      .post(
+        process.env.REACT_APP_LINK_TO_API + "/registerPage/visits/appointments",
+        dataForApi,
+      )
+      .then((resp) => {
+        navigate("/registration/date");
+        dispatch(setData({ availableDates: resp.data.value }));
+      });
   }
 
   return (

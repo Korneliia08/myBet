@@ -1,67 +1,62 @@
 import style from "./DateCard.module.css";
-import {useNavigate} from "react-router-dom";
+import { useEffect, useState } from "react";
+import Day from "./Day/Day";
+import { useSelector } from "react-redux";
+import Hour from "./Hour/Hour";
 
 const DateCard = () => {
-    const navigate = useNavigate();
+  const date = new Date();
+  const [allDays, setAllDays] = useState([]);
+  const availableDates = useSelector(
+    (state) => state.registration.availableDates,
+  );
+  const selectedDate = useSelector((state) => state.registration.selectedDay);
 
-    function desplayBasicDate() {
-        navigate("/registration/basicDate");
+  function createDays() {
+    let index = 0;
+
+    const tmp = [];
+    for (; index < 14; index++) {
+      const datePlusIndex = new Date().setDate(date.getDate() + index);
+      tmp.push(new Date(datePlusIndex));
     }
+    setAllDays(tmp);
+  }
 
-    return (
-        <>
-            <h5 className={style.month}>
-                September
-            </h5>
-            <div className={style.containerForDays}>
-                <div className={style.blockDay}>
-                    <span className={style.number}>1</span>
-                    <span className={style.day}>Monday</span>
-                </div>
-                <div className={style.blockDay}>
-                    <span className={style.number}>2</span>
-                    <span className={style.day}>Tuesday</span>
-                </div>
-                <div className={style.blockDay}>
-                    <span className={style.number}>3</span>
-                    <span className={style.day}>Wednesday</span>
-                </div>
-                <div className={style.blockDay}>
-                    <span className={style.number}>4</span>
-                    <span className={style.day}>Thursday</span>
-                </div>
-                <div className={style.blockDay}>
-                    <span className={style.number}>5</span>
-                    <span className={style.day}>Friday</span>
-                </div>
-            </div>
-            <div className={style.containerForHours}>
-                <div className={style.blockHour} onClick={desplayBasicDate}>
-                    <span className={style.hour}>10:00-11:00</span>
-                </div>
-                <div className={style.blockHour} onClick={desplayBasicDate}>
-                    <span className={style.hour}>11:00-12:00</span>
-                </div>
-                <div className={style.blockHour} onClick={desplayBasicDate}>
-                    <span className={style.hour}>12:00-13:00</span>
-                </div>
-                <div className={style.blockHour} onClick={desplayBasicDate}>
-                    <span className={style.hour}>13:00-14:00</span>
-                </div>
-                <div className={style.blockHour} onClick={desplayBasicDate}>
-                    <span className={style.hour}>14:00-15:00</span>
-                </div>
-                <div className={style.blockHour} onClick={desplayBasicDate}>
-                    <span className={style.hour}>15:00-16:00</span>
-                </div>
-                <div className={style.blockHour} onClick={desplayBasicDate}>
-                    <span className={style.hour}>16:00-17:00</span>
-                </div>
-                <div className={style.blockHour} onClick={desplayBasicDate}>
-                    <span className={style.hour}>17:00-18:00</span>
-                </div>
-            </div>
-        </>
-    )
-}
+  const days = allDays
+    .filter((day) => {
+      return availableDates.some((availableDate) => {
+        const start = new Date(availableDate.start);
+        return (
+          start.getDate() === day.getDate() &&
+          start.getMonth() === day.getMonth() &&
+          start.getFullYear() === day.getFullYear()
+        );
+      });
+    })
+    .map((day, index) => <Day data={day} key={index} />);
+
+  const hours = availableDates
+    .filter((date) => {
+      return (
+        new Date(date.start).getDate() === new Date(selectedDate).getDate() &&
+        new Date(date.start).getMonth() === new Date(selectedDate).getMonth() &&
+        new Date(date.start).getFullYear() ===
+          new Date(selectedDate).getFullYear()
+      );
+    })
+    .map((date) => <Hour data={date} />);
+
+  useEffect(() => {
+    createDays();
+  }, []);
+
+  return (
+    <>
+      <h5 className={style.month}>September</h5>
+      <div className={style.containerForDays}>{days}</div>
+      <div className={style.containerForHours}>{hours}</div>
+    </>
+  );
+};
 export default DateCard;

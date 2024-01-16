@@ -1,0 +1,31 @@
+.blockDay {
+  width: 19%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px 1px inset rgba(200, 201, 201, 0.82);
+
+  &:focus {
+    background-color: #1da1f2;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .number {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .day {
+    color: black;
+    font-size: 19px;
+    letter-spacing: 2px;
+  }
+}

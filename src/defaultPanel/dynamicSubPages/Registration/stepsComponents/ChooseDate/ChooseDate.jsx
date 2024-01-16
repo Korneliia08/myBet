@@ -5,7 +5,7 @@ import DateCard from "./DateCard/DateCard";
 import { useSelector } from "react-redux";
 
 const ChooseDate = () => {
-  const data = useSelector((state) => state.registration.idOfServices);
+  const data = useSelector((state) => state.registration);
   console.log(data);
   return (
     <div className="containerInRegistration">
