@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { setData } from "../../../../../../data/reducers/registrationReducer";
+import { ReCAPTCHA } from "react-google-recaptcha";
 
 const FormBasicData = () => {
   const dispatch = useDispatch();
@@ -33,6 +34,10 @@ const FormBasicData = () => {
     };
   }
 
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
+
   return (
     <div className={style.container}>
       <form>
@@ -59,6 +64,10 @@ const FormBasicData = () => {
           value="Book Now"
           className="btnBook"
           onClick={desplayVeryfication}
+        />
+        <ReCAPTCHA
+          sitekey="6Ldx_1MpAAAAAICoyhuEgTNU7-nICGtvPQcIZfBn"
+          onChange={onChange}
         />
       </form>
     </div>
