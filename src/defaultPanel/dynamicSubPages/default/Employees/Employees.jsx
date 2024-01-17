@@ -17,7 +17,7 @@ const Employees = () => {
   }
 
   return (
-    <section className={style.sectionEmpoyees}>
+    <section className={style.sectionEmpoyees} id="sectionEmployees">
       <div className={style.blockForTitle}>
         <h2 className={style.title}>{data.title}</h2>
       </div>
