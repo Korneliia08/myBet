@@ -8,6 +8,9 @@ import axios from "axios";
 import { setData } from "../../../../../data/reducers/registrationReducer";
 
 const ChooseService = () => {
+  const dataDefault = useSelector(
+    (state) => state.stateOfPage.stateOfPage.registration.steps.chooseAservice,
+  );
   const navigate = useNavigate();
   const idOfEmployee = useSelector((state) => state.registration.idOfEmployee);
   const allServices = useSelector((state) => state.services.services);
@@ -39,13 +42,12 @@ const ChooseService = () => {
   return (
     <div className="containerInRegistration">
       <Back />
-      <h4 className="mainTitle">Choose a service</h4>
+      <h4 className="mainTitle">{dataDefault.title}</h4>
       <Moustache />
-      <p className="describeUnderTitle">
-        Barbershop offers professional services of certified barbers with years
-        of experience. On this page you can choose a preferred barber in a few
-        clicks.
-      </p>
+      <p
+        className="describeUnderTitle"
+        dangerouslySetInnerHTML={{ __html: dataDefault.description }}
+      ></p>
       <div className={style.containerForServices}>
         <div className={style.blockForHeadlines}>
           <span className={style.nr}>Nr</span>

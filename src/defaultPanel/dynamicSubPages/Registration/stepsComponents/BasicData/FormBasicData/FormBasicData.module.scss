@@ -2,13 +2,16 @@
   padding: 40px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
 
   form {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 10px;
 
     .groupOfInputs {
       display: flex;

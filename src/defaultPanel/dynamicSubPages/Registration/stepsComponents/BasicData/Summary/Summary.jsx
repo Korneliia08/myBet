@@ -43,6 +43,9 @@ const Summary = () => {
 
   const start = data.selectedDate.start;
   const end = data.selectedDate.end;
+
+  const totalPrice = data.totalPrice;
+
   if (!selectedEmployee || titlesOfServices.length < 1) {
     navigate("/");
     return;
@@ -54,7 +57,7 @@ const Summary = () => {
         {titlesOfServices}
       </div>
       <div className={style.blockOfInformation}>
-        <h5>Barber:</h5>
+        <h5>Employee:</h5>
         <span>
           {selectedEmployee.firstname} &nbsp;
           {selectedEmployee.lastname}
@@ -65,6 +68,10 @@ const Summary = () => {
         <span>
           {month} {dayOfMonth}, ({getHour(start)} - {getHour(end)})
         </span>
+      </div>
+      <div className={style.blockOfInformation}>
+        <h5>Total price:</h5>
+        <span>{totalPrice} zł</span>
       </div>
     </div>
   );

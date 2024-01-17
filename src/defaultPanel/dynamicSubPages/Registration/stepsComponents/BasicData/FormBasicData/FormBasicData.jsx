@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { setData } from "../../../../../../data/reducers/registrationReducer";
-import { ReCAPTCHA } from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const FormBasicData = () => {
   const dispatch = useDispatch();
@@ -65,11 +65,12 @@ const FormBasicData = () => {
           className="btnBook"
           onClick={desplayVeryfication}
         />
-        <ReCAPTCHA
-          sitekey="6Ldx_1MpAAAAAICoyhuEgTNU7-nICGtvPQcIZfBn"
-          onChange={onChange}
-        />
+        {/*sitekey="6Ldx_1MpAAAAAICoyhuEgTNU7-nICGtvPQcIZfBn"*/}
       </form>
+      <ReCAPTCHA
+        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+        onChange={onChange}
+      />
     </div>
   );
 };

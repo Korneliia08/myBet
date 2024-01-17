@@ -56,6 +56,40 @@ const stateOfPageReducer = createSlice({
             "We employ only highly qualified barbers who are not just professionals, but also enjoy maintaining the atmosphere of a classic barbershop.",
         },
       },
+      registration: {
+        steps: {
+          chooseAemployee: {
+            title: "Choose a barber",
+            description:
+              "Barbershop offers professional services of certified barbers with years of experience. On this page you can choose a preferred barber in a few clicks.",
+          },
+          chooseAservice: {
+            title: "Choose a service",
+            description:
+              "Barbershop offers professional services of certified barbers with years of experience. On this page you can choose a preferred barber in a few clicks.",
+          },
+          chooseAdate: {
+            title: "Choose a date",
+            description:
+              "Feel free to use our services! We are open to scheduling an appointment at a convenient time for you. Choose a date that suits your preferences, and we will do our best to accommodate your schedule.",
+          },
+          basicData: {
+            title: "Enter basic data",
+            description:
+              "Feel free to use our services! We are open to scheduling an appointment at a convenient time for you. Choose a date that suits your preferences, and we will do our best to accommodate your schedule.",
+          },
+          veryfication: {
+            title: "Veryfication",
+            description:
+              "Feel free to use our services! We are open to scheduling an appointment at a convenient time for you. Choose a date that suits your preferences, and we will do our best to accommodate your schedule.",
+          },
+          summary: {
+            title: "It is all",
+            description:
+              "Feel free to use our services! We are open to scheduling an appointment at a convenient time for you. Choose a date that suits your preferences, and we will do our best to accommodate your schedule.",
+          },
+        },
+      },
       getInTouch: {
         backgroundImage: "",
         title: "Get in touch",
