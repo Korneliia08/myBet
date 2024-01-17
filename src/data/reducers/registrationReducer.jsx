@@ -12,6 +12,7 @@ const registrationReducer = createSlice({
     dataOfUser: {
       name: "",
       surname: "",
+      prefixOfPhone: "",
       numberOfPhone: "",
       email: "",
     },
