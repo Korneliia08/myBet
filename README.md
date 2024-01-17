@@ -8,3 +8,4 @@
 * [font-awesome](https://fontawesome.com)
 * [aos](https://www.npmjs.com/package/aos)
 * [sass](https://www.npmjs.com/package/sass)
+* [captcha](https://www.npmjs.com/package/react-google-recaptcha)
