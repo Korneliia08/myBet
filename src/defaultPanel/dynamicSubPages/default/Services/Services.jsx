@@ -10,7 +10,7 @@ const Services = () => {
   ));
   const data = useSelector((state) => state.stateOfPage.stateOfPage.services);
   return (
-    <section className={style.container}>
+    <section className={style.container} id="sectionServices">
       <div className={style.blockForTitle}>
         <h2 className="mainTitle">{data.title}</h2>
         <Moustache />

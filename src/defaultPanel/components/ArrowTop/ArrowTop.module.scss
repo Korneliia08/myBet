@@ -1,6 +1,24 @@
 .container {
-  background-color: #e82323;
-  position: absolute;
-  bottom: 650px;
-  right: 45px;
+  background-color: #1A1A1A;
+  position: fixed;
+  bottom: -50px;
+  right: 40px;
+  z-index: 200;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px inset #0e0e0e;
+  transition: background-color 500ms, bottom 1500ms;
+
+  .arrowTop {
+    color: white;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(49, 49, 49);
+  }
+}
+
+.showScroll {
+  bottom: 50px;
 }

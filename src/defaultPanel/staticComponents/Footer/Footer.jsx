@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 const Footer = () => {
   const data = useSelector((state) => state.stateOfPage.stateOfPage.footer);
   return (
-    <footer>
+    <footer id="footer">
       <div className={style.topPartFooter}>
         <Describe />
         <OpeningHours />

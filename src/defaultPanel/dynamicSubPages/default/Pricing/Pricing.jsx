@@ -13,7 +13,7 @@ const Pricing = () => {
   }
 
   return (
-    <section className={style.sectionPricing}>
+    <section className={style.sectionPricing} id="sectionPricing">
       <div className={style.blockForTitle}>
         <h2 className="mainTitle">{data.title}</h2>
         <Moustache />

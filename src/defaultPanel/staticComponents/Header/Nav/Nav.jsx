@@ -22,11 +22,15 @@ const Nav = () => {
             <HashLink smooth to="/#sectionEmployees">
               employees
             </HashLink>
-            <Link to={"/"}>about us</Link>
-            <Link to={"/"}>services</Link>
-            <Link to={"/"}>pricing</Link>
-            <Link to={"/"}>contact</Link>
-            <Link to={"/rgdev"}>map</Link>
+            <HashLink smooth to={"/#sectionAboutUs"}>
+              about us
+            </HashLink>
+            <HashLink smooth to={"/#sectionServices"}>
+              services
+            </HashLink>
+            <HashLink to={"/#sectionPricing"}>pricing</HashLink>
+            <HashLink to={"/#footer"}>contact</HashLink>
+            <HashLink to={"/#footer"}>map</HashLink>
           </div>
           <div className={style.smallContainer}>
             <FontAwesomeIcon icon={faBars} className={style.burger} />

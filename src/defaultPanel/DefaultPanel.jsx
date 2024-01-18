@@ -7,6 +7,7 @@ import { setServices } from "../data/reducers/serviceReducer";
 import { useDispatch } from "react-redux";
 import { setEmployees } from "../data/reducers/employeeReducer";
 import { setState } from "../data/reducers/stateOfPageReducer";
+import ArrowTop from "./components/ArrowTop/ArrowTop";
 
 const DefaultPanel = () => {
   const dispatch = useDispatch();
@@ -32,6 +33,7 @@ const DefaultPanel = () => {
     <div className="flexibleBlock">
       <Header />
       <Outlet />
+      <ArrowTop />
       <Footer />
     </div>
   );

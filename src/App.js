@@ -22,6 +22,7 @@ import { Provider } from "react-redux";
 import store from "./data/store";
 
 function App() {
+  // const router = createHashRouter(
   const router = createBrowserRouter(
     [
       {
