@@ -24,6 +24,9 @@ const ArrowTop = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", getPosition);
+    return () => {
+      window.removeEventListener("scroll", getPosition);
+    };
   }, []);
   return (
     <div
