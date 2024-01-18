@@ -9,6 +9,10 @@
   align-items: center;
   box-shadow: 0px 0px 20px 1px inset rgba(200, 201, 201, 0.82);
 
+  &.selectedDay {
+    background-color: #1da1f2;
+  }
+
   &:focus {
     background-color: #1da1f2;
   }
@@ -29,3 +33,4 @@
     letter-spacing: 2px;
   }
 }
+
