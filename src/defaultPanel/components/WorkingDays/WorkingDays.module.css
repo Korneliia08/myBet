@@ -3,11 +3,6 @@
   column-gap: 2px;
   margin-bottom: 10px;
 }
-@media (max-width: 1000px) {
-  .containerAllDays {
-    margin-bottom: 0px;
-  }
-}
 .containerAllDays span {
   display: block;
   padding: 2px 4px;

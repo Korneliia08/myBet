@@ -1,5 +1,5 @@
 .blockInformationAboutEmployee {
-  padding: 60px 10px;
+  padding: 40px 10px;
   background-color: #F5F8F9;
   display: flex;
   flex-direction: column;
@@ -15,10 +15,34 @@
   box-shadow: 0px 0px 8px 1px #8a8a8a;
   margin-bottom: 10px;
 }
+@media (max-width: 900px) {
+  .blockInformationAboutEmployee .blockForImg {
+    width: 153px;
+    height: 153px;
+  }
+}
+@media (max-width: 500px) {
+  .blockInformationAboutEmployee .blockForImg {
+    width: 130px;
+    height: 130px;
+  }
+}
 .blockInformationAboutEmployee .blockForImg .image {
   width: 180px;
   height: 180px;
   border-radius: 100%;
+}
+@media (max-width: 900px) {
+  .blockInformationAboutEmployee .blockForImg .image {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .blockInformationAboutEmployee .blockForImg .image {
+    width: 133px;
+    height: 133px;
+  }
 }
 .blockInformationAboutEmployee .blockForContact {
   min-width: 25%;
@@ -28,6 +52,12 @@
   flex-direction: column;
   row-gap: 5px;
   box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  .blockInformationAboutEmployee .blockForContact {
+    padding: 10px 5px;
+    row-gap: 2px;
+  }
 }
 .blockInformationAboutEmployee .blockForContact h4 {
   margin-bottom: 5px;
@@ -40,7 +70,7 @@
 }
 @media (max-width: 800px) {
   .blockInformationAboutEmployee .blockForContact h4 {
-    font-size: 16px;
+    font-size: 14px;
     width: 70%;
   }
 }
@@ -67,6 +97,12 @@
   column-gap: 10px;
   margin-bottom: 15px;
 }
+@media (max-width: 800px) {
+  .blockInformationAboutEmployee .blockForBtns {
+    column-gap: 5px;
+    margin-bottom: 10px;
+  }
+}
 .blockInformationAboutEmployee .blockForBtns .btnWrite, .blockInformationAboutEmployee .blockForBtns .btnBook {
   background-color: rgba(70, 109, 192, 0.85);
   color: white;
@@ -84,14 +120,14 @@
 }
 @media (max-width: 800px) {
   .blockInformationAboutEmployee .blockForBtns .btnWrite, .blockInformationAboutEmployee .blockForBtns .btnBook {
-    padding: 5px 20px;
-    font-size: 12px;
+    padding: 4px 12px;
+    font-size: 10px;
   }
 }
 @media (max-width: 350px) {
   .blockInformationAboutEmployee .blockForBtns .btnWrite, .blockInformationAboutEmployee .blockForBtns .btnBook {
-    padding: 5px 10px;
-    font-size: 10px;
+    padding: 4px 10px;
+    font-size: 8px;
   }
 }
 

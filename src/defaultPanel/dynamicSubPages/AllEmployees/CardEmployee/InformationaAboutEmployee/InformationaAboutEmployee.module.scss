@@ -1,5 +1,5 @@
 .blockInformationAboutEmployee {
-  padding: 60px 10px;
+  padding: 40px 10px;
   background-color: #F5F8F9;
   display: flex;
   flex-direction: column;
@@ -14,11 +14,27 @@
     border-radius: 100%;
     box-shadow: 0px 0px 8px 1px #8a8a8a;
     margin-bottom: 10px;
+    @media (max-width: 900px) {
+      width: 153px;
+      height: 153px;
+    }
+    @media (max-width: 500px) {
+      width: 130px;
+      height: 130px;
+    }
 
     .image {
       width: 180px;
       height: 180px;
       border-radius: 100%;
+      @media (max-width: 900px) {
+        width: 150px;
+        height: 150px;
+      }
+      @media (max-width: 500px) {
+        width: 133px;
+        height: 133px;
+      }
     }
   }
 
@@ -30,6 +46,10 @@
     flex-direction: column;
     row-gap: 5px;
     box-sizing: border-box;
+    @media (max-width: 800px) {
+      padding: 10px 5px;
+      row-gap: 2px;
+    }
 
     h4 {
       margin-bottom: 5px;
@@ -40,7 +60,7 @@
       width: 100%;
       text-align: left;
       @media (max-width: 800px) {
-        font-size: 16px;
+        font-size: 14px;
         width: 70%;
       }
     }
@@ -69,6 +89,10 @@
     display: flex;
     column-gap: 10px;
     margin-bottom: 15px;
+    @media (max-width: 800px) {
+      column-gap: 5px;
+      margin-bottom: 10px;
+    }
 
     .btnWrite, .btnBook {
       background-color: rgba(70, 109, 192, 0.85);
@@ -87,12 +111,12 @@
       }
 
       @media (max-width: 800px) {
-        padding: 5px 20px;
-        font-size: 12px;
+        padding: 4px 12px;
+        font-size: 10px;
       }
       @media (max-width: 350px) {
-        padding: 5px 10px;
-        font-size: 10px;
+        padding: 4px 10px;
+        font-size: 8px;
       }
     }
   }
