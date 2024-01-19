@@ -2,6 +2,9 @@
   display: flex;
   column-gap: 2px;
   margin-bottom: 10px;
+  @media (max-width: 1000px) {
+    margin-bottom: 0px;
+  }
 
   span {
     display: block;
@@ -11,6 +14,13 @@
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 1px;
+    @media (max-width: 1000px) {
+      font-size: 10px;
+      letter-spacing: 0;
+    }
+    @media (max-width: 800px) {
+      font-size: 8px;
+    }
   }
 
   .noActive {

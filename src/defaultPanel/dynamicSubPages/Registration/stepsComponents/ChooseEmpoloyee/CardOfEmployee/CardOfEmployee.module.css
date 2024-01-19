@@ -19,13 +19,23 @@
   height: 140px;
   z-index: 25;
 }
+@media (max-width: 1000px) {
+  .container .blockForImage img {
+    height: 120px;
+  }
+}
 .container .blockForImage .background {
   width: 100%;
-  height: 180px;
+  height: 140px;
   z-index: 20;
   position: absolute;
   top: 0;
   filter: blur(30px);
+}
+@media (max-width: 1000px) {
+  .container .blockForImage .background {
+    height: 120px;
+  }
 }
 .container .rightPart {
   display: flex;
@@ -33,7 +43,12 @@
   align-items: center;
   flex-direction: column;
   width: 55%;
-  row-gap: 20px;
+  row-gap: 15px;
+}
+@media (max-width: 1000px) {
+  .container .rightPart {
+    row-gap: 10px;
+  }
 }
 .container .rightPart h5 {
   font-weight: 400;
@@ -52,6 +67,13 @@
   letter-spacing: 1px;
   text-shadow: 0px 1px 1px gray;
   transition: all 400ms ease;
+}
+@media (max-width: 1000px) {
+  .container .rightPart button {
+    padding: 5px 20px;
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
 }
 .container .rightPart button:hover {
   cursor: pointer;
