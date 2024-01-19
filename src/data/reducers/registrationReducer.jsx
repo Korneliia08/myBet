@@ -16,6 +16,7 @@ const registrationReducer = createSlice({
       numberOfPhone: "",
       email: "",
     },
+    veryficationId: "",
     availableDates: [],
     selectedDay: "",
     totalPrice: 0,

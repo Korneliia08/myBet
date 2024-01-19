@@ -22,13 +22,16 @@
   display: flex;
   column-gap: 5px;
 }
-.container form .groupOfInputs input, .container form .groupOfInputs select {
+.container form .groupOfInputs .inputStyle, .container form .groupOfInputs .selectStyle {
   background-color: rgba(211, 211, 211, 0.91);
   padding: 4px 8px;
   font-size: 18px;
   color: #2d2d2d;
   border: 1px solid gray;
   border-radius: 5px;
+}
+.container form.invalidStyle input:invalid, .container form.invalidStyle select:invalid {
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=FormBasicData.module.css.map */
