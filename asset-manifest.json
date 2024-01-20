@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myBet/static/css/main.570cdff9.css",
-    "main.js": "/myBet/static/js/main.57f3805e.js",
+    "main.css": "/myBet/static/css/main.c0de580e.css",
+    "main.js": "/myBet/static/js/main.a5963971.js",
     "static/media/backgroundWriteToUs.jpg": "/myBet/static/media/backgroundWriteToUs.c73f59402d2a568bf4a6.jpg",
     "static/media/barber.jpg": "/myBet/static/media/barber.ca6299566e4a0db05f77.jpg",
     "static/media/men1.jpeg": "/myBet/static/media/men1.0f249b4a0a364ab3c48e.jpeg",
@@ -9,13 +9,17 @@
     "static/media/men2.jpeg": "/myBet/static/media/men2.a34252009a8b3fbfb236.jpeg",
     "static/media/backgroundBlurEmployees.jpeg": "/myBet/static/media/backgroundBlurEmployees.a12c0d5c653448ef2ef3.jpeg",
     "static/media/aboutUs.jpg": "/myBet/static/media/aboutUs.001b4bb08e1547904c3f.jpg",
+    "static/media/slick.svg": "/myBet/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/myBet/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/myBet/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/mustache.svg": "/myBet/static/media/mustache.f7d9fa85b96af8ca9daff873f5ddcf3e.svg",
+    "static/media/slick.woff": "/myBet/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/myBet/index.html",
-    "main.570cdff9.css.map": "/myBet/static/css/main.570cdff9.css.map",
-    "main.57f3805e.js.map": "/myBet/static/js/main.57f3805e.js.map"
+    "main.c0de580e.css.map": "/myBet/static/css/main.c0de580e.css.map",
+    "main.a5963971.js.map": "/myBet/static/js/main.a5963971.js.map"
   },
   "entrypoints": [
-    "static/css/main.570cdff9.css",
-    "static/js/main.57f3805e.js"
+    "static/css/main.c0de580e.css",
+    "static/js/main.a5963971.js"
   ]
 }
