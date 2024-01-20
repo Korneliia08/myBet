@@ -4,26 +4,26 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  width: 80%;
 }
 .containerForContent .content {
   width: 450px;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.2;
   font-size: 19px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 750px) {
   .containerForContent .content {
     width: 350px;
-    line-height: 1.2;
-    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.1;
   }
 }
 @media (max-width: 550px) {
   .containerForContent .content {
     width: 80%;
-    font-size: 14px;
   }
 }
 

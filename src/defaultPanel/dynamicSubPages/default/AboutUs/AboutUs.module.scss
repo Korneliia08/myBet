@@ -1,9 +1,8 @@
 .section {
   background-color: rgba(213, 213, 213, 0.84);
   display: flex;
-  column-gap: 55px;
   justify-content: flex-start;
-  padding: 70px 20px 70px 0px;
+  padding: 50px 20px 40px 0px;
   box-sizing: border-box;
 
   @media (max-width: 1480px) {

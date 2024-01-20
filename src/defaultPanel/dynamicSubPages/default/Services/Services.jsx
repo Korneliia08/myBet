@@ -7,19 +7,42 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Services = () => {
+  const allServices = useSelector((state) => state.services.services);
+  const serviceCard = allServices.map((service) => (
+    <ServiceCard data={service} />
+  ));
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: serviceCard.length > 4,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          infinite: serviceCard.length > 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          infinite: serviceCard.length > 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          infinite: serviceCard.length > 1,
+        },
+      },
+    ],
   };
-  const allServices = useSelector((state) => state.services.services);
-  const serviceCard = allServices.map((service) => (
-    <ServiceCard data={service} />
-  ));
   const data = useSelector((state) => state.stateOfPage.stateOfPage.services);
   return (
     <section className={style.container} id="sectionServices">
