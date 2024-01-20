@@ -6,7 +6,24 @@ import { useSelector } from "react-redux";
 
 const Pricing = () => {
   const navigate = useNavigate();
-  const data = useSelector((state) => state.stateOfPage.stateOfPage.pricing);
+  const dataDefault = useSelector(
+    (state) => state.stateOfPage.stateOfPage.pricing,
+  );
+  const data = useSelector((state) => state.services.services);
+  const categories = [];
+  data.forEach((service) => {
+    if (categories.indexOf(service.category) === -1) {
+      categories.push(service.category);
+    }
+  });
+
+  const allCategories = categories.map((category) => {
+    return (
+      <CategoryService
+        data={data.filter((service) => service.category === category)}
+      />
+    );
+  });
 
   function display() {
     navigate("/pricing");
@@ -15,14 +32,10 @@ const Pricing = () => {
   return (
     <section className={style.sectionPricing} id="sectionPricing">
       <div className={style.blockForTitle}>
-        <h2 className="mainTitle">{data.title}</h2>
+        <h2 className="mainTitle">{dataDefault.title}</h2>
         <Moustache />
       </div>
-      <div className={style.containerForCategories}>
-        <CategoryService />
-        <CategoryService />
-        <CategoryService />
-      </div>
+      <div className={style.containerForCategories}>{allCategories}</div>
       <button onClick={display} className="pinkBtn">
         Show more
       </button>

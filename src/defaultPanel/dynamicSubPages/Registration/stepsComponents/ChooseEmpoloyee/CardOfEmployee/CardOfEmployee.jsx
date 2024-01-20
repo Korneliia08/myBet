@@ -14,6 +14,8 @@ const CardOfEmployee = (props) => {
     dispatch(
       setData({
         idOfEmployee: data.id,
+        idOfServices: [],
+        totalPrice: "0",
       }),
     );
   }

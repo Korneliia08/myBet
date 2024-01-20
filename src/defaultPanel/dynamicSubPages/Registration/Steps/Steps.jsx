@@ -22,7 +22,7 @@ const Steps = () => {
         setStep(4);
         break;
       case "/registration/veryfication":
-        setStep("prawie juz");
+        setStep(5);
         break;
       // case "/registration/summary":
       //     setStepFun(1);
@@ -38,7 +38,7 @@ const Steps = () => {
   return (
     <div className={style.container}>
       <HomeIcon />
-      <h3>{step} of 4</h3>
+      <h3>{step} of 5</h3>
       <span className="mainTitle">steps</span>
     </div>
   );

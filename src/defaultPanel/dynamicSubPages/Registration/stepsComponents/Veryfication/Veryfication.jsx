@@ -22,13 +22,15 @@ const Veryfication = () => {
     const veryficationCode = inputCode.current.value;
     event.preventDefault();
     axios
-      .post(process.env.REACT_APP_LINK_TO_API + "/visits/veryfication", {
+      .post(process.env.REACT_APP_LINK_TO_API + "/visit/veryfication", {
         veryficationId,
         veryficationCode,
       })
-      .then((resp) => console.log(resp))
+      .then((resp) => {
+        console.log(resp);
+        navigate("/registration/summary");
+      })
       .catch((error) => console.log(error));
-    navigate("/registration/summary");
   }
 
   return (
