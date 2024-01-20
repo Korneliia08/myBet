@@ -1,9 +1,9 @@
 .serviceCard {
-  padding: 40px 10px;
+  padding: 30px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 10px;
+  row-gap: 5px;
   box-sizing: border-box;
 }
 @media (max-width: 1110px) {
@@ -20,7 +20,7 @@
   text-align: center;
   color: #1e1e1e;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 19px;
   letter-spacing: 1px;
   text-shadow: 0px 0px 1px #363636;
 }
@@ -28,7 +28,7 @@
   text-align: center;
   color: #464646;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
 }
 @media (max-width: 1110px) {
   .serviceCard .describe {
@@ -42,16 +42,10 @@
 }
 .serviceCard .blockForImage {
   background-color: rgba(182, 181, 181, 0.77);
-  width: 243px;
-  height: 244px;
+  width: 180px;
+  height: 180px;
   border-radius: 100%;
   box-shadow: 0px 0px 5px 1px #5b5b5b;
-}
-@media (max-width: 700px) {
-  .serviceCard .blockForImage {
-    width: 204px;
-    height: 204px;
-  }
 }
 @media (max-width: 400px) {
   .serviceCard .blockForImage {
@@ -60,16 +54,10 @@
   }
 }
 .serviceCard .blockForImage .imageService {
-  width: 240px;
+  width: 178px;
   border-radius: 100%;
-  height: 240px;
+  height: 178px;
   transition: 500ms;
-}
-@media (max-width: 700px) {
-  .serviceCard .blockForImage .imageService {
-    width: 200px;
-    height: 200px;
-  }
 }
 @media (max-width: 400px) {
   .serviceCard .blockForImage .imageService {
