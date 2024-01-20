@@ -143,6 +143,14 @@
           cursor: pointer;
         }
       }
+
+      &.invalidStyle {
+        input, select, textarea {
+          &:invalid {
+            border: 2px solid #e82323;
+          }
+        }
+      }
     }
   }
 }

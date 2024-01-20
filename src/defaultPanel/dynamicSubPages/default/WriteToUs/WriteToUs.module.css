@@ -165,5 +165,8 @@
   background-color: #be3b3b;
   cursor: pointer;
 }
+.container .blockForForm form.invalidStyle input:invalid, .container .blockForForm form.invalidStyle select:invalid, .container .blockForForm form.invalidStyle textarea:invalid {
+  border: 2px solid #e82323;
+}
 
 /*# sourceMappingURL=WriteToUs.module.css.map */
