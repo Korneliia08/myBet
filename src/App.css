@@ -99,6 +99,10 @@
   }
 }
 
+.slick-arrow:before {
+  color: #EF5151 !important;
+}
+
 .iconMoney {
   color: rgba(117, 140, 47, 0.83);
 }

@@ -10,3 +10,4 @@
 * [sass](https://www.npmjs.com/package/sass)
 * [captcha](https://www.npmjs.com/package/react-google-recaptcha)
 * [react-router-hash-link](https://www.npmjs.com/package/react-router-hash-link)
+* [react-slick](https://www.npmjs.com/package/react-slick)
