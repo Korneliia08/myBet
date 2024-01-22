@@ -8,8 +8,8 @@ import Slider from "react-slick";
 
 const Services = () => {
   const allServices = useSelector((state) => state.services.services);
-  const serviceCard = allServices.map((service) => (
-    <ServiceCard data={service} />
+  const serviceCard = allServices.map((service, index) => (
+    <ServiceCard data={service} key={index} />
   ));
   var settings = {
     dots: true,

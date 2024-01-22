@@ -17,10 +17,11 @@ const Pricing = () => {
     }
   });
 
-  const allCategories = categories.map((category) => {
+  const allCategories = categories.map((category, index) => {
     return (
       <CategoryService
         data={data.filter((service) => service.category === category)}
+        key={index}
       />
     );
   });

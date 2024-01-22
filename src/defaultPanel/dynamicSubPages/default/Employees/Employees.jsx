@@ -8,7 +8,9 @@ const Employees = () => {
   const allEmployees = useSelector((state) => state.employees.employees);
   const cardEmployee = allEmployees
     .slice(0, 3)
-    .map((employeeCard) => <CardEmployee data={employeeCard} />);
+    .map((employeeCard, index) => (
+      <CardEmployee data={employeeCard} key={index} />
+    ));
 
   const data = useSelector((state) => state.stateOfPage.stateOfPage.employees);
 

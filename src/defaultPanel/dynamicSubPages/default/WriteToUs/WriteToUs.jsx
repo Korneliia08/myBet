@@ -30,11 +30,7 @@ const WriteToUs = () => {
 
   return (
     <section className={style.container}>
-      <img
-        src={backgroundImage}
-        alt="image of backgorund"
-        className={style.image}
-      />
+      <img src={backgroundImage} alt="backgorund" className={style.image} />
       <div className={style.blockForForm}>
         <h2 className="mainTitle">{data.title}</h2>
         <Moustache />

@@ -10,8 +10,8 @@ const ChooseEmpoloyee = () => {
   );
   let { idOfEmployee } = useParams();
   const employees = useSelector((state) => state.employees.employees);
-  const cardOfEmployee = employees.map((employee) => (
-    <CardOfEmployee data={employee} idOfEmployee={idOfEmployee} />
+  const cardOfEmployee = employees.map((employee, index) => (
+    <CardOfEmployee data={employee} idOfEmployee={idOfEmployee} key={index} />
   ));
   return (
     <div className="containerInRegistration">

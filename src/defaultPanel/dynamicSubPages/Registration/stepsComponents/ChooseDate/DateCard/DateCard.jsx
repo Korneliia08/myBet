@@ -45,7 +45,7 @@ const DateCard = () => {
           new Date(selectedDate).getFullYear()
       );
     })
-    .map((date) => <Hour data={date} />);
+    .map((date, index) => <Hour data={date} key={index} />);
 
   useEffect(() => {
     createDays();

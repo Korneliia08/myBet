@@ -102,6 +102,9 @@ const FormBasicData = () => {
               ref={inputNumberOfPhone}
               required={true}
               className={style.inputStyle}
+              maxLength={9}
+              minLength={9}
+              pattern="[0-9]{9,9}"
             />
           </div>
           <input
@@ -124,8 +127,11 @@ const FormBasicData = () => {
         sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
         onChange={onChangeReCaptcha}
       />
-      <span style={{ display: isReCaptchaClick ? "block" : "none" }}>
-        recaptcha
+      <span
+        style={{ opacity: isReCaptchaClick ? "1" : "0" }}
+        className={style.spanConfirm}
+      >
+        Confirm that you are not a robot!
       </span>
     </div>
   );

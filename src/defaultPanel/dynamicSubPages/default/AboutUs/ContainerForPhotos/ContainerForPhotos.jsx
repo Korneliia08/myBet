@@ -7,13 +7,13 @@ const ContainerForPhotos = (props) => {
   return (
     <div className={style.containerForImages}>
       <div className={style.blockForImage}>
-        <img src={img1} alt="image of man" />
+        <img src={img1} alt="employee" />
       </div>
       <div className={style.blockForImage}>
-        <img src={img2} alt="image of man" />
+        <img src={img2} alt="employee" />
       </div>
       <div className={style.blockForImage}>
-        <img src={img3} alt="image of man" />
+        <img src={img3} alt="employee" />
       </div>
     </div>
   );

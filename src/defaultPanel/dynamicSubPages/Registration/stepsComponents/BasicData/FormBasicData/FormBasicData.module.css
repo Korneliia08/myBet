@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  row-gap: 10px;
+  row-gap: 5px;
 }
 .container form {
   width: 100%;
@@ -32,6 +32,10 @@
 }
 .container form.invalidStyle input:invalid, .container form.invalidStyle select:invalid {
   border: 1px solid red;
+}
+
+.spanConfirm {
+  color: red;
 }
 
 /*# sourceMappingURL=FormBasicData.module.css.map */

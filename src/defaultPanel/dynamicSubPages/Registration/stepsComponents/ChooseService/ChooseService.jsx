@@ -36,7 +36,8 @@ const ChooseService = () => {
       .then((resp) => {
         navigate("/registration/date");
         dispatch(setData({ availableDates: resp.data.value }));
-      });
+      })
+      .catch((err) => console.log(err));
   }
 
   return (

@@ -26,10 +26,7 @@ const CardEmployee = (props) => {
           data.profilImageId ? "" : style.darker
         }`}
       >
-        <img
-          src={image}
-          alt={`image of employee ${data.firstname} ${data.lastname}`}
-        />
+        <img src={image} alt={`${data.firstname} ${data.lastname}`} />
         <img src={image} className={style.background} />
       </div>
       <div className={style.containerForInformation}>

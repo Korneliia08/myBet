@@ -24,10 +24,7 @@ const CardEmployee = (props) => {
   return (
     <div className={style.cardOfEmployee} onClick={displayInfoAboutEmployee}>
       <div className={style.containerForImage}>
-        <img
-          src={image}
-          alt={`image of employee ${data.firstName} ${data.lastName}`}
-        />
+        <img src={image} alt={`${data.firstName} ${data.lastName}`} />
         <img src={image} alt="" />
       </div>
       <div className={style.containerForInformation}>

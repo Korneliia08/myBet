@@ -7,8 +7,8 @@ import { useSelector } from "react-redux";
 const AllEmployees = () => {
   const allEmployees = useSelector((state) => state.employees.employees);
   const data = useSelector((state) => state.stateOfPage.stateOfPage.employees);
-  const cardEmployee = allEmployees.map((employee) => (
-    <CardEmployee data={employee} />
+  const cardEmployee = allEmployees.map((employee, index) => (
+    <CardEmployee data={employee} key={index} />
   ));
   return (
     <section className="containerSubPage">

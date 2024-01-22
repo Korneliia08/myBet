@@ -44,7 +44,7 @@ const InformationAboutEmployee = () => {
       <div className={style.blockForImg}>
         <img
           src={imgEmployee}
-          alt="image of employee"
+          alt={`${currentEmployee.firstname} ${currentEmployee.lastname}`}
           className={style.image}
         />
       </div>

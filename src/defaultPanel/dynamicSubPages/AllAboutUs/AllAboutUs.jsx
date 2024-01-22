@@ -10,7 +10,7 @@ const AllAboutUs = () => {
     <section className="containerSubPage">
       <h2 className="mainTitle">{data.information.title}</h2>
       <Moustache />
-      <img src={image} alt="image about us" className={style.image} />
+      <img src={image} alt="about us" className={style.image} />
       <p
         className={style.content}
         dangerouslySetInnerHTML={{ __html: data.information.mainDescription }}

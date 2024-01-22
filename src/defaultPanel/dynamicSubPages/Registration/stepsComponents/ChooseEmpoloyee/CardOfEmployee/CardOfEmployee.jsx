@@ -9,7 +9,6 @@ const CardOfEmployee = (props) => {
   const data = props.data;
   const idOfEmployee = props.idOfEmployee;
   const dispatch = useDispatch();
-  console.log(idOfEmployee, data.id);
 
   function desplayChooseAService() {
     navigate("/registration/service");
@@ -31,11 +30,11 @@ const CardOfEmployee = (props) => {
       <div className={style.blockForImage}>
         <img
           src={process.env.REACT_APP_IMAGE_LINK + data.profilImageId}
-          alt="employee"
+          alt={`${data.firstname} ${data.lastname}`}
         />
         <img
           src={process.env.REACT_APP_IMAGE_LINK + data.profilImageId}
-          alt="employee"
+          alt=""
           className={style.background}
         />
       </div>

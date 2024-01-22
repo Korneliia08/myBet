@@ -8,8 +8,6 @@ const ChooseDate = () => {
   const dataDefault = useSelector(
     (state) => state.stateOfPage.stateOfPage.registration.steps.chooseAdate,
   );
-  const data = useSelector((state) => state.registration);
-  console.log(data);
   return (
     <div className="containerInRegistration">
       <Back />

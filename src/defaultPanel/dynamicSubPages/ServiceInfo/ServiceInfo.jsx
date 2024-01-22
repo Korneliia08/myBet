@@ -34,7 +34,7 @@ const ServiceInfo = () => {
           <div className={style.imgAndTitle}>
             <img
               src={`https://api.fenek.tech/files/image/${imageId}`}
-              alt={`image of ${currentService.title} service`}
+              alt={`service:${currentService.title}`}
             />
             <div>
               <h4>{currentService.title}</h4>

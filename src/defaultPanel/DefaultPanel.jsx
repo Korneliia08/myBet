@@ -23,11 +23,11 @@ const DefaultPanel = () => {
         dispatch(setEmployees(response.data.value));
       },
     );
-    axios(
-      "https://api.fenek.tech/registerPage/secondTemplate/defaultData",
-    ).then((response) => {
-      dispatch(setState(response.data.value));
-    });
+    axios("https://api.fenek.tech/registerPage/secondTemplate/defaultData")
+      .then((response) => {
+        dispatch(setState(response.data.value));
+      })
+      .catch((err) => console.log(err));
   }, []);
   return (
     <div className="flexibleBlock">

@@ -27,7 +27,6 @@ const Veryfication = () => {
         veryficationCode,
       })
       .then((resp) => {
-        console.log(resp);
         navigate("/registration/summary");
       })
       .catch((error) => console.log(error));
