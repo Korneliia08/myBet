@@ -58,12 +58,13 @@
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
-        transition: 700ms ease;
+        transition: 500ms ease;
         text-shadow: 0px 0px 1px black;
         text-align: center;
+        font-size: 13px;
 
         &:hover {
-          transform: perspective(1px) scale(1.05);
+          color: #7a8aee;
         }
 
         @media (max-width: 1300px) {
@@ -89,8 +90,9 @@
   }
 }
 
-.writeToUs {
+body .writeToUs {
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 7px 15px;
   margin-top: 0;
+  font-size: 12px;
 }

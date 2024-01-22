@@ -7,6 +7,7 @@ import axios from "axios";
 
 const WriteToUs = () => {
   const data = useSelector((state) => state.stateOfPage.stateOfPage.getInTouch);
+  const employees = useSelector((state) => state.employees.employees);
   const [invalidStyle, setInvalidStyle] = useState(false);
   const inputName = useRef();
   const inputSurname = useRef();
@@ -15,7 +16,8 @@ const WriteToUs = () => {
   const inputNumberOfPhone = useRef();
   const message = useRef();
 
-  function sendDataToApi() {
+  function sendDataToApi(event) {
+    event.preventDefault();
     axios
       .post(process.env.REACT_APP_LINK_TO_API + "/registerPage/writeToUs", {
         name: inputName.current.value,
@@ -24,12 +26,12 @@ const WriteToUs = () => {
         message: message.current.value,
         numberOfPhone: `${selectPrefixOfPhone.current.value}-${inputNumberOfPhone.current.value}`,
       })
-      .then((resp) => console.log(resp))
-      .catch((error) => console.log(error));
+      .then((resp) => console.log("udalo sie"))
+      .catch((error) => console.log("nie udalo sie"));
   }
 
   return (
-    <section className={style.container}>
+    <section className={style.container} id="sectionWriteToUs">
       <img src={backgroundImage} alt="backgorund" className={style.image} />
       <div className={style.blockForForm}>
         <h2 className="mainTitle">{data.title}</h2>
@@ -39,6 +41,27 @@ const WriteToUs = () => {
           className={invalidStyle ? style.invalidStyle : ""}
           onSubmit={sendDataToApi}
         >
+          <div className={style.groupe}>
+            <select required="true" ref={selectPrefixOfPhone}>
+              <option value="Bet" disabled={true}>
+                Choose who you want to send to
+              </option>
+              <option value="Bet">Bet</option>
+              <option value="Bet" disabled={true}>
+                Employees:
+              </option>
+              {employees.map((employee, index) => {
+                return (
+                  <option value={employee.id}>
+                    {employee.firstname} {employee.lastname}
+                  </option>
+                );
+              })}
+            </select>
+            <span className={style.chooseWhoSendTo}>
+              {/*Choose who you want to send to*/}
+            </span>
+          </div>
           <input
             type="text"
             placeholder="Name"
@@ -69,7 +92,7 @@ const WriteToUs = () => {
               ref={inputNumberOfPhone}
               maxLength={9}
               minLength={9}
-              pattern="[0,9]{9,9}"
+              pattern="[0-9]{9,9}"
             />
           </div>
           <textarea
