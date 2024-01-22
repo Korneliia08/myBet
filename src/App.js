@@ -42,7 +42,7 @@ function App() {
             element: <AllEmployees />,
           },
           {
-            path: "allEmployees/:id",
+            path: "employee/:id",
             element: <InformationAboutEmployee />,
           },
           {
@@ -58,7 +58,7 @@ function App() {
             element: <Registration />,
             children: [
               {
-                path: "employee",
+                path: "employee/:idOfEmployee?",
                 element: <ChooseEmpoloyee />,
               },
               {

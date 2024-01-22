@@ -7,7 +7,9 @@ import { setData } from "../../../../../../data/reducers/registrationReducer";
 const CardOfEmployee = (props) => {
   const navigate = useNavigate();
   const data = props.data;
+  const idOfEmployee = props.idOfEmployee;
   const dispatch = useDispatch();
+  console.log(idOfEmployee, data.id);
 
   function desplayChooseAService() {
     navigate("/registration/service");
@@ -21,7 +23,11 @@ const CardOfEmployee = (props) => {
   }
 
   return (
-    <div className={style.container}>
+    <div
+      className={`${style.container} ${
+        idOfEmployee === data.id.toString() ? style.selectedEmployee : ""
+      }`}
+    >
       <div className={style.blockForImage}>
         <img
           src={process.env.REACT_APP_IMAGE_LINK + data.profilImageId}

@@ -41,7 +41,7 @@ const ChooseService = () => {
 
   return (
     <div className="containerInRegistration">
-      <Back />
+      <Back toEmployees={true} />
       <h4 className="mainTitle">{dataDefault.title}</h4>
       <Moustache />
       <p

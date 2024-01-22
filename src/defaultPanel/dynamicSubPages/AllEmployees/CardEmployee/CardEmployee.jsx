@@ -11,7 +11,7 @@ const CardEmployee = (props) => {
   }`;
 
   function displayCurrentEmployee() {
-    navigate(`/allEmployees/${data.id}`);
+    navigate(`/employee/${data.id}`);
   }
 
   let description = data.description;

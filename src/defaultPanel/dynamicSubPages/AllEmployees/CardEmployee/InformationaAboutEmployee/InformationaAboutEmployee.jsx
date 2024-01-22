@@ -23,7 +23,7 @@ const InformationAboutEmployee = () => {
     process.env.REACT_APP_IMAGE_LINK + currentEmployee.profilImageId;
 
   function desplayRegistration() {
-    navigate("/registration");
+    navigate(`/registration/employee/${currentEmployee.id}`);
   }
 
   let description = currentEmployee.description;

@@ -6,6 +6,12 @@
   border-radius: 25px;
   justify-content: space-between;
 
+  &.selectedEmployee {
+    background-color: #a7d79bab;
+    border: 2px inset #8edd8ed6;
+    box-shadow: 0px 0px 2px 1px #046304;
+  }
+
   .blockForImage {
     background-color: black;
     width: 45%;
