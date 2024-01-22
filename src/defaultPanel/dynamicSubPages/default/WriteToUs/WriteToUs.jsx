@@ -67,6 +67,9 @@ const WriteToUs = () => {
               placeholder="Phone"
               required="true"
               ref={inputNumberOfPhone}
+              maxLength={9}
+              minLength={9}
+              pattern="[0,9]{9,9}"
             />
           </div>
           <textarea

@@ -3,9 +3,9 @@
   display: flex;
 }
 .container .image {
-  height: 40vw;
+  height: 35vw;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.8117647059);
-  border-radius: 15px;
+  border-radius: 0 15px 15px 0;
 }
 @media (max-width: 700px) {
   .container .image {
@@ -81,9 +81,9 @@
   column-gap: 2px;
 }
 .container .blockForForm form .groupe select {
-  padding: 10px 20px;
+  padding: 5px 15px;
   border-radius: 5px;
-  font-size: 19px;
+  font-size: 18px;
   background-color: transparent;
   border: 2px solid #868686;
   color: #9f0000;
@@ -107,10 +107,10 @@
   background-color: transparent;
   border: 2px solid #868686;
   border-radius: 5px;
-  color: black;
+  color: #282828;
   text-shadow: 0px 0px 1px black;
   font-size: 18px;
-  padding: 10px 20px;
+  padding: 5px 15px;
   box-sizing: border-box;
 }
 @media (max-width: 1100px) {
@@ -125,12 +125,12 @@
   }
 }
 .container .blockForForm form input {
-  padding: 10px 20px;
+  padding: 5px 15px;
   border-radius: 5px;
   font-size: 18px;
   background-color: transparent;
   border: 2px solid #868686;
-  color: black;
+  color: #282828;
   text-shadow: 0px 0px 1px black;
   box-sizing: border-box;
 }

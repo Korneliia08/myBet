@@ -1,11 +1,14 @@
 .container {
   background-color: #DCDCDC;
   display: flex;
+  $paddingInElementsOfForm: 5px 15px;
+  $fontSizeInElementOfForm: 18px;
+  $colorInElementsOfForm: #282828;
 
   .image {
-    height: 40vw;
+    height: 35vw;
     box-shadow: 1px 1px 4px 1px #000000cf;
-    border-radius: 15px;
+    border-radius: 0 15px 15px 0;
     @media (max-width: 700px) {
       height: 30vw;
     }
@@ -65,9 +68,9 @@
 
       .groupe {
         select {
-          padding: 10px 20px;
+          padding: $paddingInElementsOfForm;
           border-radius: 5px;
-          font-size: 19px;
+          font-size: $fontSizeInElementOfForm;
           background-color: transparent;
           border: 2px solid #868686;
           color: #9f0000;
@@ -92,10 +95,10 @@
         background-color: transparent;
         border: 2px solid #868686;
         border-radius: 5px;
-        color: black;
+        color: $colorInElementsOfForm;
         text-shadow: 0px 0px 1px black;
-        font-size: 18px;
-        padding: 10px 20px;
+        font-size: $fontSizeInElementOfForm;
+        padding: $paddingInElementsOfForm;
         box-sizing: border-box;
         @media (max-width: 1100px) {
           padding: 5px;
@@ -107,12 +110,12 @@
       }
 
       input {
-        padding: 10px 20px;
+        padding: $paddingInElementsOfForm;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: $fontSizeInElementOfForm;
         background-color: transparent;
         border: 2px solid #868686;
-        color: black;
+        color: $colorInElementsOfForm;
         text-shadow: 0px 0px 1px black;
         box-sizing: border-box;
         @media (max-width: 1100px) {
