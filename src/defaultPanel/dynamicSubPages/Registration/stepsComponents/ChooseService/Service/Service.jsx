@@ -8,6 +8,7 @@ import {
   deleteService,
 } from "../../../../../../data/reducers/registrationReducer";
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Service = (props) => {
   const data = props.data;
@@ -17,6 +18,7 @@ const Service = (props) => {
     (state) => state.registration.idOfServices,
   );
   const inputRef = useRef();
+  const navigate = useNavigate();
 
   function addToChoosedServices(event) {
     if (event.target.checked) {
@@ -26,6 +28,10 @@ const Service = (props) => {
       dispatch(deleteService(data.id));
       dispatch(counterTotalSum(-data.price));
     }
+  }
+
+  function desplayService() {
+    navigate(`/service/${data.id}`);
   }
 
   useEffect(() => {
@@ -42,6 +48,7 @@ const Service = (props) => {
         <FontAwesomeIcon
           icon={faInfo}
           className={`${style.icon} ${style.infoIcon}`}
+          onClick={desplayService}
         />
       </p>
       <span className={style.spanPrice}>

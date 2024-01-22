@@ -25,11 +25,11 @@ const CardOfEmployee = (props) => {
       <div className={style.blockForImage}>
         <img
           src={process.env.REACT_APP_IMAGE_LINK + data.profilImageId}
-          alt="image of employee"
+          alt="employee"
         />
         <img
           src={process.env.REACT_APP_IMAGE_LINK + data.profilImageId}
-          alt="image of employee"
+          alt="employee"
           className={style.background}
         />
       </div>
