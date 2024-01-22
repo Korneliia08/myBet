@@ -106,6 +106,7 @@
         font-size: $fontSizeInElementOfForm;
         padding: $paddingInElementsOfForm;
         box-sizing: border-box;
+        height: 115px;
         @media (max-width: 1100px) {
           padding: 5px;
           font-size: $fontSizeInElementOfForm - 4px;

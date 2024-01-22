@@ -117,6 +117,7 @@
   font-size: 18px;
   padding: 5px 15px;
   box-sizing: border-box;
+  height: 115px;
 }
 @media (max-width: 1100px) {
   .container .blockForForm form textarea {
