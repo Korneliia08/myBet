@@ -13,6 +13,7 @@ const WriteToUs = () => {
   const inputSurname = useRef();
   const inputEmail = useRef();
   const selectPrefixOfPhone = useRef();
+  const selectWhoEmployee = useRef();
   const inputNumberOfPhone = useRef();
   const message = useRef();
 
@@ -25,6 +26,7 @@ const WriteToUs = () => {
         email: inputEmail.current.value,
         message: message.current.value,
         numberOfPhone: `${selectPrefixOfPhone.current.value}-${inputNumberOfPhone.current.value}`,
+        selectWhoEmployee: selectWhoEmployee.current.value,
       })
       .then((resp) => console.log("udalo sie"))
       .catch((error) => console.log("nie udalo sie"));
@@ -42,14 +44,10 @@ const WriteToUs = () => {
           onSubmit={sendDataToApi}
         >
           <div className={style.groupe}>
-            <select required="true" ref={selectPrefixOfPhone}>
-              <option value="Bet" disabled={true}>
-                Choose who you want to send to
-              </option>
-              <option value="Bet">Bet</option>
-              <option value="Bet" disabled={true}>
-                Employees:
-              </option>
+            <select required="true" ref={selectWhoEmployee}>
+              <option disabled={true}>Choose who you want to send to</option>
+              <option value="bet">Bet</option>
+              <option disabled={true}>Employees:</option>
               {employees.map((employee, index) => {
                 return (
                   <option value={employee.id}>
@@ -58,9 +56,6 @@ const WriteToUs = () => {
                 );
               })}
             </select>
-            <span className={style.chooseWhoSendTo}>
-              {/*Choose who you want to send to*/}
-            </span>
           </div>
           <input
             type="text"

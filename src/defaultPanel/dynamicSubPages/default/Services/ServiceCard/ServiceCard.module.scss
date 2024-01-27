@@ -39,19 +39,28 @@
     height: $size;
     border-radius: 100%;
     box-shadow: 0px 0px 5px 1px #5b5b5b;
-    @media (max-width: 400px) {
-      width: 184px;
-      height: 184px;
+    @media (max-width: 750px) {
+      width: $size - 40px;
+      height: $size - 40px;
     }
+    @media (max-width: 450px) {
+      width: $size - 50px;
+      height: $size - 50px;
+    }
+
 
     .imageService {
       width: $size - 2px;
       border-radius: 100%;
       height: $size - 2px;
       transition: 500ms;
-      @media (max-width: 400px) {
-        width: 180px;
-        height: 180px;
+      @media (max-width: 750px) {
+        width: $size - 42px;
+        height: $size - 42px;
+      }
+      @media (max-width: 450px) {
+        width: $size - 52px;
+        height: $size - 52px;
       }
     }
 
