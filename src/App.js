@@ -20,6 +20,8 @@ import ServiceInfo from "./defaultPanel/dynamicSubPages/ServiceInfo/ServiceInfo"
 import Summary from "./defaultPanel/dynamicSubPages/Registration/stepsComponents/Summary/Summary";
 import { Provider } from "react-redux";
 import store from "./data/store";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   // const router = createHashRouter(
@@ -100,6 +102,7 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <RouterProvider router={router}></RouterProvider>
+        <ToastContainer />
       </Provider>
     </div>
   );

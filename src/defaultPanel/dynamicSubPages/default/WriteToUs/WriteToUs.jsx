@@ -4,6 +4,7 @@ import Moustache from "../../../components/Moustache/Moustache";
 import { useSelector } from "react-redux";
 import { useRef, useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const WriteToUs = () => {
   const data = useSelector((state) => state.stateOfPage.stateOfPage.getInTouch);
@@ -17,9 +18,11 @@ const WriteToUs = () => {
   const inputNumberOfPhone = useRef();
   const message = useRef();
 
-  function sendDataToApi(event) {
+  const notifyError = () => toast.error("Wow so easy !");
+
+  async function sendDataToApi(event) {
     event.preventDefault();
-    axios
+    const sendMessagePromise = axios
       .post(process.env.REACT_APP_LINK_TO_API + "/registerPage/writeToUs", {
         name: inputName.current.value,
         surname: inputSurname.current.value,
@@ -28,8 +31,14 @@ const WriteToUs = () => {
         numberOfPhone: `${selectPrefixOfPhone.current.value}-${inputNumberOfPhone.current.value}`,
         selectWhoEmployee: selectWhoEmployee.current.value,
       })
-      .then((resp) => console.log("udalo sie"))
-      .catch((error) => console.log("nie udalo sie"));
+      .then((resp) => {})
+      .catch((error) => {});
+
+    await toast.promise(sendMessagePromise, {
+      pending: "Sending a message....",
+      success: "Your message has been sent 👌",
+      error: "Your message has not been sent 🤯",
+    });
   }
 
   return (
