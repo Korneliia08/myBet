@@ -9,6 +9,11 @@
   filter: drop-shadow(0px 0px 1px rgba(70, 70, 70, 0.93));
   transition: 500ms;
 }
+@media (max-width: 1100px) {
+  .container {
+    top: 10px;
+  }
+}
 .container:hover {
   cursor: pointer;
   color: rgba(18, 105, 23, 0.96);

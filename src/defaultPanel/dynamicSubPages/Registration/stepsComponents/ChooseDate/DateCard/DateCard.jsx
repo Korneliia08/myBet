@@ -77,6 +77,14 @@ const DateCard = () => {
           slidesToScroll: 3,
         },
       },
+
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
     ],
   };
   var settingsSliderForHours = {
@@ -103,6 +111,13 @@ const DateCard = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],

@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  background-color: rgba(157, 168, 215, 0.81);
+  background-color: rgba(186, 186, 186, 0.26);
   box-sizing: border-box;
   position: relative;
   padding: 5px 5px 0px 5px;
@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   border-bottom: 2px solid #a1a1a1;
+  box-shadow: 0px 0px 40px 2px inset rgba(201, 200, 200, 0.74);
 }
 .container h3 {
   font-size: 18px;
@@ -18,9 +19,9 @@
 }
 .container span {
   font-size: 16px;
-  color: white;
-  letter-spacing: 2px;
-  text-shadow: 0px 1px 1px black;
+  color: #ef5151;
+  letter-spacing: 1px;
+  text-shadow: 0px 1px 1px white;
   font-weight: bold;
 }
 
