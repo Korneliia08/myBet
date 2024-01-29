@@ -28,6 +28,12 @@
       font-size: 20px;
     }
 
+    .nr {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
     .service {
       width: 65%;
     }
@@ -50,6 +56,9 @@
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
+  @media (max-width: 800px) {
+    width: 98%;
+  }
 
   .greenSpanForMoney {
     font-size: 25px;

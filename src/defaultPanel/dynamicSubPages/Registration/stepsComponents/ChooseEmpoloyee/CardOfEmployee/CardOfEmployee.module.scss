@@ -5,6 +5,9 @@
   display: flex;
   border-radius: 25px;
   justify-content: space-between;
+  @media(max-width: 405px) {
+    min-width: 100%;
+  }
 
   &.selectedEmployee {
     background-color: #a7d79bab;

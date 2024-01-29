@@ -13,6 +13,12 @@
     font-size: 16px;
   }
 
+  .spanId {
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
   .serviceTitle {
     width: 65%;
   }
@@ -27,6 +33,10 @@
 
     &:hover {
       cursor: help;
+    }
+
+    @media (max-width: 800px) {
+      padding: 2px 2px;
     }
   }
 
