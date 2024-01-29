@@ -32,7 +32,7 @@ function App() {
         element: <DefaultPanel />,
         children: [
           {
-            path: "/",
+            path: "/:employeeId?",
             element: <Default />,
           },
           {

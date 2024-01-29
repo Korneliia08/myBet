@@ -11,7 +11,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  column-gap: 10px;
+  column-gap: 8px;
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@
   box-sizing: border-box;
   width: 100%;
   display: flex;
-  column-gap: 10px;
+  column-gap: 5px;
   justify-content: center;
 }
 

@@ -40,15 +40,9 @@ const ChooseService = () => {
       .catch((err) => console.log(err));
   }
 
-  return (
-    <div className="containerInRegistration">
-      <Back toEmployees={true} />
-      <h4 className="mainTitle">{dataDefault.title}</h4>
-      <Moustache />
-      <p
-        className="describeUnderTitle"
-        dangerouslySetInnerHTML={{ __html: dataDefault.description }}
-      ></p>
+  const noServices = <h3 className="messageWhenEmpty">No services</h3>;
+  const containerForServices = (
+    <>
       <div className={style.containerForServices}>
         <div className={style.blockForHeadlines}>
           <span className={style.nr}>Nr</span>
@@ -69,6 +63,19 @@ const ChooseService = () => {
           Next
         </button>
       </div>
+    </>
+  );
+
+  return (
+    <div className="containerInRegistration">
+      <Back toEmployees={true} />
+      <h4 className="mainTitle">{dataDefault.title}</h4>
+      <Moustache />
+      <p
+        className="describeUnderTitle"
+        dangerouslySetInnerHTML={{ __html: dataDefault.description }}
+      ></p>
+      {servicesComponent.length ? containerForServices : noServices}
     </div>
   );
 };

@@ -248,4 +248,11 @@
   background-color: #be3b3b;
 }
 
+.messageWhenEmpty {
+  color: #b90000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 /*# sourceMappingURL=App.css.map */

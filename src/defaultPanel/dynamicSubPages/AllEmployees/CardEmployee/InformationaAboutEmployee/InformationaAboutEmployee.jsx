@@ -7,6 +7,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate, useParams } from "react-router-dom";
 import WorkingDays from "../../../../components/WorkingDays/WorkingDays";
 import { useSelector } from "react-redux";
+import { HashLink } from "react-router-hash-link";
 
 const InformationAboutEmployee = () => {
   const { id } = useParams();
@@ -37,6 +38,34 @@ const InformationAboutEmployee = () => {
   let email = currentEmployee.email;
   if (!email) {
     email = "no email";
+  }
+
+  function toScroll(element) {
+    const yCoordinate =
+      element.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -50;
+    let positionScrollY = window.scrollY;
+    if (positionScrollY < yCoordinate + yOffset) {
+      const intervalFun = setInterval(() => {
+        if (positionScrollY < yCoordinate + yOffset) {
+          positionScrollY += 20;
+          window.scrollTo(0, positionScrollY);
+        } else {
+          clearInterval(intervalFun);
+          window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+        }
+      }, 1);
+    } else {
+      const intervalFun = setInterval(() => {
+        if (positionScrollY > yCoordinate + yOffset) {
+          positionScrollY -= 20;
+          window.scrollTo(0, positionScrollY);
+        } else {
+          clearInterval(intervalFun);
+          window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+        }
+      }, 1);
+    }
   }
 
   return (
@@ -71,7 +100,13 @@ const InformationAboutEmployee = () => {
         </div>
       </div>
       <div className={style.blockForBtns}>
-        <button className={style.btnWrite}>Write to me</button>
+        <HashLink
+          smooth
+          to={`/${currentEmployee.id}#sectionWriteToUs`}
+          scroll={(element) => toScroll(element)}
+        >
+          <button className={style.btnWrite}>Write to me</button>
+        </HashLink>
         <button className={style.btnBook} onClick={desplayRegistration}>
           Book a visit
         </button>

@@ -13,6 +13,7 @@ const ChooseEmpoloyee = () => {
   const cardOfEmployee = employees.map((employee, index) => (
     <CardOfEmployee data={employee} idOfEmployee={idOfEmployee} key={index} />
   ));
+  const noCards = <h3 className="messageWhenEmpty">No employees</h3>;
   return (
     <div className="containerInRegistration">
       <h4 className="mainTitle">{data.title}</h4>
@@ -21,7 +22,9 @@ const ChooseEmpoloyee = () => {
         className="describeUnderTitle"
         dangerouslySetInnerHTML={{ __html: data.description }}
       ></p>
-      <div className={style.blockForCards}>{cardOfEmployee}</div>
+      <div className={style.blockForCards}>
+        {cardOfEmployee.length ? cardOfEmployee : noCards}
+      </div>
     </div>
   );
 };

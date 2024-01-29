@@ -18,8 +18,6 @@ const WriteToUs = () => {
   const inputNumberOfPhone = useRef();
   const message = useRef();
 
-  const notifyError = () => toast.error("Wow so easy !");
-
   async function sendDataToApi(event) {
     event.preventDefault();
     const sendMessagePromise = axios
