@@ -9,6 +9,9 @@
   align-items: center;
   box-shadow: 0px 0px 20px 1px inset rgba(200, 201, 201, 0.82);
   border-radius: 10px;
+  @media (max-width: 800px) {
+    width: 90px;
+  }
 
   &.selectedDay {
     //background-color: rgba(155, 252, 143, 0.6);

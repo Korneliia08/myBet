@@ -4,8 +4,18 @@
   background-color: white;
   padding: 10px;
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
   border-radius: 20px;
+}
+@media (max-width: 1000px) {
+  .containerForSummaryAndForm {
+    width: 75%;
+  }
+}
+@media (max-width: 600px) {
+  .containerForSummaryAndForm {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=BasicData.module.css.map */

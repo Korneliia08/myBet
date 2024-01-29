@@ -51,20 +51,78 @@ const DateCard = () => {
   useEffect(() => {
     createDays();
   }, []);
-  var settings = {
+  var settingsSliderForDays = {
     infinite: false,
     speed: 500,
     slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
+  };
+  var settingsSliderForHours = {
+    infinite: false,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1424,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
   };
   return (
     <>
       <h5 className={style.month}>September</h5>
       <div className={style.containerForDays}>
-        <Slider {...settings}>{days}</Slider>
+        {days.length > 0 ? (
+          <Slider {...settingsSliderForDays}>{days}</Slider>
+        ) : (
+          ""
+        )}
       </div>
       <div className={style.containerForHours}>
-        <Slider {...settings}>{hours}</Slider>
+        {hours.length > 0 ? (
+          <Slider {...settingsSliderForHours}>{hours}</Slider>
+        ) : (
+          ""
+        )}
       </div>
     </>
   );

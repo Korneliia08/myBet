@@ -6,6 +6,11 @@
   border-radius: 25px;
   justify-content: space-between;
 }
+@media (max-width: 405px) {
+  .container {
+    min-width: 100%;
+  }
+}
 .container.selectedEmployee {
   background-color: rgba(167, 215, 155, 0.6705882353);
   border: 2px inset rgba(142, 221, 142, 0.8392156863);

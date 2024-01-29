@@ -17,5 +17,15 @@
   border-bottom: 2px solid #383838;
   cursor: pointer;
 }
+@media (max-width: 1100px) {
+  .back {
+    right: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .back {
+    top: -35px;
+  }
+}
 
 /*# sourceMappingURL=Back.module.css.map */

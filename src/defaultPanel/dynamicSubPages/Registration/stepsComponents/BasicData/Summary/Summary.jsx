@@ -53,15 +53,15 @@ const Summary = () => {
   return (
     <div className={style.container}>
       <div className={style.blockOfInformation}>
-        <h5>Service/Services:</h5>
-        {titlesOfServices}
-      </div>
-      <div className={style.blockOfInformation}>
         <h5>Employee:</h5>
         <span>
           {selectedEmployee.firstname} &nbsp;
           {selectedEmployee.lastname}
         </span>
+      </div>
+      <div className={style.blockOfInformation}>
+        <h5>Service/Services:</h5>
+        {titlesOfServices}
       </div>
       <div className={style.blockOfInformation}>
         <h5>Date:</h5>

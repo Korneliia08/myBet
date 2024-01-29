@@ -6,17 +6,29 @@
   align-items: center;
   row-gap: 5px;
 }
+@media (max-width: 1000px) {
+  .container {
+    padding: 10px;
+  }
+}
 .container form {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 5px;
+}
+@media (max-width: 700px) {
+  .container form {
+    flex-direction: column;
+    row-gap: 5px;
+    column-gap: 2px;
+  }
 }
 .container form .groupOfInputs {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 5px;
 }
 .container form .groupOfInputs .blockForNumberOfPhone {
   display: flex;
@@ -29,6 +41,12 @@
   color: #2d2d2d;
   border: 1px solid gray;
   border-radius: 5px;
+}
+@media (max-width: 1000px) {
+  .container form .groupOfInputs .inputStyle, .container form .groupOfInputs .selectStyle {
+    font-size: 15px;
+    padding: 2px 5px;
+  }
 }
 .container form.invalidStyle input:invalid, .container form.invalidStyle select:invalid {
   border: 1px solid red;

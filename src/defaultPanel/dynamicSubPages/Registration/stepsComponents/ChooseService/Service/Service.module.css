@@ -12,6 +12,11 @@
   font-weight: bold;
   font-size: 16px;
 }
+@media (max-width: 800px) {
+  .container .spanId {
+    display: none;
+  }
+}
 .container .serviceTitle {
   width: 65%;
 }
@@ -25,6 +30,11 @@
 }
 .container .infoIcon:hover {
   cursor: help;
+}
+@media (max-width: 800px) {
+  .container .infoIcon {
+    padding: 2px 2px;
+  }
 }
 .container .spanPrice {
   width: 15%;

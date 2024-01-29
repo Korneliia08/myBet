@@ -21,10 +21,30 @@
    border: 1px inset #4d72ee;*/
   margin-bottom: 20px;
 }
+@media (max-width: 1300px) {
+  .containerForDays {
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .containerForDays {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .containerForDays {
+    width: calc(100% - 88px);
+  }
+}
 
 .containerForHours {
   box-sizing: border-box;
   width: 80%;
+}
+@media (max-width: 800px) {
+  .containerForHours {
+    width: calc(100% - 88px);
+  }
 }
 
 /*# sourceMappingURL=DateCard.module.css.map */

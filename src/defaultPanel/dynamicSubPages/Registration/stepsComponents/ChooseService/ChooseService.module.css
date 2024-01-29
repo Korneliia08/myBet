@@ -27,6 +27,11 @@
   font-weight: bold;
   font-size: 20px;
 }
+@media (max-width: 800px) {
+  .containerForServices .blockForHeadlines .nr {
+    display: none;
+  }
+}
 .containerForServices .blockForHeadlines .service {
   width: 65%;
 }
@@ -45,6 +50,11 @@
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  .bottomPart {
+    width: 98%;
+  }
 }
 .bottomPart .greenSpanForMoney {
   font-size: 25px;

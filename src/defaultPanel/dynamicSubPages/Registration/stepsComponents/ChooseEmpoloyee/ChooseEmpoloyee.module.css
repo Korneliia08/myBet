@@ -4,12 +4,15 @@
   flex-wrap: wrap;
   width: 100%;
   column-gap: 20px;
+  box-sizing: border-box;
   row-gap: 20px;
 }
 @media (max-width: 1000px) {
   .blockForCards {
     column-gap: 10px;
     row-gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

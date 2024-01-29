@@ -31,7 +31,8 @@
 }
 @media (max-width: 800px) {
   .describeUnderTitle {
-    width: 90%;
+    width: 70%;
+    margin-bottom: 10px;
   }
 }
 
@@ -44,6 +45,11 @@
   box-sizing: border-box;
   position: relative;
   padding: 5px;
+}
+@media (max-width: 1400px) {
+  .containerInRegistration {
+    width: 90%;
+  }
 }
 @media (max-width: 1100px) {
   .containerInRegistration {
@@ -102,6 +108,16 @@
 .slick-arrow:before {
   color: #fd7c7c !important;
 }
+@media (max-width: 700px) {
+  .slick-arrow:before {
+    font-size: 27px !important;
+  }
+}
+@media (max-width: 700px) {
+  .slick-arrow.slick-prev {
+    left: -35px !important;
+  }
+}
 
 .iconMoney {
   color: rgba(117, 140, 47, 0.83);
@@ -136,6 +152,13 @@
   border-radius: 20px;
   border: 1px solid #014249;
   transition: 400ms;
+}
+@media (max-width: 1000px) {
+  .btnBook {
+    height: 30px;
+    padding: 5px 12px;
+    font-size: 10px;
+  }
 }
 .btnBook:hover {
   cursor: pointer;

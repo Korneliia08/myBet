@@ -1,26 +1,43 @@
 .container {
   display: flex;
   border-bottom: 2px solid gray;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 5px;
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-content: center;
+    row-gap: 2px;
+  }
 
   .blockOfInformation {
-    padding: 20px 5px;
-    width: 32%;
+    width: 30%;
+    padding: 5px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 0px;
+    @media (max-width: 650px) {
+      width: 100%;
+      padding: 0px 5px;
+    }
 
     h5 {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 400;
       color: #2a2a2a;
       text-shadow: 0px 0px 1px black;
     }
 
     span {
-      font-size: 19px;
-      line-height: 1.4;
+      font-size: 16px;
+      line-height: 1.1;
       text-shadow: 0px 1px 1px gray;
       color: #383838;
       text-align: center;
