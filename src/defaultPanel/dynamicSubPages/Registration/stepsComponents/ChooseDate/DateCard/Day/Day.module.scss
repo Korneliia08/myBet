@@ -1,8 +1,8 @@
 .blockDay {
-  width: 12%;
-  background-color: white;
+  width: 120px;
+  background-color: #ffffff;
   box-sizing: border-box;
-  padding: 4px;
+  padding: 20px 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,9 +11,10 @@
   border-radius: 10px;
 
   &.selectedDay {
-    background-color: rgba(155, 252, 143, 0.6);
-    border: 1px inset green;
-    scale: 1.04;
+    //background-color: rgba(155, 252, 143, 0.6);
+    background-color: whitesmoke;
+    border: 1px inset #be3b3b;
+    //  scale: 1.04;
   }
 
   &:hover {
@@ -22,13 +23,13 @@
 
   .number {
     color: black;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
   }
 
   .day {
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
   }
 }

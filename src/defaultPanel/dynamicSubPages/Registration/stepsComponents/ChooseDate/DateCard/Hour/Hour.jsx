@@ -19,7 +19,7 @@ const Hour = (props) => {
   return (
     <div className={style.blockHour} onClick={desplayBasicDate}>
       <span className={style.hour}>
-        {getHour(start)}-{getHour(end)}
+        {getHour(start)} - {getHour(end)}
       </span>
     </div>
   );

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Day from "./Day/Day";
 import { useSelector } from "react-redux";
 import Hour from "./Hour/Hour";
+import Slider from "react-slick";
 
 const DateCard = () => {
   const date = new Date();
@@ -50,12 +51,21 @@ const DateCard = () => {
   useEffect(() => {
     createDays();
   }, []);
-
+  var settings = {
+    infinite: false,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+  };
   return (
     <>
       <h5 className={style.month}>September</h5>
-      <div className={style.containerForDays}>{days}</div>
-      <div className={style.containerForHours}>{hours}</div>
+      <div className={style.containerForDays}>
+        <Slider {...settings}>{days}</Slider>
+      </div>
+      <div className={style.containerForHours}>
+        <Slider {...settings}>{hours}</Slider>
+      </div>
     </>
   );
 };
