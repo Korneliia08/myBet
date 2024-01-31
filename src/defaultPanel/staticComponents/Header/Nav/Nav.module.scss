@@ -93,7 +93,11 @@ body .writeToUs {
   text-decoration: none;
   padding: 7px 15px;
   margin-top: 0;
-  font-size: 12px;
+  font-size: 9px;
+  background-color: transparent;
+  box-shadow: 0px 0px 8px 1px inset #181818, 0px 0px 4px 1px inset #424242;
+  border: 1px outset #EF5151;
+  letter-spacing: 1px;
 }
 
 .responsiveMenu {
