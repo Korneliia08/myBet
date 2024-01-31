@@ -174,6 +174,10 @@
   background-color: #be3b3b;
   cursor: pointer;
 }
+.container .blockForForm form .submit:disabled {
+  background-color: rgba(0, 0, 0, 0.29);
+  cursor: not-allowed;
+}
 .container .blockForForm form.invalidStyle input:invalid, .container .blockForForm form.invalidStyle select:invalid, .container .blockForForm form.invalidStyle textarea:invalid {
   border: 2px solid #e82323;
 }

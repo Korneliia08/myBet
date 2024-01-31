@@ -10,6 +10,7 @@ const WriteToUs = () => {
   const data = useSelector((state) => state.stateOfPage.stateOfPage.getInTouch);
   const employees = useSelector((state) => state.employees.employees);
   const [invalidStyle, setInvalidStyle] = useState(false);
+  const [messageInTimeSending, setMessageInTimeSending] = useState(false);
   const inputName = useRef();
   const inputSurname = useRef();
   const inputEmail = useRef();
@@ -17,9 +18,14 @@ const WriteToUs = () => {
   const selectWhoEmployee = useRef();
   const inputNumberOfPhone = useRef();
   const message = useRef();
+  const formWriteToUs = useRef();
 
   async function sendDataToApi(event) {
     event.preventDefault();
+    if (messageInTimeSending) {
+      return;
+    }
+    setMessageInTimeSending(true);
     const sendMessagePromise = axios
       .post(process.env.REACT_APP_LINK_TO_API + "/registerPage/writeToUs", {
         name: inputName.current.value,
@@ -29,8 +35,13 @@ const WriteToUs = () => {
         numberOfPhone: `${selectPrefixOfPhone.current.value}-${inputNumberOfPhone.current.value}`,
         selectWhoEmployee: selectWhoEmployee.current.value,
       })
-      .then((resp) => {})
-      .catch((error) => {});
+      .then((resp) => {
+        formWriteToUs.current.reset();
+      })
+      .catch((error) => {})
+      .finally(() => {
+        setMessageInTimeSending(false);
+      });
 
     await toast.promise(sendMessagePromise, {
       pending: "Sending a message....",
@@ -49,6 +60,7 @@ const WriteToUs = () => {
         <form
           className={invalidStyle ? style.invalidStyle : ""}
           onSubmit={sendDataToApi}
+          ref={formWriteToUs}
         >
           <div className={style.groupe}>
             <select required="true" ref={selectWhoEmployee}>
@@ -107,6 +119,7 @@ const WriteToUs = () => {
             value="send request"
             className={style.submit}
             onClick={() => setInvalidStyle(true)}
+            disabled={messageInTimeSending}
           />
         </form>
       </div>

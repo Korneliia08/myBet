@@ -155,6 +155,11 @@
           background-color: #be3b3b;
           cursor: pointer;
         }
+
+        &:disabled {
+          background-color: rgba(0, 0, 0, 0.29);
+          cursor: not-allowed;
+        }
       }
 
       &.invalidStyle {
