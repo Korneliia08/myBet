@@ -63,6 +63,7 @@
   .btnView {
     text-transform: uppercase;
     margin-top: 40px;
+    margin-bottom: 10px;
     padding: 10px 40px;
     color: white;
     border-radius: 50px;
@@ -83,7 +84,6 @@
       font-size: 16px;
     }
     @media (max-width: 550px) {
-      margin-top: 10px;
       padding: 5px 20px;
       font-size: 12px;
     }

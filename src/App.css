@@ -138,7 +138,11 @@
   text-shadow: 0px 1px 1px #676767;
   border: 1px inset #606060;
 }
-.nextBtn:hover {
+.nextBtn:disabled {
+  background-color: rgba(121, 121, 121, 0.93);
+  cursor: not-allowed;
+}
+.nextBtn:hover:not(.nextBtn:disabled) {
   cursor: pointer;
   background-color: rgba(1, 91, 1, 0.93);
 }
@@ -146,12 +150,13 @@
 .btnBook {
   background-color: #014D55;
   color: white;
-  height: 40px;
-  padding: 5px 20px;
-  font-size: 16px;
+  height: 35px;
+  padding: 5px 15px;
+  font-size: 12px;
   border-radius: 20px;
   border: 1px solid #014249;
   transition: 400ms;
+  margin-left: 5px;
 }
 @media (max-width: 1000px) {
   .btnBook {
@@ -202,7 +207,7 @@
 }
 @media (max-width: 650px) {
   .nameSurname {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
@@ -262,8 +267,8 @@
 }
 @media (max-width: 500px) {
   .pinkBtn {
-    padding: 2px 5px;
-    font-size: 8px;
+    padding: 4px 8px;
+    font-size: 9px;
   }
 }
 .pinkBtn:hover {

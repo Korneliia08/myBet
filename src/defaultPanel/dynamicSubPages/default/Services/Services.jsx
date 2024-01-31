@@ -51,7 +51,7 @@ const Services = () => {
         <Moustache />
       </div>
       <div className={style.containerForServicesCard}>
-        <div style={{ width: "90vw" }}>
+        <div className={style.containerForServicesCardSlider}>
           <Slider {...settings}>{serviceCard}</Slider>
         </div>
       </div>

@@ -22,17 +22,18 @@ const Day = (props) => {
 
   useEffect(() => {
     if (selectedDay !== "") {
-      const day = selectedDay.getDate();
+      const day = new Date(selectedDay).getDate();
       setSelected(day === new Date(data).getDate());
     }
   }, [selectedDay]);
 
   function desplayHours() {
-    dispatch(setData({ selectedDay: data }));
+    dispatch(setData({ selectedDay: data.getTime() }));
   }
 
   return (
     <div
+      data-date={new Date(data).getTime()}
       className={`${style.blockDay} ${selected ? style.selectedDay : ""}`}
       onClick={desplayHours}
     >

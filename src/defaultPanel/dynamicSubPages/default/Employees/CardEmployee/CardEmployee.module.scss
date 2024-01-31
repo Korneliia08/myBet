@@ -18,17 +18,14 @@
   @media (max-width: 950px) {
     height: 280px;
   }
-  @media (max-width: 650px) {
-    height: 200px;
-  }
   @media (max-width: 500px) {
     width: 45%;
-    height: 150px;
+    height: 200px;
     min-width: 140px;
   }
 
   .containerForImage {
-    height: 65%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +40,7 @@
       height: 50%;
     }
     @media (max-width: 650px) {
-      height: 80%;
+      height: 85%;
     }
 
     img:first-of-type {
@@ -62,12 +59,12 @@
   }
 
   .containerForInformation {
-    height: 35%;
+    height: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    row-gap: 10px;
     padding: 0 5px 5px 5px;
     @media (max-width: 1225px) {
       height: 40%;
@@ -77,19 +74,18 @@
       row-gap: 5px;
     }
     @media (max-width: 650px) {
-      width: 20%;
+      height: 15%;
     }
 
     .information {
       width: 85%;
       text-align: center;
-      line-height: 1.2;
-      font-size: 16px;
+      line-height: 1;
+      font-size: 14px;
       font-weight: bold;
       color: #464646;
       @media (max-width: 950px) {
         line-height: 1.0;
-        font-size: 14px;
       }
       @media (max-width: 650px) {
         display: none;

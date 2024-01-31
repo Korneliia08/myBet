@@ -1,5 +1,5 @@
 import style from "./DateCard.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Day from "./Day/Day";
 import { useSelector } from "react-redux";
 import Hour from "./Hour/Hour";
@@ -7,7 +7,10 @@ import Slider from "react-slick";
 
 const DateCard = () => {
   const date = new Date();
+  const div = useRef();
+  const slider = useRef();
   const [allDays, setAllDays] = useState([]);
+  const [month, setMonth] = useState("");
   const availableDates = useSelector(
     (state) => state.registration.availableDates,
   );
@@ -51,6 +54,54 @@ const DateCard = () => {
   useEffect(() => {
     createDays();
   }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setMonthName();
+    }, 100);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  function setMonthName() {
+    if (div.current && div.current.children[0]) {
+      let childs = div.current.children[0].children[1].children[0].children;
+      childs = Array.from(childs).filter((div) => {
+        return div.ariaHidden === "false";
+      });
+      let first, last;
+      if (childs.length > 0) {
+        first = childs[0];
+        last = childs[childs.length - 1];
+        let firstDate = first.children[0].children[0].getAttribute("data-date");
+        let lastDate = last.children[0].children[0].getAttribute("data-date");
+        firstDate = new Date(Number(firstDate));
+        lastDate = new Date(Number(lastDate));
+        const firstMonth = firstDate.getMonth();
+        const lastMonth = lastDate.getMonth();
+        if (firstMonth === lastMonth) {
+          setMonth(`${months[firstMonth]}`);
+        } else {
+          setMonth(`${months[firstMonth]}/${months[lastMonth]}`);
+        }
+      }
+    }
+  }
+
   var settingsSliderForDays = {
     infinite: false,
     speed: 500,
@@ -124,10 +175,12 @@ const DateCard = () => {
   };
   return (
     <>
-      <h5 className={style.month}>September</h5>
-      <div className={style.containerForDays}>
+      <h5 className={style.month}>{month}</h5>
+      <div className={style.containerForDays} ref={div} onClick={setMonthName}>
         {days.length > 0 ? (
-          <Slider {...settingsSliderForDays}>{days}</Slider>
+          <Slider ref={slider} {...settingsSliderForDays}>
+            {days}
+          </Slider>
         ) : (
           ""
         )}

@@ -137,12 +137,13 @@
 .btnBook {
   background-color: #014D55;
   color: white;
-  height: 40px;
-  padding: 5px 20px;
-  font-size: 16px;
+  height: 35px;
+  padding: 5px 15px;
+  font-size: 12px;
   border-radius: 20px;
   border: 1px solid #014249;
   transition: 400ms;
+  margin-left: 5px;
   @media (max-width: 1000px) {
     height: 30px;
     padding: 5px 12px;
@@ -190,7 +191,7 @@
     margin-top: 0px;
   }
   @media (max-width: 650px) {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
@@ -240,8 +241,8 @@
     font-size: 12px;
   }
   @media (max-width: 500px) {
-    padding: 2px 5px;
-    font-size: 8px;
+    padding: 4px 8px;
+    font-size: 9px;
   }
 
   &:hover {

@@ -6,6 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import Service from "./Service/Service";
 import axios from "axios";
 import { setData } from "../../../../../data/reducers/registrationReducer";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 const ChooseService = () => {
   const dataDefault = useSelector(
@@ -14,6 +16,8 @@ const ChooseService = () => {
   const navigate = useNavigate();
   const idOfEmployee = useSelector((state) => state.registration.idOfEmployee);
   const allServices = useSelector((state) => state.services.services);
+
+  const [messageInTimeSending, setMessageInTimeSending] = useState(false);
   const servicesComponent = allServices
     .filter((service) => service.employees.indexOf(idOfEmployee) !== -1)
     .map((service, index) => (
@@ -23,7 +27,14 @@ const ChooseService = () => {
   const data = useSelector((state) => state.registration);
   const dispatch = useDispatch();
 
-  function desplayChooseDate() {
+  async function desplayChooseDate() {
+    if (data.idOfServices.length === 0) {
+      await toast.info("No service selected");
+      return;
+    }
+
+    setMessageInTimeSending(true);
+    if (messageInTimeSending) return;
     const dataForApi = {
       idOfEmployee: data.idOfEmployee,
       idOfServices: data.idOfServices,
@@ -37,7 +48,10 @@ const ChooseService = () => {
         navigate("/registration/date");
         dispatch(setData({ availableDates: resp.data.value }));
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
+      .finally(() => {
+        setMessageInTimeSending(false);
+      });
   }
 
   const noServices = <h3 className="messageWhenEmpty">No services</h3>;
@@ -59,8 +73,12 @@ const ChooseService = () => {
             $
           </span>
         </span>
-        <button className="nextBtn" onClick={desplayChooseDate}>
-          Next
+        <button
+          className="nextBtn"
+          disabled={messageInTimeSending}
+          onClick={desplayChooseDate}
+        >
+          Next {messageInTimeSending}
         </button>
       </div>
     </>

@@ -26,5 +26,13 @@
     flex-wrap: wrap;
   }
 }
+.container .containerForServicesCardSlider {
+  width: 90%;
+}
+@media (max-width: 800px) {
+  .container .containerForServicesCardSlider {
+    width: 85%;
+  }
+}
 
 /*# sourceMappingURL=Services.module.css.map */

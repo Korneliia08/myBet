@@ -33,7 +33,7 @@ const CardEmployee = (props) => {
         </h3>
         <p
           className={style.information}
-          dangerouslySetInnerHTML={{ __html: maxLenght(description, 100) }}
+          dangerouslySetInnerHTML={{ __html: maxLenght(description, 60) }}
         ></p>
         <SocialMedias data={data.socialMedia} />
       </div>
