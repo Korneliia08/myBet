@@ -1,8 +1,12 @@
 .categoryCard {
   box-sizing: border-box;
+  @media (max-width: 650px) {
+    width: 100%;
+  }
 
   .titleCategory {
-    width: 40%;
+    min-width: 40%;
+    width: min-content;
     color: white;
     background-color: #ef5151;
     padding: 10px 0;
@@ -14,6 +18,12 @@
       margin: 10px 0px 20px 0px;
       padding: 5px 0;
       font-size: 15px;
+    }
+    @media (max-width: 650px) {
+      min-width: 25%;
+      margin: 5px 0px 20px 0px;
+      padding: 5px 0;
+      font-size: 13px;
     }
   }
 }

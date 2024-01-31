@@ -8,7 +8,7 @@
 }
 @media (max-width: 1200px) {
   .sectionPricing {
-    padding: 20px;
+    padding: 15px;
   }
 }
 .sectionPricing .blockForTitle {
@@ -19,7 +19,7 @@
 }
 .sectionPricing .containerForCategories {
   display: flex;
-  column-gap: 25px;
+  column-gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
