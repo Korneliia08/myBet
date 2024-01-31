@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import { changeLetterColor } from "../../../../pipes/setColorLetter";
 import { HashLink } from "react-router-hash-link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Nav = () => {
   const data = useSelector((state) => state.stateOfPage.stateOfPage.header.nav);
@@ -47,10 +47,33 @@ const Nav = () => {
     }
   }
 
+  function handlerClick(event) {
+    if (event.target.localName === "a") {
+      closeMenuResponsive();
+    }
+  }
+
+  function closeOuther(event) {
+    if (!event.target.closest("#navDiv")) {
+      closeMenuResponsive();
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("click", closeOuther);
+
+    return () => {
+      document.removeEventListener("click", closeOuther);
+    };
+  }, []);
   return (
     <>
       <div className={style.emptyBlock}></div>
-      <div className={style.containerForTitleAndNav}>
+      <div
+        id="navDiv"
+        className={style.containerForTitleAndNav}
+        onClick={handlerClick}
+      >
         <h1
           className={style.title}
           dangerouslySetInnerHTML={{ __html: changeLetterColor(data.logo) }}
@@ -61,6 +84,7 @@ const Nav = () => {
             <HashLink
               scroll={(element) => toScroll(element)}
               to="/#sectionEmployees"
+              onClick={closeMenuResponsive}
             >
               employees
             </HashLink>
