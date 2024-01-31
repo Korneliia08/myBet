@@ -29,7 +29,7 @@ const ChooseService = () => {
 
   async function desplayChooseDate() {
     if (data.idOfServices.length === 0) {
-      await toast.info("No service selected");
+      await toast.info("No service selected", { toastId: 0 });
       return;
     }
 

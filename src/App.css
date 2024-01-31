@@ -165,7 +165,11 @@
     font-size: 10px;
   }
 }
-.btnBook:hover {
+.btnBook:disabled {
+  background-color: rgba(121, 121, 121, 0.93);
+  cursor: not-allowed;
+}
+.btnBook:hover:not(.btnBook:disabled) {
   cursor: pointer;
   background-color: #004148;
 }
@@ -261,14 +265,14 @@
 }
 @media (max-width: 900px) {
   .pinkBtn {
-    padding: 5px 10px;
+    padding: 5px 15px;
     font-size: 12px;
   }
 }
 @media (max-width: 500px) {
   .pinkBtn {
-    padding: 4px 8px;
-    font-size: 9px;
+    font-size: 11px;
+    letter-spacing: 1px;
   }
 }
 .pinkBtn:hover {

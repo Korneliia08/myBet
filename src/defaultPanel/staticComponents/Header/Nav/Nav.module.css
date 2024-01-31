@@ -97,4 +97,37 @@ body .writeToUs {
   font-size: 12px;
 }
 
+.responsiveMenu {
+  padding: 25px 0;
+  background-color: black;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 45vh;
+  z-index: 250;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  transition: all 500ms ease-in-out;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.responsiveMenu a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.closeBtn {
+  color: #e3e3e3;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  padding: 5px 10px;
+}
+
 /*# sourceMappingURL=Nav.module.css.map */

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import { useRef, useState } from "react";
+import { toast } from "react-toastify";
 
 const Veryfication = () => {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ const Veryfication = () => {
     (state) => state.stateOfPage.stateOfPage.registration.steps.veryfication,
   );
 
+  const [messageInTimeSending, setMessageInTimeSending] = useState(false);
   const [invalidStyle, setInvalidStyle] = useState(false);
   const veryficationId = useSelector(
     (state) => state.registration.veryficationId,
@@ -19,8 +21,10 @@ const Veryfication = () => {
   const inputCode = useRef();
 
   function desplaySummary(event) {
-    const veryficationCode = inputCode.current.value;
     event.preventDefault();
+    if (messageInTimeSending) return;
+    setMessageInTimeSending(true);
+    const veryficationCode = inputCode.current.value;
     axios
       .post(process.env.REACT_APP_LINK_TO_API + "/visit/veryfication", {
         veryficationId,
@@ -29,7 +33,13 @@ const Veryfication = () => {
       .then((resp) => {
         navigate("/registration/summary");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        toast.info("The code is incorrect");
+        console.log(error);
+      })
+      .finally(() => {
+        setMessageInTimeSending(false);
+      });
   }
 
   return (
@@ -54,6 +64,7 @@ const Veryfication = () => {
         <input
           type="submit"
           value="Next"
+          disabled={messageInTimeSending}
           className="nextBtn"
           onClick={() => setInvalidStyle(true)}
         />

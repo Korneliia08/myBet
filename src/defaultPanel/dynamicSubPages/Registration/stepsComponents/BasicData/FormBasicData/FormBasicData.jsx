@@ -18,10 +18,13 @@ const FormBasicData = () => {
   const [reCaptcha, setReCaptcha] = useState(null);
   const [isReCaptchaClick, setIsReCaptchaClick] = useState(false);
 
+  const [messageInTimeSending, setMessageInTimeSending] = useState(false);
   const [invalidStyle, setInvalidStyle] = useState(false);
 
   function desplayVeryfication(event) {
     event.preventDefault();
+    if (messageInTimeSending) return;
+    setMessageInTimeSending(true);
     setIsReCaptchaClick(false);
     if (reCaptcha == null) {
       setIsReCaptchaClick(true);
@@ -46,6 +49,9 @@ const FormBasicData = () => {
       })
       .catch((error) => {
         console.log(error);
+      })
+      .finally(() => {
+        setMessageInTimeSending(true);
       });
   }
 
@@ -119,6 +125,7 @@ const FormBasicData = () => {
           type="submit"
           value="Book Now"
           className="btnBook"
+          disabled={messageInTimeSending}
           onClick={() => setInvalidStyle(true)}
         />
         {/*sitekey="6Ldx_1MpAAAAAICoyhuEgTNU7-nICGtvPQcIZfBn"*/}
