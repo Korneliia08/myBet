@@ -78,28 +78,31 @@ const DateCard = () => {
   ];
 
   function setMonthName() {
-    if (div.current && div.current.children[0]) {
-      let childs = div.current.children[0].children[1].children[0].children;
-      childs = Array.from(childs).filter((div) => {
-        return div.ariaHidden === "false";
-      });
-      let first, last;
-      if (childs.length > 0) {
-        first = childs[0];
-        last = childs[childs.length - 1];
-        let firstDate = first.children[0].children[0].getAttribute("data-date");
-        let lastDate = last.children[0].children[0].getAttribute("data-date");
-        firstDate = new Date(Number(firstDate));
-        lastDate = new Date(Number(lastDate));
-        const firstMonth = firstDate.getMonth();
-        const lastMonth = lastDate.getMonth();
-        if (firstMonth === lastMonth) {
-          setMonth(`${months[firstMonth]}`);
-        } else {
-          setMonth(`${months[firstMonth]}/${months[lastMonth]}`);
+    try {
+      if (div.current && div.current.children[0]) {
+        let childs = div.current.children[0].children[1].children[0].children;
+        childs = Array.from(childs).filter((div) => {
+          return div.ariaHidden === "false";
+        });
+        let first, last;
+        if (childs.length > 0) {
+          first = childs[0];
+          last = childs[childs.length - 1];
+          let firstDate =
+            first.children[0].children[0].getAttribute("data-date");
+          let lastDate = last.children[0].children[0].getAttribute("data-date");
+          firstDate = new Date(Number(firstDate));
+          lastDate = new Date(Number(lastDate));
+          const firstMonth = firstDate.getMonth();
+          const lastMonth = lastDate.getMonth();
+          if (firstMonth === lastMonth) {
+            setMonth(`${months[firstMonth]}`);
+          } else {
+            setMonth(`${months[firstMonth]}/${months[lastMonth]}`);
+          }
         }
       }
-    }
+    } catch (error) {}
   }
 
   var settingsSliderForDays = {
@@ -130,7 +133,7 @@ const DateCard = () => {
       },
 
       {
-        breakpoint: 400,
+        breakpoint: 350,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,

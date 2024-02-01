@@ -9,6 +9,7 @@ import {
 } from "../../../../../../data/reducers/registrationReducer";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { maxLenght } from "../../../../../../pipes/maxLenght";
 
 const Service = (props) => {
   const data = props.data;
@@ -40,20 +41,26 @@ const Service = (props) => {
     }
   }, []);
 
+  function togleInput(event) {
+    if (event.target.localName !== "input") {
+      inputRef.current.click();
+    }
+  }
+
   return (
-    <div className={style.container}>
+    <div className={style.container} onClick={togleInput}>
       <span className={style.spanId}>{++counter}.</span>
       <p className={style.serviceTitle}>
-        {data.title}
         <FontAwesomeIcon
           icon={faInfo}
           className={`${style.icon} ${style.infoIcon}`}
           onClick={desplayService}
         />
+        {maxLenght(data.title, 70)}
       </p>
       <span className={style.spanPrice}>
         {data.price}
-        <span className="greenSpanForMoney">zł</span>
+        <span className="greenSpanForMoney">$</span>
       </span>
       <input type="checkbox" ref={inputRef} onChange={addToChoosedServices} />
     </div>

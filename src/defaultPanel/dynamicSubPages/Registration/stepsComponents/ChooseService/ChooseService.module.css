@@ -1,11 +1,11 @@
 .containerForServices {
   width: 100%;
   min-height: 150px;
-  max-height: 400px;
+  max-height: 500px;
   padding: 0 15px 15px 15px;
   box-sizing: border-box;
   background-color: #dadada;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -14,6 +14,17 @@
   border-radius: 5px;
   box-shadow: 0px 0px 15px 1px rgba(148, 147, 147, 0.62);
   margin-bottom: 10px;
+}
+@media (max-width: 650px) {
+  .containerForServices {
+    width: 90%;
+    row-gap: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .containerForServices {
+    width: 100%;
+  }
 }
 .containerForServices .blockForHeadlines {
   display: flex;
@@ -27,6 +38,11 @@
   font-weight: bold;
   font-size: 20px;
 }
+@media (max-width: 650px) {
+  .containerForServices .blockForHeadlines .nr, .containerForServices .blockForHeadlines .service, .containerForServices .blockForHeadlines .price, .containerForServices .blockForHeadlines .choose {
+    font-size: 15px;
+  }
+}
 @media (max-width: 800px) {
   .containerForServices .blockForHeadlines .nr {
     display: none;
@@ -35,8 +51,23 @@
 .containerForServices .blockForHeadlines .service {
   width: 65%;
 }
+@media (max-width: 650px) {
+  .containerForServices .blockForHeadlines .service {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .containerForServices .blockForHeadlines .service {
+    width: 60%;
+  }
+}
 .containerForServices .blockForHeadlines .price {
   width: 15%;
+}
+@media (max-width: 400px) {
+  .containerForServices .blockForHeadlines .price {
+    width: 20%;
+  }
 }
 .containerForServices .blockForHeadlines .choose {
   width: 10%;
@@ -60,10 +91,30 @@
   font-size: 25px;
   margin-left: 5px;
 }
+@media (max-width: 650px) {
+  .bottomPart .greenSpanForMoney {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .bottomPart .greenSpanForMoney {
+    font-size: 18px;
+  }
+}
 .bottomPart .totalSum {
   color: #464646;
   font-weight: bold;
   font-size: 25px;
+}
+@media (max-width: 650px) {
+  .bottomPart .totalSum {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .bottomPart .totalSum {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=ChooseService.module.css.map */

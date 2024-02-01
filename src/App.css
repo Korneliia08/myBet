@@ -138,6 +138,18 @@
   text-shadow: 0px 1px 1px #676767;
   border: 1px inset #606060;
 }
+@media (max-width: 650px) {
+  .nextBtn {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+}
+@media (max-width: 400px) {
+  .nextBtn {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+}
 .nextBtn:disabled {
   background-color: rgba(121, 121, 121, 0.93);
   cursor: not-allowed;

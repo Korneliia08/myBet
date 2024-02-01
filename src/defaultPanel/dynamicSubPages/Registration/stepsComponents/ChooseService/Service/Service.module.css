@@ -2,15 +2,27 @@
   background-color: #f3f2f2;
   display: flex;
   align-items: center;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 6px 7px;
   box-sizing: border-box;
   border-radius: 5px;
+}
+@media (max-width: 650px) {
+  .container {
+    padding: 5px;
+  }
 }
 .container .spanId, .container .serviceTitle, .container .spanPrice {
   width: 10%;
   color: #464646;
   font-weight: bold;
   font-size: 16px;
+}
+@media (max-width: 650px) {
+  .container .spanId, .container .serviceTitle, .container .spanPrice {
+    font-size: 14px;
+    user-select: none;
+  }
 }
 @media (max-width: 800px) {
   .container .spanId {
@@ -19,12 +31,24 @@
 }
 .container .serviceTitle {
   width: 65%;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+@media (max-width: 650px) {
+  .container .serviceTitle {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .container .serviceTitle {
+    width: 60%;
+  }
 }
 .container .infoIcon {
   background-color: rgba(241, 241, 241, 0);
   padding: 5px 25px;
   border-radius: 40%;
-  margin-left: 20px;
+  margin-right: 2px;
   color: red;
   box-sizing: border-box;
 }
@@ -39,9 +63,19 @@
 .container .spanPrice {
   width: 15%;
 }
+@media (max-width: 400px) {
+  .container .spanPrice {
+    width: 20%;
+  }
+}
 .container input {
   width: 10%;
   scale: 1.4;
+}
+@media (max-width: 650px) {
+  .container input {
+    scale: 1.2;
+  }
 }
 
 /*# sourceMappingURL=Service.module.css.map */

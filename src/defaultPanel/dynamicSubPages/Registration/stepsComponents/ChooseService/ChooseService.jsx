@@ -80,9 +80,7 @@ const ChooseService = () => {
       <div className={style.bottomPart}>
         <span className={style.totalSum}>
           Total sum: {totalSum}
-          <span className={`${style.greenSpanForMoney} greenSpanForMoney`}>
-            $
-          </span>
+          <span className={style.greenSpanForMoney}>$</span>
         </span>
         <button
           className="nextBtn"

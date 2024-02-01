@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import WorkingDays from "../../../../../components/WorkingDays/WorkingDays";
 import { useDispatch } from "react-redux";
 import { setData } from "../../../../../../data/reducers/registrationReducer";
+import { maxLenght } from "../../../../../../pipes/maxLenght";
 
 const CardOfEmployee = (props) => {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ const CardOfEmployee = (props) => {
 
   return (
     <div
+      onClick={desplayChooseAService}
       className={`${style.container} ${
         idOfEmployee === data.id.toString() ? style.selectedEmployee : ""
       }`}
@@ -39,9 +41,7 @@ const CardOfEmployee = (props) => {
         />
       </div>
       <div className={style.rightPart}>
-        <h5>
-          {data.firstname}&nbsp;{data.lastname}
-        </h5>
+        <h5>{maxLenght(`${data.firstname} ${data.lastname}`, 20 - 2, true)}</h5>
         <WorkingDays data={data.workDay} />
         <button onClick={desplayChooseAService}>Choose</button>
       </div>

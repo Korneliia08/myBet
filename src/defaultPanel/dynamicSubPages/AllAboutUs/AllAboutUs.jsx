@@ -7,6 +7,9 @@ import { useEffect } from "react";
 import scrollToTop from "../../../pipes/scrollToTop";
 
 const AllAboutUs = () => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const data = useSelector((state) => state.stateOfPage.stateOfPage.aboutUs);
   return (
     <section className="containerSubPage">

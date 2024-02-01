@@ -68,7 +68,7 @@ const Nav = () => {
               to={"/#sectionAboutUs"}
               scroll={(element) => toScroll(element)}
             >
-              about us/
+              about us
             </HashLink>
             <HashLink
               smooth
