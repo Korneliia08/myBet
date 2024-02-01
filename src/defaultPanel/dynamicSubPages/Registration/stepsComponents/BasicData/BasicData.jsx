@@ -4,11 +4,34 @@ import style from "./BasicData.module.css";
 import FormBasicData from "./FormBasicData/FormBasicData";
 import Summary from "./Summary/Summary";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import scrollToTop from "../../../../../pipes/scrollToTop";
 
 const BasicData = () => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const dataDefault = useSelector(
     (state) => state.stateOfPage.stateOfPage.registration.steps.basicData,
   );
+
+  const navigate = useNavigate();
+  const idOfEmployee = useSelector((state) => state.registration.idOfEmployee);
+  const idOfServices = useSelector((state) => state.registration.idOfServices);
+  useEffect(() => {
+    if (idOfServices.length === 0) {
+      toast.warn("Registration back to first step. No service selected");
+      navigate("/registration");
+    }
+
+    if (idOfEmployee === 0) {
+      toast.warn("Registration back to first step. No employee selected");
+      navigate("/registration");
+    }
+  }, [idOfEmployee, idOfServices]);
+
   return (
     <div className="containerInRegistration">
       <Back />

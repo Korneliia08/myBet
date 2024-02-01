@@ -5,6 +5,27 @@
   display: flex;
   border-radius: 25px;
   justify-content: space-between;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .container {
+    min-width: 40%;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    min-width: 55%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    min-width: 65%;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    min-width: 80%;
+  }
 }
 @media (max-width: 405px) {
   .container {
@@ -25,6 +46,11 @@
   border-radius: 25px;
   overflow: hidden;
 }
+@media (max-width: 900px) {
+  .container .blockForImage {
+    width: 40%;
+  }
+}
 .container .blockForImage img {
   height: 140px;
   z-index: 25;
@@ -32,6 +58,11 @@
 @media (max-width: 1000px) {
   .container .blockForImage img {
     height: 120px;
+  }
+}
+@media (max-width: 900px) {
+  .container .blockForImage img {
+    height: 90px;
   }
 }
 .container .blockForImage .background {
@@ -47,32 +78,43 @@
     height: 120px;
   }
 }
+@media (max-width: 900px) {
+  .container .blockForImage .background {
+    height: 90px;
+  }
+}
 .container .rightPart {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 55%;
-  row-gap: 15px;
+  padding: 5px;
+  box-sizing: border-box;
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .container .rightPart {
-    row-gap: 10px;
+    width: 60%;
   }
 }
 .container .rightPart h5 {
   font-weight: 400;
-  font-size: 19px;
+  font-size: 18px;
   letter-spacing: 1px;
   color: #333333;
   text-shadow: 0px 1px 1px #757575;
+}
+@media (max-width: 405px) {
+  .container .rightPart h5 {
+    font-size: 16px;
+  }
 }
 .container .rightPart button {
   padding: 5px 25px;
   border-radius: 10px;
   background-color: #014D55;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   border: 1px solid #003338;
   letter-spacing: 1px;
   text-shadow: 0px 1px 1px gray;
@@ -81,7 +123,7 @@
 @media (max-width: 1000px) {
   .container .rightPart button {
     padding: 5px 20px;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0px;
   }
 }

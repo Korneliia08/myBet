@@ -8,8 +8,12 @@ import axios from "axios";
 import { setData } from "../../../../../data/reducers/registrationReducer";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import scrollToTop from "../../../../../pipes/scrollToTop";
 
 const ChooseService = () => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const dataDefault = useSelector(
     (state) => state.stateOfPage.stateOfPage.registration.steps.chooseAservice,
   );
@@ -29,7 +33,7 @@ const ChooseService = () => {
 
   useEffect(() => {
     if (idOfEmployee === 0) {
-      toast.warn("Registration back to first step");
+      toast.warn("Registration back to first step. No employee selected");
       navigate("/registration");
     }
   }, [idOfEmployee]);

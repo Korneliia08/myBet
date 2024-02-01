@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import { changeLetterColor } from "../../../../pipes/setColorLetter";
 import { HashLink } from "react-router-hash-link";
 import { useEffect, useState } from "react";
+import toScroll from "../../../../pipes/toScroll";
 
 const Nav = () => {
   const data = useSelector((state) => state.stateOfPage.stateOfPage.header.nav);
@@ -17,34 +18,6 @@ const Nav = () => {
 
   function closeMenuResponsive() {
     setMenuResp(false);
-  }
-
-  function toScroll(element) {
-    const yCoordinate =
-      element.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -50;
-    let positionScrollY = window.scrollY;
-    if (positionScrollY < yCoordinate + yOffset) {
-      const intervalFun = setInterval(() => {
-        if (positionScrollY < yCoordinate + yOffset) {
-          positionScrollY += 20;
-          window.scrollTo(0, positionScrollY);
-        } else {
-          clearInterval(intervalFun);
-          window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-        }
-      }, 1);
-    } else {
-      const intervalFun = setInterval(() => {
-        if (positionScrollY > yCoordinate + yOffset) {
-          positionScrollY -= 20;
-          window.scrollTo(0, positionScrollY);
-        } else {
-          clearInterval(intervalFun);
-          window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-        }
-      }, 1);
-    }
   }
 
   function handlerClick(event) {
@@ -74,10 +47,12 @@ const Nav = () => {
         className={style.containerForTitleAndNav}
         onClick={handlerClick}
       >
-        <h1
-          className={style.title}
-          dangerouslySetInnerHTML={{ __html: changeLetterColor(data.logo) }}
-        ></h1>
+        <Link to={"/"} className={style.h1Link}>
+          <h1
+            className={style.title}
+            dangerouslySetInnerHTML={{ __html: changeLetterColor(data.logo) }}
+          ></h1>
+        </Link>
         <nav className={style.nav}>
           <div className={style.bigContainer}>
             <Link to={"/registration"}>registration</Link>
@@ -93,7 +68,7 @@ const Nav = () => {
               to={"/#sectionAboutUs"}
               scroll={(element) => toScroll(element)}
             >
-              about us
+              about us/
             </HashLink>
             <HashLink
               smooth

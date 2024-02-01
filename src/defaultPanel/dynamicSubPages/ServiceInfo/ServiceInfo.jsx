@@ -5,8 +5,13 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faCoins } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
+import scrollToTop from "../../../pipes/scrollToTop";
 
 const ServiceInfo = () => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const navigate = useNavigate();
   const { id } = useParams();
   const currentService = useSelector((state) =>

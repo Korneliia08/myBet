@@ -3,6 +3,16 @@
   column-gap: 2px;
   margin-bottom: 10px;
 }
+@media (max-width: 900px) {
+  .containerAllDays {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 405px) {
+  .containerAllDays {
+    column-gap: 1px;
+  }
+}
 .containerAllDays span {
   display: block;
   padding: 2px 4px;
@@ -14,13 +24,8 @@
 }
 @media (max-width: 1000px) {
   .containerAllDays span {
-    font-size: 10px;
-    letter-spacing: 0;
-  }
-}
-@media (max-width: 800px) {
-  .containerAllDays span {
     font-size: 8px;
+    letter-spacing: 0;
   }
 }
 .containerAllDays .noActive {

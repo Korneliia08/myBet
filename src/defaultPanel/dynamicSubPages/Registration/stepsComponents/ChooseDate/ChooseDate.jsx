@@ -6,8 +6,12 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import scrollToTop from "../../../../../pipes/scrollToTop";
 
 const ChooseDate = () => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const dataDefault = useSelector(
     (state) => state.stateOfPage.stateOfPage.registration.steps.chooseAdate,
   );
@@ -16,20 +20,16 @@ const ChooseDate = () => {
   const idOfEmployee = useSelector((state) => state.registration.idOfEmployee);
   const idOfServices = useSelector((state) => state.registration.idOfServices);
   useEffect(() => {
-    if (idOfServices.length) {
-      toast.warn("Registration back to first step</br> No service selected", {
-        allowHtml: true,
-      });
+    if (idOfServices.length === 0) {
+      toast.warn("Registration back to first step. No service selected");
       navigate("/registration");
     }
 
     if (idOfEmployee === 0) {
-      toast.warn("Registration back to first step</br>No employee selected", {
-        allowHtml: true,
-      });
+      toast.warn("Registration back to first step. No employee selected");
       navigate("/registration");
     }
-  }, [idOfEmployee]);
+  }, [idOfEmployee, idOfServices]);
   return (
     <div className="containerInRegistration">
       <Back />

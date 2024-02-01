@@ -1,11 +1,16 @@
 import ArrowBack from "../../components/ArrowBack/ArrowBack";
 import Moustache from "../../components/Moustache/Moustache";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import scrollToTop from "../../../pipes/scrollToTop";
 
 const AllPricing = () => {
   const data = useSelector(
     (state) => state.stateOfPage.stateOfPage.pricing.subPage,
   );
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   return (
     <section className="containerSubPage">

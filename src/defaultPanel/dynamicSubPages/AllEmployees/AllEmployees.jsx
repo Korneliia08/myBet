@@ -3,8 +3,13 @@ import CardEmployee from "./CardEmployee/CardEmployee";
 import ArrowBack from "../../components/ArrowBack/ArrowBack";
 import Moustache from "../../components/Moustache/Moustache";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import scrollToTop from "../../../pipes/scrollToTop";
 
 const AllEmployees = () => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const allEmployees = useSelector((state) => state.employees.employees);
   const data = useSelector((state) => state.stateOfPage.stateOfPage.employees);
   const cardEmployee = allEmployees.map((employee, index) => (

@@ -3,8 +3,13 @@ import CardOfEmployee from "./CardOfEmployee/CardOfEmployee";
 import Moustache from "../../../../components/Moustache/Moustache";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+import scrollToTop from "../../../../../pipes/scrollToTop";
 
 const ChooseEmpoloyee = () => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const data = useSelector(
     (state) => state.stateOfPage.stateOfPage.registration.steps.chooseAemployee,
   );
@@ -28,4 +33,5 @@ const ChooseEmpoloyee = () => {
     </div>
   );
 };
+
 export default ChooseEmpoloyee;

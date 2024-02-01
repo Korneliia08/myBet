@@ -4,10 +4,14 @@ import style from "./Veryfication.module.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
+import scrollToTop from "../../../../../pipes/scrollToTop";
 
 const Veryfication = () => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const navigate = useNavigate();
   const dataDefault = useSelector(
     (state) => state.stateOfPage.stateOfPage.registration.steps.veryfication,
@@ -19,6 +23,20 @@ const Veryfication = () => {
     (state) => state.registration.veryficationId,
   );
   const inputCode = useRef();
+
+  const idOfEmployee = useSelector((state) => state.registration.idOfEmployee);
+  const idOfServices = useSelector((state) => state.registration.idOfServices);
+  useEffect(() => {
+    if (idOfServices.length === 0) {
+      toast.warn("Registration back to first step. No service selected");
+      navigate("/registration");
+    }
+
+    if (idOfEmployee === 0) {
+      toast.warn("Registration back to first step. No employee selected");
+      navigate("/registration");
+    }
+  }, [idOfEmployee, idOfServices]);
 
   function desplaySummary(event) {
     event.preventDefault();

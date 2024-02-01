@@ -3,6 +3,8 @@ import ArrowBack from "../../components/ArrowBack/ArrowBack";
 import image from "../../assets/images/aboutUs.jpg";
 import Moustache from "../../components/Moustache/Moustache";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import scrollToTop from "../../../pipes/scrollToTop";
 
 const AllAboutUs = () => {
   const data = useSelector((state) => state.stateOfPage.stateOfPage.aboutUs);
