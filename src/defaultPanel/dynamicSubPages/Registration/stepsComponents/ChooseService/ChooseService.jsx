@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Service from "./Service/Service";
 import axios from "axios";
 import { setData } from "../../../../../data/reducers/registrationReducer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 const ChooseService = () => {
@@ -26,6 +26,13 @@ const ChooseService = () => {
   const totalSum = useSelector((state) => state.registration.totalPrice);
   const data = useSelector((state) => state.registration);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (idOfEmployee === 0) {
+      toast.warn("Registration back to first step");
+      navigate("/registration");
+    }
+  }, [idOfEmployee]);
 
   async function desplayChooseDate() {
     if (data.idOfServices.length === 0) {

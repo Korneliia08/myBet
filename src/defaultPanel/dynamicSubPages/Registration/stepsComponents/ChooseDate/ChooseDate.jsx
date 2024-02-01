@@ -17,7 +17,7 @@ const ChooseDate = () => {
   const idOfServices = useSelector((state) => state.registration.idOfServices);
   useEffect(() => {
     if (idOfServices.length) {
-      toast.warn("Registration back to first step\n No service selected", {
+      toast.warn("Registration back to first step</br> No service selected", {
         allowHtml: true,
       });
       navigate("/registration");
