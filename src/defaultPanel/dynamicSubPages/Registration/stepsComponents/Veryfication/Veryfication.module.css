@@ -19,6 +19,12 @@
   border: 1px solid gray;
   border-radius: 5px;
 }
+@media (max-width: 650px) {
+  .form input:first-of-type {
+    width: 140px;
+    font-size: 15px;
+  }
+}
 .form.invalidStyle input:invalid {
   border: 1px solid red;
 }

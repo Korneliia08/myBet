@@ -68,15 +68,15 @@ const ChooseService = () => {
   const noServices = <h3 className="messageWhenEmpty">No services</h3>;
   const containerForServices = (
     <>
-      <div className={style.containerForServices}>
-        <div className={style.blockForHeadlines}>
-          <span className={style.nr}>Nr</span>
-          <span className={style.service}>Service</span>
-          <span className={style.price}>Price</span>
-          <span className={style.choose}>Choose</span>
-        </div>
+      <table className={style.containerForServices}>
+        <tr className={style.blockForHeadlines}>
+          <th className={style.nr}>Nr</th>
+          <th className={style.service}>Service</th>
+          <th className={style.price}>Price</th>
+          <th className={style.choose}>Choose</th>
+        </tr>
         {servicesComponent}
-      </div>
+      </table>
       <div className={style.bottomPart}>
         <span className={style.totalSum}>
           Total sum: {totalSum}

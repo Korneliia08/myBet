@@ -22,9 +22,9 @@
 .blockHour .hour {
   font-size: 18px;
 }
-@media (max-width: 500px) {
-  .blockHour .hour > span {
-    display: none;
+@media (max-width: 650px) {
+  .blockHour .hour {
+    font-size: 12px;
   }
 }
 

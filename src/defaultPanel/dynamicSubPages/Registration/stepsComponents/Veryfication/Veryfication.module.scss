@@ -18,6 +18,10 @@
     color: #2d2d2d;
     border: 1px solid gray;
     border-radius: 5px;
+    @media (max-width: 650px) {
+      width: 140px;
+      font-size: 15px;
+    }
   }
 
   &.invalidStyle {

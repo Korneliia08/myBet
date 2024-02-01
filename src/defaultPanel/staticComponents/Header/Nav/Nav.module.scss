@@ -1,6 +1,7 @@
+$height: 48px;
 .emptyBlock {
   width: 100%;
-  height: 52px;
+  height: $height;
 }
 
 .h1Link {
@@ -12,7 +13,7 @@
   background-color: rgb(26, 26, 26);
   box-sizing: border-box;
   padding: 5px 5px;
-  height: 52px;
+  height: $height;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -43,6 +44,8 @@
     display: flex;
     justify-content: space-around;
     column-gap: 10px;
+    box-sizing: border-box;
+    padding: 0 10px;
     @media (max-width: 800px) {
       display: contents;
       justify-content: space-between;
@@ -82,16 +85,22 @@
 
     .smallContainer {
       display: none;
-      width: 35%;
+      width: 20%;
       justify-content: center;
       align-items: center;
       @media (max-width: 800px) {
         display: flex;
       }
+      @media (max-width: 650px) {
+        width: 10%;
+      }
 
       .burger {
         color: white;
         font-size: 26px;
+        @media (max-width: 650px) {
+          font-size: 19px;
+        }
       }
     }
   }
@@ -113,6 +122,10 @@ body .writeToUs {
       box-shadow: none;
       background-color: transparent;
     }
+  }
+  @media (max-width: 400px) {
+    font-size: 7px;
+    padding: 6px 7px;
   }
 }
 

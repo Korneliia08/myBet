@@ -1,11 +1,23 @@
 .container {
-  background-color: #f3f2f2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 6px 7px;
   box-sizing: border-box;
   border-radius: 5px;
+  position: relative;
+}
+.container:after {
+  width: 100%;
+  height: 100%;
+  background-color: #f3f2f2;
+  border-radius: 5px;
+  content: "-";
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+}
+.container td {
+  position: relative;
+  z-index: 11;
 }
 @media (max-width: 650px) {
   .container {
@@ -24,58 +36,41 @@
     user-select: none;
   }
 }
+.container .spanId {
+  width: 35px;
+}
 @media (max-width: 800px) {
   .container .spanId {
     display: none;
   }
 }
 .container .serviceTitle {
-  width: 65%;
   box-sizing: border-box;
   padding-left: 5px;
 }
-@media (max-width: 650px) {
-  .container .serviceTitle {
-    width: 70%;
-  }
-}
-@media (max-width: 400px) {
-  .container .serviceTitle {
-    width: 60%;
-  }
-}
 .container .infoIcon {
   background-color: rgba(241, 241, 241, 0);
-  padding: 5px 25px;
+  padding: 0px 25px;
   border-radius: 40%;
   margin-right: 2px;
   color: red;
   box-sizing: border-box;
+  position: relative;
 }
 .container .infoIcon:hover {
   cursor: help;
 }
-@media (max-width: 800px) {
-  .container .infoIcon {
-    padding: 2px 2px;
-  }
-}
-.container .spanPrice {
-  width: 15%;
-}
-@media (max-width: 400px) {
-  .container .spanPrice {
-    width: 20%;
-  }
-}
 .container input {
-  width: 10%;
   scale: 1.4;
 }
 @media (max-width: 650px) {
   .container input {
     scale: 1.2;
   }
+}
+
+.emptyRow td {
+  height: 5px;
 }
 
 /*# sourceMappingURL=Service.module.css.map */

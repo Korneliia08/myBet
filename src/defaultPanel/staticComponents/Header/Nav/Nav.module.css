@@ -1,6 +1,6 @@
 .emptyBlock {
   width: 100%;
-  height: 52px;
+  height: 48px;
 }
 
 .h1Link {
@@ -12,7 +12,7 @@
   background-color: rgb(26, 26, 26);
   box-sizing: border-box;
   padding: 5px 5px;
-  height: 52px;
+  height: 48px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -42,6 +42,8 @@
   display: flex;
   justify-content: space-around;
   column-gap: 10px;
+  box-sizing: border-box;
+  padding: 0 10px;
 }
 @media (max-width: 800px) {
   .containerForTitleAndNav .nav {
@@ -85,7 +87,7 @@
 }
 .containerForTitleAndNav .nav .smallContainer {
   display: none;
-  width: 35%;
+  width: 20%;
   justify-content: center;
   align-items: center;
 }
@@ -94,9 +96,19 @@
     display: flex;
   }
 }
+@media (max-width: 650px) {
+  .containerForTitleAndNav .nav .smallContainer {
+    width: 10%;
+  }
+}
 .containerForTitleAndNav .nav .smallContainer .burger {
   color: white;
   font-size: 26px;
+}
+@media (max-width: 650px) {
+  .containerForTitleAndNav .nav .smallContainer .burger {
+    font-size: 19px;
+  }
 }
 
 body .writeToUs {
@@ -117,6 +129,12 @@ body .writeToUs {
   body .writeToUs:hover {
     box-shadow: none;
     background-color: transparent;
+  }
+}
+@media (max-width: 400px) {
+  body .writeToUs {
+    font-size: 7px;
+    padding: 6px 7px;
   }
 }
 

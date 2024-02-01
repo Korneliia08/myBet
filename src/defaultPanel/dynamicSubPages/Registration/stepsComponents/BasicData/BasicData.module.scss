@@ -6,10 +6,11 @@
   box-sizing: border-box;
   width: 90%;
   border-radius: 20px;
+  box-shadow: 0px 0px 2px 1px #a9a8a8;
   @media (max-width: 1000px) {
-    width: 75%;
+    width: 85%;
   }
-  @media (max-width: 600px) {
-    width: 100%;
+  @media (max-width: 650px) {
+    width: 90%;
   }
 }

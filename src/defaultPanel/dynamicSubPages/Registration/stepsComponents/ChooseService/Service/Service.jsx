@@ -48,22 +48,33 @@ const Service = (props) => {
   }
 
   return (
-    <div className={style.container} onClick={togleInput}>
-      <span className={style.spanId}>{++counter}.</span>
-      <p className={style.serviceTitle}>
-        <FontAwesomeIcon
-          icon={faInfo}
-          className={`${style.icon} ${style.infoIcon}`}
-          onClick={desplayService}
-        />
-        {maxLenght(data.title, 70)}
-      </p>
-      <span className={style.spanPrice}>
-        {data.price}
-        <span className="greenSpanForMoney">$</span>
-      </span>
-      <input type="checkbox" ref={inputRef} onChange={addToChoosedServices} />
-    </div>
+    <>
+      <tr className={style.container} onClick={togleInput}>
+        <td className={style.spanId}>{++counter}.</td>
+        <td className={style.serviceTitle}>
+          {maxLenght(data.title, 70)}
+          <FontAwesomeIcon
+            icon={faInfo}
+            className={`${style.icon} ${style.infoIcon}`}
+            onClick={desplayService}
+          />
+        </td>
+        <td className={style.spanPrice}>
+          {data.price}
+          <span className="greenSpanForMoney">$</span>
+        </td>
+        <td>
+          <input
+            type="checkbox"
+            ref={inputRef}
+            onChange={addToChoosedServices}
+          />
+        </td>
+      </tr>
+      <tr className={style.emptyRow}>
+        <td></td>
+      </tr>
+    </>
   );
 };
 export default Service;

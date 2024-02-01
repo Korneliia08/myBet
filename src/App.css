@@ -140,14 +140,13 @@
 }
 @media (max-width: 650px) {
   .nextBtn {
-    font-size: 15px;
-    padding: 5px 20px;
+    font-size: 13px;
+    padding: 4px 15px;
   }
 }
 @media (max-width: 400px) {
   .nextBtn {
     font-size: 12px;
-    padding: 5px 15px;
   }
 }
 .nextBtn:disabled {
@@ -197,6 +196,13 @@
   border: 2px solid #024850;
   letter-spacing: 1px;
   transition: all 400ms ease;
+}
+@media (max-width: 700px) {
+  .btnBackToHome {
+    max-width: 160px;
+    font-size: 9px;
+    padding: 5px 15px;
+  }
 }
 .btnBackToHome:hover {
   cursor: pointer;
