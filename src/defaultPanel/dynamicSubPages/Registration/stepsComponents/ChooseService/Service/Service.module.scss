@@ -1,16 +1,48 @@
-.container {
+.after {
+  width: 100%;
+  height: 100%;
   background-color: #f3f2f2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-radius: 5px;
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.container {
+
+  //display: flex;
+  // align-items: center;
+  // justify-content: space-between;
   padding: 6px 7px;
   box-sizing: border-box;
   border-radius: 5px;
+  position: relative;
+
+  &:after {
+    width: 100%;
+    height: 100%;
+    background-color: #f3f2f2;
+    border-radius: 5px;
+    content: "";
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+  }
+
+  td {
+    position: relative;
+    z-index: 11;
+  }
+
   @media (max-width: 650px) {
     padding: 5px;
   }
 
   .spanId, .serviceTitle, .spanPrice {
+
     width: 10%;
     color: #464646;
     font-weight: bold;
@@ -25,49 +57,57 @@
     @media (max-width: 800px) {
       display: none;
     }
+    width: 35px;
   }
 
   .serviceTitle {
-    width: 65%;
+    width: 100%;
     box-sizing: border-box;
     padding-left: 5px;
+    //    position: relative;
+    //  top: -4px;
     @media (max-width: 650px) {
-      width: 70%;
+      //   width: 70%;
     }
     @media (max-width: 400px) {
-      width: 60%;
+      //    width: 60%;
     }
   }
 
   .infoIcon {
     background-color: rgba(241, 241, 241, 0);
-    padding: 5px 25px;
+    padding: 0px 25px;
     border-radius: 40%;
     margin-right: 2px;
     color: red;
     box-sizing: border-box;
+    position: relative;
+    //  top: 4px;
 
     &:hover {
       cursor: help;
     }
 
-    @media (max-width: 800px) {
-      padding: 2px 2px;
-    }
   }
 
   .spanPrice {
-    width: 15%;
+    // width: 15%;
     @media (max-width: 400px) {
-      width: 20%;
+      // width: 20%;
     }
   }
 
   input {
-    width: 10%;
     scale: 1.4;
     @media (max-width: 650px) {
       scale: 1.2;
     }
+  }
+}
+
+.emptyRow {
+  td {
+    height: 7px;
+
   }
 }
