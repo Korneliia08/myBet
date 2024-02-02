@@ -31,9 +31,9 @@
   font-size: 14px;
   width: 280px;
 }
-@media (max-width: 400px) {
+@media (max-width: 1050px) {
   .serviceCard .describe {
-    width: 240px;
+    width: auto;
   }
 }
 .serviceCard .blockForImage {
