@@ -8,11 +8,15 @@ import { useNavigate, useParams } from "react-router-dom";
 import WorkingDays from "../../../../components/WorkingDays/WorkingDays";
 import { useSelector } from "react-redux";
 import { HashLink } from "react-router-hash-link";
+import { useEffect } from "react";
+import scrollToTop from "../../../../../pipes/scrollToTop";
 
 const InformationAboutEmployee = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const employees = useSelector((state) => state.employees.employees);
 
   const currentEmployee = employees.find((employee) => employee.id == id);

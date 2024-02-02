@@ -2,9 +2,10 @@ import style from "./WriteToUs.module.css";
 import backgroundImage from "../../../assets/images/backgroundWriteToUs.jpg";
 import Moustache from "../../../components/Moustache/Moustache";
 import { useSelector } from "react-redux";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useParams } from "react-router-dom";
 
 const WriteToUs = () => {
   const data = useSelector((state) => state.stateOfPage.stateOfPage.getInTouch);
@@ -19,6 +20,12 @@ const WriteToUs = () => {
   const inputNumberOfPhone = useRef();
   const message = useRef();
   const formWriteToUs = useRef();
+  const { employeeId } = useParams();
+  useEffect(() => {
+    if (employeeId) {
+      selectWhoEmployee.current.value = employeeId;
+    }
+  }, [employeeId]);
 
   async function sendDataToApi(event) {
     event.preventDefault();

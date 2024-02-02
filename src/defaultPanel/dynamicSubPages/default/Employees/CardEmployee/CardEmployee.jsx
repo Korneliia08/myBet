@@ -29,7 +29,7 @@ const CardEmployee = (props) => {
       </div>
       <div className={style.containerForInformation}>
         <h3 className="nameSurname">
-          {data.firstname} {data.lastname}
+          {maxLenght(`${data.firstname} ${data.lastname}`, 18, true)}
         </h3>
         <p
           className={style.information}
