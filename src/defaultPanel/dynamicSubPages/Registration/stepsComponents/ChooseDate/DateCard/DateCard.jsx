@@ -168,7 +168,7 @@ const DateCard = () => {
         },
       },
       {
-        breakpoint: 400,
+        breakpoint: 350,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,

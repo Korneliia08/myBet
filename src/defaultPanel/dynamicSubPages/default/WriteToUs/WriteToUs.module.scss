@@ -2,7 +2,7 @@
   background-color: #DCDCDC;
   display: flex;
   $paddingInElementsOfForm: 5px 15px;
-  $fontSizeInElementOfForm: 18px;
+  $fontSizeInElementOfForm: 20px;
   $colorInElementsOfForm: #282828;
 
   .image {
@@ -29,7 +29,8 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 20px 0;
-    @media (max-width: 600px) {
+    @media (max-width: 650px) {
+      width: 95%;
       padding: 10px;
     }
 
@@ -45,7 +46,7 @@
       @media (max-width: 1100px) {
         width: 350px;
         line-height: 1.0;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-size: 14px;
       }
       @media (max-width: 750px) {
@@ -62,6 +63,7 @@
       display: flex;
       row-gap: 10px;
       flex-direction: column;
+      width: 100%;
       @media (max-width: 750px) {
         row-gap: 5px;
       }
@@ -112,9 +114,6 @@
           padding: 5px;
           font-size: $fontSizeInElementOfForm - 4px;
         }
-        @media (max-width: 550px) {
-          font-size: $fontSizeInElementOfForm - 6px;
-        }
       }
 
       input {
@@ -130,8 +129,9 @@
           padding: 5px;
           font-size: $fontSizeInElementOfForm - 4px;
         }
-        @media (max-width: 550px) {
-          font-size: $fontSizeInElementOfForm - 6px;
+
+        &::placeholder {
+          color: #3d3d3d;
         }
       }
 

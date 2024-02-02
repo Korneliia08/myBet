@@ -4,16 +4,20 @@
   position: absolute;
   top: 15px;
   left: 40px;
-  font-size: 25px;
-  color: rgba(21, 128, 27, 0.93);
+  font-size: 24px;
+  color: rgb(116 138 203 / 93%);
   filter: drop-shadow(0px 0px 1px rgba(70, 70, 70, 0.93));
   transition: 500ms;
   @media (max-width: 1100px) {
     top: 10px;
   }
+  @media (max-width: 800px) {
+    padding: 10px;
+    font-size: 19px;
+  }
 
   &:hover {
     cursor: pointer;
-    color: rgba(18, 105, 23, 0.96);
+    color: rgba(85, 109, 182, 0.93)
   }
 }

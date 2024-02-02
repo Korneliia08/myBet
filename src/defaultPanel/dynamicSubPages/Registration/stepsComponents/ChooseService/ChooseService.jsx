@@ -69,13 +69,15 @@ const ChooseService = () => {
   const containerForServices = (
     <>
       <table className={style.containerForServices}>
-        <tr className={style.blockForHeadlines}>
-          <th className={style.nr}>Nr</th>
-          <th className={style.service}>Service</th>
-          <th className={style.price}>Price</th>
-          <th className={style.choose}>Choose</th>
-        </tr>
-        {servicesComponent}
+        <thead>
+          <tr className={style.blockForHeadlines}>
+            <td className={style.nr}>Nr</td>
+            <th className={style.service}>Service</th>
+            <th className={style.price}>Price</th>
+            <th className={style.choose}>Choose</th>
+          </tr>
+        </thead>
+        <tbody>{servicesComponent}</tbody>
       </table>
       <div className={style.bottomPart}>
         <span className={style.totalSum}>

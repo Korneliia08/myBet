@@ -31,8 +31,9 @@
   box-sizing: border-box;
   padding: 20px 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .container .blockForForm {
+    width: 95%;
     padding: 10px;
   }
 }
@@ -50,7 +51,7 @@
   .container .blockForForm .content {
     width: 350px;
     line-height: 1;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 14px;
   }
 }
@@ -70,6 +71,7 @@
   display: flex;
   row-gap: 10px;
   flex-direction: column;
+  width: 100%;
 }
 @media (max-width: 750px) {
   .container .blockForForm form {
@@ -84,7 +86,7 @@
 .container .blockForForm form .groupe select {
   padding: 5px 15px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: transparent;
   border: 2px solid #868686;
   color: #000f4d;
@@ -95,12 +97,12 @@
 @media (max-width: 1100px) {
   .container .blockForForm form .groupe select {
     padding: 5px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 550px) {
   .container .blockForForm form .groupe select {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .container .blockForForm form .groupe .chooseWhoSendTo {
@@ -115,7 +117,7 @@
   border-radius: 5px;
   color: #282828;
   text-shadow: 0px 0px 1px black;
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px 15px;
   box-sizing: border-box;
   height: 115px;
@@ -123,18 +125,13 @@
 @media (max-width: 1100px) {
   .container .blockForForm form textarea {
     padding: 5px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 550px) {
-  .container .blockForForm form textarea {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .container .blockForForm form input {
   padding: 5px 15px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 20px;
   background-color: transparent;
   border: 2px solid #868686;
   color: #282828;
@@ -144,13 +141,11 @@
 @media (max-width: 1100px) {
   .container .blockForForm form input {
     padding: 5px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
-@media (max-width: 550px) {
-  .container .blockForForm form input {
-    font-size: 12px;
-  }
+.container .blockForForm form input::placeholder {
+  color: #3d3d3d;
 }
 .container .blockForForm form .submit {
   border: none;
